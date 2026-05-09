@@ -744,7 +744,7 @@ cron.schedule('0 */5 * * *', () => {
   if (!isFetching) fetchAllPhones(); 
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`\n🚀 BudgetPick running at http://localhost:${PORT}`);
   console.log(`POST /api/refresh to start price fetch\n`);
