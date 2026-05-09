@@ -695,79 +695,84 @@
       "category": "under20k",
       "platforms": {
         "Flipkart": {
-          "title": "CMF Phone 2 Pro",
-          "price": 15237,
-          "priceFormatted": "₹15,237",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=CMF%20Phone%202%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-1.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:23.841Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:44:42.147Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "CMF Phone 2 Pro",
-          "price": 17501,
-          "priceFormatted": "₹17,501",
-          "rating": "4.8",
-          "link": "https://www.amazon.in/s?k=CMF%20Phone%202%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-1.jpg",
+          "title": "Samsung",
+          "price": 21998,
+          "priceFormatted": "₹21,998",
+          "rating": 4.3,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3NzY2NzIyOTcwNzAxMTY3OjE3NzgzNTU4NzU6c3BfYXRmOjMwMDU0MjA4MTg0ODgzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.IJHLehNa3EK6Jk0iT_vVEjIg0ACCISbi0Qoo1gbxFB5-kLuFUUgqZbsg6oZGeheF-mqcfRSeKeetf4MJGwd27lPeDfRcSQgL0gCLHcinkbndT0kz_9PJWOSFWq7oVQz20kfSN52h6iwx9pryxcDatZJN7138KVA74KBqpOC21f9pTG0IgAE0eiXHWLEDSzzo2jr1BTDG84_7P3gKQWit0jrTHnAEw7Jy8CliV4pg2L0.2LVV1If0j1KeCWOpX1aMIJkcIewGJCBqYRj3dneQC8E%26dib_tag%3Dse%26keywords%3DCMF%2BPhone%2B2%2BPro%26nsdOptOutParam%3Dtrue%26qid%3D1778355875%26sr%3D8-1-spons%26aref%3DPwYuLkqD5d%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=PwYuLkqD5d&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71PQ2tp0jwL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:23.841Z"
+          "fetchedAt": "2026-05-09T19:44:44.633Z"
         },
         "Croma": {
-          "title": "CMF Phone 2 Pro",
-          "price": 15556,
-          "priceFormatted": "₹15,556",
-          "rating": "4.4",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=CMF%20Phone%202%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-1.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:23.841Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:45:00.306Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "CMF Phone 2 Pro",
-          "price": 16062,
-          "priceFormatted": "₹16,062",
-          "rating": "4.7",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=CMF%20Phone%202%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-1.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:23.841Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:45:14.793Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "CMF Phone 2 Pro",
-          "price": 15795,
-          "priceFormatted": "₹15,795",
-          "rating": "4.8",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/CMF%20Phone%202%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-1.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:23.841Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:45:32.709Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "CMF Phone 2 Pro",
-          "price": 16300,
-          "priceFormatted": "₹16,300",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=CMF%20Phone%202%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-1.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:23.841Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:45:47.465Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 15237,
-        "platform": "Flipkart",
-        "formatted": "₹15,237",
-        "link": "https://www.flipkart.com/search?q=CMF%20Phone%202%20Pro"
+        "price": 21998,
+        "platform": "Amazon",
+        "formatted": "₹21,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3NzY2NzIyOTcwNzAxMTY3OjE3NzgzNTU4NzU6c3BfYXRmOjMwMDU0MjA4MTg0ODgzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.IJHLehNa3EK6Jk0iT_vVEjIg0ACCISbi0Qoo1gbxFB5-kLuFUUgqZbsg6oZGeheF-mqcfRSeKeetf4MJGwd27lPeDfRcSQgL0gCLHcinkbndT0kz_9PJWOSFWq7oVQz20kfSN52h6iwx9pryxcDatZJN7138KVA74KBqpOC21f9pTG0IgAE0eiXHWLEDSzzo2jr1BTDG84_7P3gKQWit0jrTHnAEw7Jy8CliV4pg2L0.2LVV1If0j1KeCWOpX1aMIJkcIewGJCBqYRj3dneQC8E%26dib_tag%3Dse%26keywords%3DCMF%2BPhone%2B2%2BPro%26nsdOptOutParam%3Dtrue%26qid%3D1778355875%26sr%3D8-1-spons%26aref%3DPwYuLkqD5d%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=PwYuLkqD5d&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:23.841Z"
+      "lastUpdated": "2026-05-09T19:45:48.201Z"
     },
     "vivo-t4r": {
       "id": "vivo-t4r",
@@ -776,79 +781,84 @@
       "category": "under20k",
       "platforms": {
         "Flipkart": {
-          "title": "Vivo T4R 5G",
-          "price": 18999,
-          "priceFormatted": "₹18,999",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=Vivo%20T4R%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-t3-pro.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:25.893Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:45:53.990Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Vivo T4R 5G",
-          "price": 18672,
-          "priceFormatted": "₹18,672",
-          "rating": "4.1",
-          "link": "https://www.amazon.in/s?k=Vivo%20T4R%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-t3-pro.jpg",
+          "title": "Samsung",
+          "price": 21998,
+          "priceFormatted": "₹21,998",
+          "rating": 4.3,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyOTM4Mjg1Mjk4MjU4MDQwOjE3NzgzNTU5NDg6c3BfYXRmOjMwMTA3NzIyNjcwMDYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.cTI6yv5aiv-Ly7P_qlEDz9-MmzNmgHxpIxLw4rWAwEmrYFj4E3qJwNA1Ndd7P8pA-hxrTTLAMCHpWSeBLNUWBNXRLB7EXQTikvMqs4GaWVdkrZFNzjKYfAkJ6ShkZy76ys0WbxYSZdn72LXGX92DLH6jYdX2ue-Gajl_xOfe_67-w_GJNEXvAXdP88xzeXaKTCscireQB71vpavhwXeBEa79FbalVxaUAxin_VA66_s.CiR_GmABCkYbvBoaYGjQKSvCPzcrmn4Z5h7bXEnC8Rg%26dib_tag%3Dse%26keywords%3DVivo%2BT4R%2B5G%26qid%3D1778355947%26sr%3D8-1-spons%26aref%3DejcfoNlXjn%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ejcfoNlXjn&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71PQ2tp0jwL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:25.893Z"
+          "fetchedAt": "2026-05-09T19:45:57.363Z"
         },
         "Croma": {
-          "title": "Vivo T4R 5G",
-          "price": 17545,
-          "priceFormatted": "₹17,545",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=Vivo%20T4R%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-t3-pro.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:25.893Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:46:12.252Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Vivo T4R 5G",
-          "price": 17045,
-          "priceFormatted": "₹17,045",
-          "rating": "4.5",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=Vivo%20T4R%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-t3-pro.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:25.893Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:46:27.216Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Vivo T4R 5G",
-          "price": 16928,
-          "priceFormatted": "₹16,928",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/Vivo%20T4R%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-t3-pro.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:25.893Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:46:43.254Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Vivo T4R 5G",
-          "price": 18647,
-          "priceFormatted": "₹18,647",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=Vivo%20T4R%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-t3-pro.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": false,
-          "fetchedAt": "2026-05-09T14:30:25.893Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:47:00.447Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 16928,
-        "platform": "Vijay Sales",
-        "formatted": "₹16,928",
-        "link": "https://www.vijaysales.com/search/Vivo%20T4R%205G"
+        "price": 21998,
+        "platform": "Amazon",
+        "formatted": "₹21,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyOTM4Mjg1Mjk4MjU4MDQwOjE3NzgzNTU5NDg6c3BfYXRmOjMwMTA3NzIyNjcwMDYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.cTI6yv5aiv-Ly7P_qlEDz9-MmzNmgHxpIxLw4rWAwEmrYFj4E3qJwNA1Ndd7P8pA-hxrTTLAMCHpWSeBLNUWBNXRLB7EXQTikvMqs4GaWVdkrZFNzjKYfAkJ6ShkZy76ys0WbxYSZdn72LXGX92DLH6jYdX2ue-Gajl_xOfe_67-w_GJNEXvAXdP88xzeXaKTCscireQB71vpavhwXeBEa79FbalVxaUAxin_VA66_s.CiR_GmABCkYbvBoaYGjQKSvCPzcrmn4Z5h7bXEnC8Rg%26dib_tag%3Dse%26keywords%3DVivo%2BT4R%2B5G%26qid%3D1778355947%26sr%3D8-1-spons%26aref%3DejcfoNlXjn%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ejcfoNlXjn&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:25.893Z"
+      "lastUpdated": "2026-05-09T19:47:01.751Z"
     },
     "redmi-note-14": {
       "id": "redmi-note-14",
@@ -2228,5 +2238,5 @@
       "lastUpdated": "2026-05-09T14:31:18.450Z"
     }
   },
-  "lastFullFetch": "2026-05-09T19:44:36.417Z"
+  "lastFullFetch": "2026-05-09T19:47:01.752Z"
 }

@@ -318,6 +318,12 @@
         "Vijay Sales": 15795,
         "91Mobiles": 16300
       }
+    },
+    {
+      "date": "2026-05-09T19:45:48.202Z",
+      "prices": {
+        "Amazon": 21998
+      }
     }
   ],
   "vivo-t4r": [
@@ -342,6 +348,12 @@
         "Reliance Digital": 17045,
         "Vijay Sales": 16928,
         "91Mobiles": 18647
+      }
+    },
+    {
+      "date": "2026-05-09T19:47:01.751Z",
+      "prices": {
+        "Amazon": 21998
       }
     }
   ],
