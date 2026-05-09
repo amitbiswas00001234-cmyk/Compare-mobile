@@ -1,0 +1,857 @@
+{
+  "phones": {
+    "poco-m7-plus": {
+      "id": "poco-m7-plus",
+      "brand": "POCO",
+      "model": "POCO M7 Plus 5G",
+      "category": "under15k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=POCO%20M7%20Plus%205G",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T16:59:56.974Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "REDMI 15C 5G Midnight Black 4GB + 128GB | Royale Design | Massive 6000mAh Battery | Segment's Larges",
+          "price": 15499,
+          "priceFormatted": "₹15,499",
+          "rating": 3.9,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3MjY0MDA1MDk0MjY4NTIzOjE3NzgwODY3OTk6c3BfYXRmOjMwMDg2MTIxMDUyNTEzMjo6MDo6&url=%2FMidnight-Segments-MediaTek-Dimensity-Charging%2Fdp%2FB0G2B4JX1F%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.0S6PatK48XV7DmWJYmUWdyBtI8dWIwAsqUWFgTJ47J3So4PrgA8abJW4SCYut5SsISEpCfpj-cDkwvO1EAA9ur_zAvtg13tTdJDzNoufO9YURwH2i3J-sbJua4d6KVwoMLvVXGJSEcbOxJmByTirI1rwnDbp04p-5XfrI9kCmtJwEfZHKSV6dX3UbawPobQYZWg8sipLTJ7qPDhaNjeGjqoIBnirTQ4dGqqfkZGeulU.gzD4UBh7sBe3xx9PqrRKx65rNQAYi2JJMkETles6li4%26dib_tag%3Dse%26keywords%3DPOCO%2BM7%2BPlus%2B5G%26qid%3D1778086799%26sr%3D8-1-spons%26aref%3DMyFvZgFZMH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=MyFvZgFZMH&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71hOqmhz9RL._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T17:00:00.214Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=POCO%20M7%20Plus%205G",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:04.871Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=POCO%20M7%20Plus%205G",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:06.530Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/POCO%20M7%20Plus%205G",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:09.460Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=POCO%20M7%20Plus%205G",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:10.899Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 15499,
+        "platform": "Amazon",
+        "formatted": "₹15,499",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3MjY0MDA1MDk0MjY4NTIzOjE3NzgwODY3OTk6c3BfYXRmOjMwMDg2MTIxMDUyNTEzMjo6MDo6&url=%2FMidnight-Segments-MediaTek-Dimensity-Charging%2Fdp%2FB0G2B4JX1F%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.0S6PatK48XV7DmWJYmUWdyBtI8dWIwAsqUWFgTJ47J3So4PrgA8abJW4SCYut5SsISEpCfpj-cDkwvO1EAA9ur_zAvtg13tTdJDzNoufO9YURwH2i3J-sbJua4d6KVwoMLvVXGJSEcbOxJmByTirI1rwnDbp04p-5XfrI9kCmtJwEfZHKSV6dX3UbawPobQYZWg8sipLTJ7qPDhaNjeGjqoIBnirTQ4dGqqfkZGeulU.gzD4UBh7sBe3xx9PqrRKx65rNQAYi2JJMkETles6li4%26dib_tag%3Dse%26keywords%3DPOCO%2BM7%2BPlus%2B5G%26qid%3D1778086799%26sr%3D8-1-spons%26aref%3DMyFvZgFZMH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=MyFvZgFZMH&sp_cr=ZAZ"
+      },
+      "lastUpdated": "2026-05-06T17:00:12.024Z"
+    },
+    "lava-play-ultra": {
+      "id": "lava-play-ultra",
+      "brand": "Lava",
+      "model": "Lava Play Ultra",
+      "category": "under15k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Lava%20Play%20Ultra",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:15.683Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "Lava",
+          "price": 16999,
+          "priceFormatted": "₹16,999",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1MzU5NTk1MzgxNTUzODY6MTc3ODA4NjgxODpzcF9hdGY6MzAwNjc1MDI5NDgyNjMyOjowOjo&url=%2FLava-Play-Ultra-Processor-700K-Battery-33W%2Fdp%2FB0FM87WD75%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.D_VvG0O807OaDHqj1GZJLLEO0uud2E6D59PeI_6MFS-e7mw2SvunWxbfB5OFsbOzsQ7oeJ3j60NUxgA6Jz2BmdVBVz_XJJG-XF-VceWpOaPV3tQcN6WPBxNkQYLgm6BtcwWh2gm5rh10s-6tnEYeSKDEapfcIKB9IqpEz_mz5KWRy_inP39TN2wckVj2pJrAOtwa2dMnUt30UEU30eZXPbXnpmk3OVIo8ZP8k8DWEkU.soDj-7zM5bzgfpTXH-2_5AMw7tuRXR8oJjFRoBEKwuo%26dib_tag%3Dse%26keywords%3DLava%2BPlay%2BUltra%26qid%3D1778086818%26sr%3D8-1-spons%26aref%3Dx3HFbKBWAi%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=x3HFbKBWAi&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/61-SyO-EysL._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T17:00:18.904Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Lava%20Play%20Ultra",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:23.234Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Lava%20Play%20Ultra",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:25.992Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Lava%20Play%20Ultra",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:28.682Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Lava%20Play%20Ultra",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:30.018Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 16999,
+        "platform": "Amazon",
+        "formatted": "₹16,999",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1MzU5NTk1MzgxNTUzODY6MTc3ODA4NjgxODpzcF9hdGY6MzAwNjc1MDI5NDgyNjMyOjowOjo&url=%2FLava-Play-Ultra-Processor-700K-Battery-33W%2Fdp%2FB0FM87WD75%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.D_VvG0O807OaDHqj1GZJLLEO0uud2E6D59PeI_6MFS-e7mw2SvunWxbfB5OFsbOzsQ7oeJ3j60NUxgA6Jz2BmdVBVz_XJJG-XF-VceWpOaPV3tQcN6WPBxNkQYLgm6BtcwWh2gm5rh10s-6tnEYeSKDEapfcIKB9IqpEz_mz5KWRy_inP39TN2wckVj2pJrAOtwa2dMnUt30UEU30eZXPbXnpmk3OVIo8ZP8k8DWEkU.soDj-7zM5bzgfpTXH-2_5AMw7tuRXR8oJjFRoBEKwuo%26dib_tag%3Dse%26keywords%3DLava%2BPlay%2BUltra%26qid%3D1778086818%26sr%3D8-1-spons%26aref%3Dx3HFbKBWAi%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=x3HFbKBWAi&sp_cr=ZAZ"
+      },
+      "lastUpdated": "2026-05-06T17:00:31.280Z"
+    },
+    "moto-g45": {
+      "id": "moto-g45",
+      "brand": "Motorola",
+      "model": "Moto G45 5G",
+      "category": "under15k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Motorola%20Moto%20G45%205G",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:34.061Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.amazon.in/s?k=Motorola%20Moto%20G45%205G",
+          "image": null,
+          "platform": "Amazon",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:35.762Z",
+          "isFallback": true
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Motorola%20Moto%20G45%205G",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:39.772Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Motorola%20Moto%20G45%205G",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:41.604Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Motorola%20Moto%20G45%205G",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:43.658Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Motorola%20Moto%20G45%205G",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:45.048Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": null,
+      "lastUpdated": "2026-05-06T17:00:46.041Z"
+    },
+    "galaxy-m17": {
+      "id": "galaxy-m17",
+      "brand": "Samsung",
+      "model": "Galaxy M17 5G",
+      "category": "under15k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Samsung%20Galaxy%20M17%205G",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:49.493Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "Samsung",
+          "price": 16499,
+          "priceFormatted": "₹16,499",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyODQwODYxNzk4Mzg2NjQ0OjE3NzgwODY4NTE6c3BfYXRmOjMwMDc3NDE2NzU1MTQzMjo6MDo6&url=%2FSamsung-Moonlight-Storage-Upgrades-Lag-free%2Fdp%2FB0FN7W26Q8%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.sebp8bNeAS50e7gB5L2jxqIPxSwsXCk459vJ8xo8RhM56r5lJWEVJ6hDyodAhmWpTKqnVTeTuCZOUrOjUoCjT9C_AJTQE5JQsnwbnbLM3Pzvv6PXb1dzt3BY6YlntCadvD-_Z7QZJnXtvGUoh5dRUFjcxKHNUbhef0Gqr8QKjXO45UEgz2C0EXntiRVgoDBVBua3FLiBBkbuv91NmOSbshqny0DIlgPYG6-qlsR8Eh0.uKOeeUqCh09XW9jxYprcvq7Gm2M1afEdQqGDfP79m7k%26dib_tag%3Dse%26keywords%3DSamsung%2BGalaxy%2BM17%2B5G%26qid%3D1778086851%26sr%3D8-1-spons%26aref%3DV59KLHFNMS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=V59KLHFNMS&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71S8BY96MwL._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T17:00:52.054Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Samsung%20Galaxy%20M17%205G",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:57.505Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Samsung%20Galaxy%20M17%205G",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:00:59.939Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Samsung%20Galaxy%20M17%205G",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:02.372Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Samsung%20Galaxy%20M17%205G",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:03.879Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 16499,
+        "platform": "Amazon",
+        "formatted": "₹16,499",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyODQwODYxNzk4Mzg2NjQ0OjE3NzgwODY4NTE6c3BfYXRmOjMwMDc3NDE2NzU1MTQzMjo6MDo6&url=%2FSamsung-Moonlight-Storage-Upgrades-Lag-free%2Fdp%2FB0FN7W26Q8%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.sebp8bNeAS50e7gB5L2jxqIPxSwsXCk459vJ8xo8RhM56r5lJWEVJ6hDyodAhmWpTKqnVTeTuCZOUrOjUoCjT9C_AJTQE5JQsnwbnbLM3Pzvv6PXb1dzt3BY6YlntCadvD-_Z7QZJnXtvGUoh5dRUFjcxKHNUbhef0Gqr8QKjXO45UEgz2C0EXntiRVgoDBVBua3FLiBBkbuv91NmOSbshqny0DIlgPYG6-qlsR8Eh0.uKOeeUqCh09XW9jxYprcvq7Gm2M1afEdQqGDfP79m7k%26dib_tag%3Dse%26keywords%3DSamsung%2BGalaxy%2BM17%2B5G%26qid%3D1778086851%26sr%3D8-1-spons%26aref%3DV59KLHFNMS%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=V59KLHFNMS&sp_cr=ZAZ"
+      },
+      "lastUpdated": "2026-05-06T17:01:04.550Z"
+    },
+    "tecno-pova7": {
+      "id": "tecno-pova7",
+      "brand": "Tecno",
+      "model": "Tecno Pova 7 5G",
+      "category": "under15k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Tecno%20Pova%207%205G",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:09.640Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.amazon.in/s?k=Tecno%20Pova%207%205G",
+          "image": null,
+          "platform": "Amazon",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:10.734Z",
+          "isFallback": true
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Tecno%20Pova%207%205G",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:15.892Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Tecno%20Pova%207%205G",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:17.737Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Tecno%20Pova%207%205G",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:19.821Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Tecno%20Pova%207%205G",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:21.159Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": null,
+      "lastUpdated": "2026-05-06T17:01:22.574Z"
+    },
+    "edge-60-fusion": {
+      "id": "edge-60-fusion",
+      "brand": "Motorola",
+      "model": "Edge 60 Fusion",
+      "category": "under20k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Motorola%20Edge%2060%20Fusion",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:25.889Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "Motorola",
+          "price": 22545,
+          "priceFormatted": "₹22,545",
+          "rating": 3.4,
+          "link": "https://www.amazon.in/Motorola-Pantone-Slipstream-Dimensity-MediaTek/dp/B0GP6VSXHS/ref=sr_1_1?dib=eyJ2IjoiMSJ9.7S9NLVYHlheWBHgwabRRYbGwllOILOPKof216Uua7z730J65mwyuFtRDW6bDGgq90fTEuFD1jjVU-1vh8e8H9DLxqx4UBd-7h95wTJ0XK_2qwyyOt5jaJx_UvldYV2h9WYmOElah1xv5kd_DIMURPqlU7xdL-vk8kqaGjjj-2pNr3rJU6x_dekBOb3fcs-FpY9fCz4ysf5BpvUvm1cmTLI0LUwcy-xUVfgvCiqZWL5w.lX_-O_JZJEifG3rT7uHFUSlYNAcGuHvpy81l154UvbE&dib_tag=se&keywords=Motorola+Edge+60+Fusion&nsdOptOutParam=true&qid=1778086887&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/715DqVK618L._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T17:01:29.076Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Motorola%20Edge%2060%20Fusion",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:34.441Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Motorola%20Edge%2060%20Fusion",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:36.743Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Motorola%20Edge%2060%20Fusion",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:39.608Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Motorola%20Edge%2060%20Fusion",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:40.545Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 22545,
+        "platform": "Amazon",
+        "formatted": "₹22,545",
+        "link": "https://www.amazon.in/Motorola-Pantone-Slipstream-Dimensity-MediaTek/dp/B0GP6VSXHS/ref=sr_1_1?dib=eyJ2IjoiMSJ9.7S9NLVYHlheWBHgwabRRYbGwllOILOPKof216Uua7z730J65mwyuFtRDW6bDGgq90fTEuFD1jjVU-1vh8e8H9DLxqx4UBd-7h95wTJ0XK_2qwyyOt5jaJx_UvldYV2h9WYmOElah1xv5kd_DIMURPqlU7xdL-vk8kqaGjjj-2pNr3rJU6x_dekBOb3fcs-FpY9fCz4ysf5BpvUvm1cmTLI0LUwcy-xUVfgvCiqZWL5w.lX_-O_JZJEifG3rT7uHFUSlYNAcGuHvpy81l154UvbE&dib_tag=se&keywords=Motorola+Edge+60+Fusion&nsdOptOutParam=true&qid=1778086887&sr=8-1"
+      },
+      "lastUpdated": "2026-05-06T17:01:41.936Z"
+    },
+    "poco-x7": {
+      "id": "poco-x7",
+      "brand": "POCO",
+      "model": "POCO X7 5G",
+      "category": "under20k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=POCO%20X7%205G",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:46.020Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "REDMI 15C 5G Dusk Purple 4GB + 128GB | Royale Design | Massive 6000mAh Battery | Segment's Largest 1",
+          "price": 15499,
+          "priceFormatted": "₹15,499",
+          "rating": 3.9,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1Mzk1ODIyNTcwMzMwMzYyOjE3NzgwODY5MDg6c3BfYXRmOjMwMDg2MTIxMDUyNTMzMjo6MDo6&url=%2FMassive-Segments-MediaTek-Dimensity-Charging%2Fdp%2FB0G2B1S4YL%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.oNoS_q95vtq4HnTpzZOb1v1mjYVzFjN5o6sxrIAlEQRA2jKr80Y2avMIk6Q0bgw4mHQiaAlnWeviqvNUqCXbdcNuaQl6fU6J_BGOVOB0Ok3-qJ-0sVzVzOEk6FALuz2EecpM-TkvG5KiVZhJE0VZKAjRExDuyZI8jNjLjsHlQRAVCVfZ76VevXCKAagUI89O9pL3AM_tN2yNaVNInzQ9tlkEvtgnmwgitQjQfcaikIk.Wbxds2RZHhHBVvHGMjQfMVjLNBodlmaSLv8nfZX9f3E%26dib_tag%3Dse%26keywords%3DPOCO%2BX7%2B5G%26qid%3D1778086907%26sr%3D8-1-spons%26aref%3DvLR2DFTmZF%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=vLR2DFTmZF&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/719GNPKA8OL._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T17:01:48.738Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=POCO%20X7%205G",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:51.561Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=POCO%20X7%205G",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:53.063Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/POCO%20X7%205G",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:55.430Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=POCO%20X7%205G",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:01:56.540Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 15499,
+        "platform": "Amazon",
+        "formatted": "₹15,499",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1Mzk1ODIyNTcwMzMwMzYyOjE3NzgwODY5MDg6c3BfYXRmOjMwMDg2MTIxMDUyNTMzMjo6MDo6&url=%2FMassive-Segments-MediaTek-Dimensity-Charging%2Fdp%2FB0G2B1S4YL%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.oNoS_q95vtq4HnTpzZOb1v1mjYVzFjN5o6sxrIAlEQRA2jKr80Y2avMIk6Q0bgw4mHQiaAlnWeviqvNUqCXbdcNuaQl6fU6J_BGOVOB0Ok3-qJ-0sVzVzOEk6FALuz2EecpM-TkvG5KiVZhJE0VZKAjRExDuyZI8jNjLjsHlQRAVCVfZ76VevXCKAagUI89O9pL3AM_tN2yNaVNInzQ9tlkEvtgnmwgitQjQfcaikIk.Wbxds2RZHhHBVvHGMjQfMVjLNBodlmaSLv8nfZX9f3E%26dib_tag%3Dse%26keywords%3DPOCO%2BX7%2B5G%26qid%3D1778086907%26sr%3D8-1-spons%26aref%3DvLR2DFTmZF%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=vLR2DFTmZF&sp_cr=ZAZ"
+      },
+      "lastUpdated": "2026-05-06T17:01:57.927Z"
+    },
+    "moto-g86-power": {
+      "id": "moto-g86-power",
+      "brand": "Motorola",
+      "model": "Moto G86 Power 5G",
+      "category": "under20k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:01.284Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "Motorola",
+          "price": 18499,
+          "priceFormatted": "₹18,499",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/Motorola-TurboPower-Charging-Dimensity-Processor/dp/B0FKN6PJN9/ref=sr_1_1?dib=eyJ2IjoiMSJ9.xfOq91YTGvz6HRpQ3cpJmOLascEQ9jx7AlPOTXxTobIC4oANMc1DDR-pBxauDyMN9e6BUExdKRrCRwu1WBNqs6DwNwqxlWuZwffAu3kkc9aFMJoPYU0qG-y6d8C1alf30Bg3WnOUkQc8r3_aJjtKR_oI2RjD_gCSzLFe6gLe5-9iEPzRy5m1XoHnuZ0f_DMgdIoHKDfZVLwJx3mxpU4vpaoeY8j0gANayj0UlZQgKME.QDiGnyBEMtd8tHp0VEl_6xO4ryRqgstHXuazC8zeiks&dib_tag=se&keywords=Motorola+Moto+G86+Power+5G&qid=1778086923&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/516OBPGnZTL._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T17:02:04.101Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:06.410Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:08.635Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:11.147Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:12.159Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 18499,
+        "platform": "Amazon",
+        "formatted": "₹18,499",
+        "link": "https://www.amazon.in/Motorola-TurboPower-Charging-Dimensity-Processor/dp/B0FKN6PJN9/ref=sr_1_1?dib=eyJ2IjoiMSJ9.xfOq91YTGvz6HRpQ3cpJmOLascEQ9jx7AlPOTXxTobIC4oANMc1DDR-pBxauDyMN9e6BUExdKRrCRwu1WBNqs6DwNwqxlWuZwffAu3kkc9aFMJoPYU0qG-y6d8C1alf30Bg3WnOUkQc8r3_aJjtKR_oI2RjD_gCSzLFe6gLe5-9iEPzRy5m1XoHnuZ0f_DMgdIoHKDfZVLwJx3mxpU4vpaoeY8j0gANayj0UlZQgKME.QDiGnyBEMtd8tHp0VEl_6xO4ryRqgstHXuazC8zeiks&dib_tag=se&keywords=Motorola+Moto+G86+Power+5G&qid=1778086923&sr=8-1"
+      },
+      "lastUpdated": "2026-05-06T17:02:12.974Z"
+    },
+    "cmf-phone2-pro": {
+      "id": "cmf-phone2-pro",
+      "brand": "CMF by Nothing",
+      "model": "CMF Phone 2 Pro",
+      "category": "under20k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=CMF%20Phone%202%20Pro",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:17.577Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "Redmi",
+          "price": 18499,
+          "priceFormatted": "₹18,499",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToxOTU2ODQ0NTQzNzY4NTAwOjE3NzgwODY5Mzk6c3BfYXRmOjMwMDY4MDI4NzMwMjAzMjo6MDo6&url=%2FRedmi-Segments-7000mAhA-Snapdragon-Charging%2Fdp%2FB0FJFSDYVC%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.eODMgn54Fxp8Hbh_2H-3P0PlMFYjTjkxF3Dp_r9etKCi74TdyE_Uel7xH9sxKI3XvGpkuoJuh71Zk4CaplNy5mz-w2VdJgRuaMYgju_hUivV5YZ1T-vu3a8ygqp3xT-9IXn_tXb_cH41f_LRuFbF34t7wmlShRwTnEr9uLBWBQU2aZAdXmPaRm5bfJamYk1d4vqI9X3XhXXu5ZVGiZf6avd75GfnQbFnjV_PG5qoopA.HpDc6GA0tChtBb05W1iR88IycFxQmFaC-rSGygXP9oc%26dib_tag%3Dse%26keywords%3DCMF%2BPhone%2B2%2BPro%26nsdOptOutParam%3Dtrue%26qid%3D1778086939%26sr%3D8-1-spons%26aref%3D8KUmGUSSao%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=8KUmGUSSao&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/812OvmyYPmL._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T17:02:19.526Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=CMF%20Phone%202%20Pro",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:25.371Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=CMF%20Phone%202%20Pro",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:27.072Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/CMF%20Phone%202%20Pro",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:29.103Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=CMF%20Phone%202%20Pro",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T17:02:30.364Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 18499,
+        "platform": "Amazon",
+        "formatted": "₹18,499",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToxOTU2ODQ0NTQzNzY4NTAwOjE3NzgwODY5Mzk6c3BfYXRmOjMwMDY4MDI4NzMwMjAzMjo6MDo6&url=%2FRedmi-Segments-7000mAhA-Snapdragon-Charging%2Fdp%2FB0FJFSDYVC%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.eODMgn54Fxp8Hbh_2H-3P0PlMFYjTjkxF3Dp_r9etKCi74TdyE_Uel7xH9sxKI3XvGpkuoJuh71Zk4CaplNy5mz-w2VdJgRuaMYgju_hUivV5YZ1T-vu3a8ygqp3xT-9IXn_tXb_cH41f_LRuFbF34t7wmlShRwTnEr9uLBWBQU2aZAdXmPaRm5bfJamYk1d4vqI9X3XhXXu5ZVGiZf6avd75GfnQbFnjV_PG5qoopA.HpDc6GA0tChtBb05W1iR88IycFxQmFaC-rSGygXP9oc%26dib_tag%3Dse%26keywords%3DCMF%2BPhone%2B2%2BPro%26nsdOptOutParam%3Dtrue%26qid%3D1778086939%26sr%3D8-1-spons%26aref%3D8KUmGUSSao%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=8KUmGUSSao&sp_cr=ZAZ"
+      },
+      "lastUpdated": "2026-05-06T17:02:31.838Z"
+    },
+    "vivo-t4r": {
+      "id": "vivo-t4r",
+      "brand": "Vivo",
+      "model": "Vivo T4R 5G",
+      "category": "under20k",
+      "platforms": {
+        "Flipkart": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Vivo%20T4R%205G",
+          "image": null,
+          "platform": "Flipkart",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T16:24:44.728Z",
+          "isFallback": true
+        },
+        "Amazon": {
+          "title": "Samsung",
+          "price": 18499,
+          "priceFormatted": "₹18,499",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyMjE4MjE1MTk1NjMyNTI2OjE3NzgwODQ2ODY6c3BfYXRmOjMwMTA3NzE0MTM3MDAzMjo6MDo6&url=%2FSamsung-Moonlight-Storage-Upgrades-Lag-free%2Fdp%2FB0FN7WFPFD%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.cTI6yv5aiv-Ly7P_qlEDz2q9nAO2R_1LVSfgFQwb9cJKdYE4sQaeViuZNGuUJa8Z-hxrTTLAMCHpWSeBLNUWBH8tempJaQqi7pxKL5XLD_yHfjJEjvBEgfbccmdHjE3VUd83r9_1b2x61wVZDQHX9JwFCRzZFpsG6GKh-Q6myA-IWik6T7BScfaA68tw0p3KX8q8bdHzrGG3CxJ5dk183qrw7Qum-7iQ_CVSKtUlG9U.ou-uvg3ptvD2pVa3x528YCYGjaprtVmcdSXHlbAIpmM%26dib_tag%3Dse%26keywords%3DVivo%2BT4R%2B5G%26qid%3D1778084686%26sr%3D8-1-spons%26aref%3DKNlC8Ebezf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=KNlC8Ebezf&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71S8BY96MwL._AC_UY218_.jpg",
+          "platform": "Amazon",
+          "inStock": true,
+          "fetchedAt": "2026-05-06T16:24:47.353Z"
+        },
+        "Croma": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Vivo%20T4R%205G",
+          "image": null,
+          "platform": "Croma",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T16:24:48.724Z",
+          "isFallback": true
+        },
+        "Reliance Digital": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Vivo%20T4R%205G",
+          "image": null,
+          "platform": "Reliance Digital",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T16:24:50.981Z",
+          "isFallback": true
+        },
+        "Vijay Sales": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Vivo%20T4R%205G",
+          "image": null,
+          "platform": "Vijay Sales",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T16:24:53.290Z",
+          "isFallback": true
+        },
+        "91Mobiles": {
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Vivo%20T4R%205G",
+          "image": null,
+          "platform": "91Mobiles",
+          "inStock": null,
+          "fetchedAt": "2026-05-06T16:24:54.475Z",
+          "isFallback": true
+        }
+      },
+      "bestPrice": {
+        "price": 18499,
+        "platform": "Amazon",
+        "formatted": "₹18,499",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyMjE4MjE1MTk1NjMyNTI2OjE3NzgwODQ2ODY6c3BfYXRmOjMwMTA3NzE0MTM3MDAzMjo6MDo6&url=%2FSamsung-Moonlight-Storage-Upgrades-Lag-free%2Fdp%2FB0FN7WFPFD%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.cTI6yv5aiv-Ly7P_qlEDz2q9nAO2R_1LVSfgFQwb9cJKdYE4sQaeViuZNGuUJa8Z-hxrTTLAMCHpWSeBLNUWBH8tempJaQqi7pxKL5XLD_yHfjJEjvBEgfbccmdHjE3VUd83r9_1b2x61wVZDQHX9JwFCRzZFpsG6GKh-Q6myA-IWik6T7BScfaA68tw0p3KX8q8bdHzrGG3CxJ5dk183qrw7Qum-7iQ_CVSKtUlG9U.ou-uvg3ptvD2pVa3x528YCYGjaprtVmcdSXHlbAIpmM%26dib_tag%3Dse%26keywords%3DVivo%2BT4R%2B5G%26qid%3D1778084686%26sr%3D8-1-spons%26aref%3DKNlC8Ebezf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=KNlC8Ebezf&sp_cr=ZAZ"
+      },
+      "lastUpdated": "2026-05-06T16:24:55.596Z"
+    }
+  },
+  "lastFullFetch": "2026-05-06T17:02:31.840Z"
+}

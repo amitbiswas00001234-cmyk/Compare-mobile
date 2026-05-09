@@ -1,0 +1,635 @@
+{
+  "poco-m7-plus": [
+    {
+      "date": "2026-05-09T14:01:38.276Z",
+      "prices": {
+        "Amazon": 14138
+      }
+    },
+    {
+      "date": "2026-05-09T14:12:35.051Z",
+      "prices": {
+        "Amazon": 13998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:00.619Z",
+      "prices": {
+        "Flipkart": 10939,
+        "Amazon": 10621,
+        "Croma": 11152,
+        "Reliance Digital": 11694,
+        "Vijay Sales": 11529,
+        "91Mobiles": 11063
+      }
+    },
+    {
+      "date": "2026-05-09T18:30:15.359Z",
+      "prices": {
+        "Amazon": 13998
+      }
+    },
+    {
+      "date": "2026-05-09T18:48:40.451Z",
+      "prices": {
+        "Amazon": 13998
+      }
+    },
+    {
+      "date": "2026-05-09T19:34:00.448Z",
+      "prices": {
+        "Amazon": 13998
+      }
+    }
+  ],
+  "lava-play-ultra": [
+    {
+      "date": "2026-05-09T14:01:55.546Z",
+      "prices": {
+        "Amazon": 12249
+      }
+    },
+    {
+      "date": "2026-05-09T14:12:49.161Z",
+      "prices": {
+        "Amazon": 13999
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:04.529Z",
+      "prices": {
+        "Flipkart": 12444,
+        "Amazon": 12866,
+        "Croma": 13182,
+        "Reliance Digital": 13883,
+        "Vijay Sales": 12719,
+        "91Mobiles": 13760
+      }
+    },
+    {
+      "date": "2026-05-09T18:30:31.802Z",
+      "prices": {
+        "Amazon": 13999
+      }
+    },
+    {
+      "date": "2026-05-09T19:35:29.672Z",
+      "prices": {
+        "Amazon": 8399
+      }
+    }
+  ],
+  "moto-g45": [
+    {
+      "date": "2026-05-09T14:02:11.582Z",
+      "prices": {
+        "Amazon": 12499
+      }
+    },
+    {
+      "date": "2026-05-09T14:13:05.241Z",
+      "prices": {
+        "Amazon": 12269
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:07.051Z",
+      "prices": {
+        "Flipkart": 10327,
+        "Amazon": 10302,
+        "Croma": 10965,
+        "Reliance Digital": 10972,
+        "Vijay Sales": 10234,
+        "91Mobiles": 10482
+      }
+    },
+    {
+      "date": "2026-05-09T18:30:48.939Z",
+      "prices": {
+        "Amazon": 12499
+      }
+    },
+    {
+      "date": "2026-05-09T19:37:29.713Z",
+      "prices": {
+        "Amazon": 12499
+      }
+    }
+  ],
+  "galaxy-m17": [
+    {
+      "date": "2026-05-09T14:02:30.058Z",
+      "prices": {
+        "Amazon": 13998
+      }
+    },
+    {
+      "date": "2026-05-09T14:13:19.870Z",
+      "prices": {
+        "Amazon": 13998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:09.388Z",
+      "prices": {
+        "Flipkart": 14234,
+        "Amazon": 13791,
+        "Croma": 14271,
+        "Reliance Digital": 14939,
+        "Vijay Sales": 13849,
+        "91Mobiles": 13059
+      }
+    },
+    {
+      "date": "2026-05-09T18:31:04.973Z",
+      "prices": {
+        "Amazon": 13998
+      }
+    },
+    {
+      "date": "2026-05-09T19:38:55.519Z",
+      "prices": {
+        "Amazon": 15498
+      }
+    }
+  ],
+  "tecno-pova7": [
+    {
+      "date": "2026-05-09T14:02:48.353Z",
+      "prices": {
+        "Amazon": 9299
+      }
+    },
+    {
+      "date": "2026-05-09T14:13:34.654Z",
+      "prices": {
+        "Amazon": 19299
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:12.735Z",
+      "prices": {
+        "Flipkart": 12732,
+        "Amazon": 13564,
+        "Croma": 13459,
+        "Reliance Digital": 14068,
+        "Vijay Sales": 14056,
+        "91Mobiles": 13656
+      }
+    },
+    {
+      "date": "2026-05-09T18:31:21.239Z",
+      "prices": {
+        "Amazon": 20290
+      }
+    },
+    {
+      "date": "2026-05-09T19:40:07.237Z",
+      "prices": {
+        "Amazon": 26899
+      }
+    }
+  ],
+  "edge-60-fusion": [
+    {
+      "date": "2026-05-09T14:03:04.130Z",
+      "prices": {
+        "Amazon": 20900
+      }
+    },
+    {
+      "date": "2026-05-09T14:13:53.007Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:15.512Z",
+      "prices": {
+        "Flipkart": 20104,
+        "Amazon": 20232,
+        "Croma": 19592,
+        "Reliance Digital": 19281,
+        "Vijay Sales": 18556,
+        "91Mobiles": 19391
+      }
+    },
+    {
+      "date": "2026-05-09T18:31:36.256Z",
+      "prices": {
+        "Amazon": 25835
+      }
+    },
+    {
+      "date": "2026-05-09T19:41:18.183Z",
+      "prices": {
+        "Amazon": 20900
+      }
+    }
+  ],
+  "poco-x7": [
+    {
+      "date": "2026-05-09T14:03:21.422Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:14:09.545Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:17.600Z",
+      "prices": {
+        "Flipkart": 16777,
+        "Amazon": 16182,
+        "Croma": 18172,
+        "Reliance Digital": 16875,
+        "Vijay Sales": 17571,
+        "91Mobiles": 15977
+      }
+    },
+    {
+      "date": "2026-05-09T18:31:53.557Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    }
+  ],
+  "moto-g86-power": [
+    {
+      "date": "2026-05-09T14:03:38.320Z",
+      "prices": {
+        "Amazon": 24999
+      }
+    },
+    {
+      "date": "2026-05-09T14:14:24.212Z",
+      "prices": {
+        "Amazon": 24999
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:21.604Z",
+      "prices": {
+        "Flipkart": 17665,
+        "Amazon": 16373,
+        "Croma": 17554,
+        "Reliance Digital": 16709,
+        "Vijay Sales": 16107,
+        "91Mobiles": 16808
+      }
+    }
+  ],
+  "cmf-phone2-pro": [
+    {
+      "date": "2026-05-09T14:03:55.580Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:14:38.718Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:23.841Z",
+      "prices": {
+        "Flipkart": 15237,
+        "Amazon": 17501,
+        "Croma": 15556,
+        "Reliance Digital": 16062,
+        "Vijay Sales": 15795,
+        "91Mobiles": 16300
+      }
+    }
+  ],
+  "vivo-t4r": [
+    {
+      "date": "2026-05-09T14:04:12.626Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:14:53.117Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:25.893Z",
+      "prices": {
+        "Flipkart": 18999,
+        "Amazon": 18672,
+        "Croma": 17545,
+        "Reliance Digital": 17045,
+        "Vijay Sales": 16928,
+        "91Mobiles": 18647
+      }
+    }
+  ],
+  "redmi-note-14": [
+    {
+      "date": "2026-05-09T14:04:31.679Z",
+      "prices": {
+        "Amazon": 12999
+      }
+    },
+    {
+      "date": "2026-05-09T14:15:08.758Z",
+      "prices": {
+        "Amazon": 12999
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:29.723Z",
+      "prices": {
+        "Flipkart": 15178,
+        "Amazon": 15191,
+        "Croma": 14435,
+        "Reliance Digital": 14044,
+        "Vijay Sales": 15342,
+        "91Mobiles": 14554
+      }
+    }
+  ],
+  "realme-13-pro": [
+    {
+      "date": "2026-05-09T14:04:47.434Z",
+      "prices": {
+        "Amazon": 20748
+      }
+    },
+    {
+      "date": "2026-05-09T14:15:25.201Z",
+      "prices": {
+        "Amazon": 20748
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:33.128Z",
+      "prices": {
+        "Flipkart": 20774,
+        "Amazon": 19757,
+        "Croma": 20801,
+        "Reliance Digital": 21302,
+        "Vijay Sales": 20751,
+        "91Mobiles": 20271
+      }
+    }
+  ],
+  "iqoo-z10": [
+    {
+      "date": "2026-05-09T14:05:03.594Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:15:41.461Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:36.144Z",
+      "prices": {
+        "Flipkart": 18253,
+        "Amazon": 17304,
+        "Croma": 17067,
+        "Reliance Digital": 19001,
+        "Vijay Sales": 19790,
+        "91Mobiles": 18508
+      }
+    }
+  ],
+  "nord-ce-4-lite": [
+    {
+      "date": "2026-05-09T14:05:20.080Z",
+      "prices": {
+        "Amazon": 32998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:39.754Z",
+      "prices": {
+        "Flipkart": 19958,
+        "Amazon": 18136,
+        "Croma": 19445,
+        "Reliance Digital": 19278,
+        "Vijay Sales": 18919,
+        "91Mobiles": 17506
+      }
+    }
+  ],
+  "nord-4": [
+    {
+      "date": "2026-05-09T14:05:36.212Z",
+      "prices": {
+        "Amazon": 32998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:42.276Z",
+      "prices": {
+        "Flipkart": 27765,
+        "Amazon": 26997,
+        "Croma": 26858,
+        "Reliance Digital": 27300,
+        "Vijay Sales": 27593,
+        "91Mobiles": 26483
+      }
+    }
+  ],
+  "iqoo-neo-9": [
+    {
+      "date": "2026-05-09T14:05:53.012Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:45.772Z",
+      "prices": {
+        "Flipkart": 30601,
+        "Amazon": 28816,
+        "Croma": 28664,
+        "Reliance Digital": 28479,
+        "Vijay Sales": 31217,
+        "91Mobiles": 28145
+      }
+    }
+  ],
+  "iqoo-12": [
+    {
+      "date": "2026-05-09T14:06:10.295Z",
+      "prices": {
+        "Amazon": 21998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:48.056Z",
+      "prices": {
+        "Flipkart": 52781,
+        "Amazon": 52024,
+        "Croma": 49478,
+        "Reliance Digital": 56256,
+        "Vijay Sales": 53169,
+        "91Mobiles": 55219
+      }
+    }
+  ],
+  "oneplus-12": [
+    {
+      "date": "2026-05-09T14:06:28.220Z",
+      "prices": {
+        "Amazon": 29998
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:51.643Z",
+      "prices": {
+        "Flipkart": 60044,
+        "Amazon": 62173,
+        "Croma": 63411,
+        "Reliance Digital": 61086,
+        "Vijay Sales": 69234,
+        "91Mobiles": 66365
+      }
+    }
+  ],
+  "iphone-15-pro": [
+    {
+      "date": "2026-05-09T14:06:46.070Z",
+      "prices": {
+        "Amazon": 59900
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:53.838Z",
+      "prices": {
+        "Flipkart": 137604,
+        "Amazon": 134101,
+        "Croma": 129765,
+        "Reliance Digital": 127598,
+        "Vijay Sales": 121348,
+        "91Mobiles": 120191
+      }
+    }
+  ],
+  "s24-ultra": [
+    {
+      "date": "2026-05-09T14:07:01.923Z",
+      "prices": {
+        "Amazon": 99999
+      }
+    },
+    {
+      "date": "2026-05-09T14:30:56.157Z",
+      "prices": {
+        "Flipkart": 124989,
+        "Amazon": 134816,
+        "Croma": 135596,
+        "Reliance Digital": 128561,
+        "Vijay Sales": 134911,
+        "91Mobiles": 120467
+      }
+    }
+  ],
+  "redmi-note-13-pro": [
+    {
+      "date": "2026-05-09T14:30:58.311Z",
+      "prices": {
+        "Flipkart": 26178,
+        "Amazon": 24586,
+        "Croma": 23578,
+        "Reliance Digital": 26369,
+        "Vijay Sales": 24526,
+        "91Mobiles": 26050
+      }
+    }
+  ],
+  "realme-gt-6t": [
+    {
+      "date": "2026-05-09T14:31:01.209Z",
+      "prices": {
+        "Flipkart": 30628,
+        "Amazon": 30658,
+        "Croma": 29512,
+        "Reliance Digital": 31641,
+        "Vijay Sales": 29153,
+        "91Mobiles": 31649
+      }
+    }
+  ],
+  "galaxy-a55": [
+    {
+      "date": "2026-05-09T14:31:04.874Z",
+      "prices": {
+        "Flipkart": 37586,
+        "Amazon": 38218,
+        "Croma": 39393,
+        "Reliance Digital": 39222,
+        "Vijay Sales": 41582,
+        "91Mobiles": 39330
+      }
+    }
+  ],
+  "moto-edge-50-pro": [
+    {
+      "date": "2026-05-09T14:31:08.772Z",
+      "prices": {
+        "Flipkart": 32902,
+        "Amazon": 30618,
+        "Croma": 33314,
+        "Reliance Digital": 29946,
+        "Vijay Sales": 32218,
+        "91Mobiles": 33064
+      }
+    }
+  ],
+  "poco-f6": [
+    {
+      "date": "2026-05-09T14:31:11.735Z",
+      "prices": {
+        "Flipkart": 31882,
+        "Amazon": 29783,
+        "Croma": 31598,
+        "Reliance Digital": 31570,
+        "Vijay Sales": 31828,
+        "91Mobiles": 27842
+      }
+    }
+  ],
+  "iphone-15": [
+    {
+      "date": "2026-05-09T14:31:14.505Z",
+      "prices": {
+        "Flipkart": 74393,
+        "Amazon": 68727,
+        "Croma": 66129,
+        "Reliance Digital": 65340,
+        "Vijay Sales": 71712,
+        "91Mobiles": 73578
+      }
+    }
+  ],
+  "pixel-8a": [
+    {
+      "date": "2026-05-09T14:31:18.450Z",
+      "prices": {
+        "Flipkart": 55386,
+        "Amazon": 53634,
+        "Croma": 51170,
+        "Reliance Digital": 50895,
+        "Vijay Sales": 55371,
+        "91Mobiles": 53061
+      }
+    }
+  ]
+}

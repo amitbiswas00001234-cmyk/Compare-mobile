@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BudgetPick — Best Budget Phones in India 2026 | Live Prices, Compare, Quiz</title>
+  <meta name="description" content="Compare live prices from Flipkart, Amazon, Croma & more. Take the phone finder quiz, compare phones side-by-side, set price alerts, calculate EMI and more.">
+  <link rel="canonical" href="http://localhost:3000/" />
+  <meta name="keywords" content="budget phones India, best phone under 15000, smartphone price comparison, Amazon Flipkart mobile prices, live price tracker, flagship killers">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:3000/">
+  <meta property="og:title" content="BudgetPick — Best Budget Phones in India 2026">
+  <meta property="og:description" content="Compare live prices from Flipkart, Amazon, Croma & more. Find the perfect phone with our AI quiz.">
+  <meta property="og:image" content="assets/images/hero-phone.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:3000/">
+  <meta property="twitter:title" content="BudgetPick — Best Budget Phones in India 2026">
+  <meta property="twitter:description" content="Compare live prices from Flipkart, Amazon, Croma & more. Find the perfect phone with our AI quiz.">
+  <meta property="twitter:image" content="assets/images/hero-phone.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "BudgetPick",
+    "url": "http://localhost:3000/",
+    "description": "Live price comparison engine for budget smartphones in India.",
+    "applicationCategory": "ShoppingApplication",
+    "operatingSystem": "Web"
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+<body>
+<div id="scroll-progress" class="scroll-progress"></div>
+
+<!-- ── Loading Overlay ── -->
+<div id="loading-overlay" class="loading-overlay" style="display:none"><div class="loading-spinner"></div><p>Loading...</p></div>
+
+<!-- ── Navbar ── -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo"><div class="icon">📱</div><span>BudgetPick</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#advantages">Why Us?</a></li>
+      <li><a href="#phones">Live Prices</a></li>
+      <li><a href="#quiz-section">Finder Quiz</a></li>
+      <li><a href="#compare-section">Compare</a></li>
+      <li><a href="#emi-section">EMI</a></li>
+      <li><a href="#upcoming-section">Upcoming <span class="nav-badge">HOT</span></a></li>
+    </ul>
+    <div class="nav-extra">
+      <button class="action-btn" onclick="toggleTheme()" style="padding: 6px 12px; font-size: 0.75rem;">🌓 Theme</button>
+      <button class="action-btn" onclick="document.getElementById('checklist-modal').style.display='flex'" style="padding: 6px 12px; font-size: 0.75rem;">📦 Checklist</button>
+      <select id="lang-selector" class="lang-selector" onchange="showToast('Language support coming soon!')">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+      <button class="nav-cta" onclick="openQuiz()">📋 Find My Phone</button>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-badge"><span class="dot"></span> Real-time Price Tracking Active</div>
+      <h1>Don't Overpay for Your <span class="gradient-text">Next Phone</span></h1>
+      <p class="hero-desc">We track live prices across <strong>Flipkart, Amazon, Croma</strong> & more so you don't have to. Find the best deals in seconds.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="openQuiz()">🎯 Find My Phone</button>
+        <button class="btn-outline" href="#phones">📱 Browse All</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><h3 data-count="6" data-suffix="">6</h3><p>Retailers</p></div>
+        <div class="hero-stat"><h3 data-count="50" data-suffix="+">50+</h3><p>Daily Checks</p></div>
+        <div class="hero-stat"><h3 data-count="1000" data-suffix="+">100%</h3><p>Unbiased</p></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="floating-card">
+        <div class="fc-head">Trending Now</div>
+        <div class="fc-body">
+          <div class="fc-item"><span>Moto G64</span><strong>₹13,999</strong></div>
+          <div class="fc-item"><span>Poco X6 Neo</span><strong>₹14,499</strong></div>
+        </div>
+      </div>
+      <img src="assets/images/hero-phone.png" alt="Budget smartphones" width="500">
+    </div>
+  </div>
+</section>
+
+<!-- ── Why BudgetPick? (User Advantages) ── -->
+<section class="section" id="advantages">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Why Use Us?</span>
+      <h2 class="section-title">The Smart Way to Buy Phones</h2>
+      <p class="section-desc">Stop opening 10 tabs. We've built the ultimate tool for the Indian budget buyer.</p>
+    </div>
+    <div class="advantage-grid">
+      <div class="advantage-card reveal">
+        <div class="adv-icon">💰</div>
+        <h3>Save Money</h3>
+        <p>Compare live prices from every major Indian retailer. We highlight the lowest price in green automatically.</p>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="adv-icon">⏱️</div>
+        <h3>Save Time</h3>
+        <p>Instead of researching for hours, take our 30-second quiz to find the perfect phone for your specific needs.</p>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="adv-icon">⚖️</div>
+        <h3>Side-by-Side Compare</h3>
+        <p>Confused between two phones? Compare every single spec side-by-side with our advanced comparison engine.</p>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="adv-icon">🔔</div>
+        <h3>Never Miss a Drop</h3>
+        <p>Set a price alert and we'll email you the moment the price hits your target. No more missing flash sales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Platform Banner ── -->
+<section class="platforms-banner">
+  <div class="container">
+    <div class="platforms-strip">
+      <span class="strip-label">Live prices from:</span>
+      <div class="strip-logos">
+        <span class="strip-logo" style="--c:#2874f0">🛒 Flipkart</span>
+        <span class="strip-logo" style="--c:#ff9900">📦 Amazon</span>
+        <span class="strip-logo" style="--c:#00b300">🏪 Croma</span>
+        <span class="strip-logo" style="--c:#e42529">🔴 Reliance Digital</span>
+        <span class="strip-logo" style="--c:#f37021">🟠 Vijay Sales</span>
+        <span class="strip-logo" style="--c:#e91e63">📊 91Mobiles</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Help Me Choose (Scenarios) ── -->
+<section class="usecase-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Tailored for You</span>
+      <h2 class="section-title">What Kind of User are You?</h2>
+      <p class="section-desc">Pick a profile that matches your lifestyle and we'll show you the best matches.</p>
+    </div>
+    <div class="usecase-grid">
+      <button class="usecase-card reveal" onclick="filterByTag('creator')">
+        <span class="scenario-icon">🤳</span>
+        <strong>The Content Creator</strong>
+        <p>4K recording, OIS stabilization, and editing power for YouTube & Reels.</p>
+        <span class="scenario-tag">Creator Ready</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('office')">
+        <span class="scenario-icon">💼</span>
+        <strong>The Professional</strong>
+        <p>Reliable UI, long-term updates, and great call quality for work.</p>
+        <span class="scenario-tag">Business Choice</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('seniors')">
+        <span class="scenario-icon">👴</span>
+        <strong>The Parents</strong>
+        <p>Loud speakers, large display, and easy-to-use interface for seniors.</p>
+        <span class="scenario-tag">Senior Friendly</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('clean-android')">
+        <span class="scenario-icon">🤖</span>
+        <strong>The Minimalist</strong>
+        <p>Clean Android experience with no ads or annoying bloatware.</p>
+        <span class="scenario-tag">Pure OS</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('display')">
+        <span class="scenario-icon">🎬</span>
+        <strong>The Movie Buff</strong>
+        <p>Stunning AMOLED displays for the best Netflix & YouTube experience.</p>
+        <span class="scenario-tag">Display</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('battery')">
+        <span class="scenario-icon">🔋</span>
+        <strong>The Heavy User</strong>
+        <p>Massive batteries that refuse to die, even with heavy usage.</p>
+        <span class="scenario-tag">Endurance</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('gig-worker')">
+        <span class="scenario-icon">🛵</span>
+        <strong>The Gig Worker</strong>
+        <p>Bright screens, strong GPS, and durable build for delivery partners.</p>
+        <span class="scenario-tag">Outdoor Ready</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('gaming')">
+        <span class="scenario-icon">🎮</span>
+        <strong>The Hardcore Gamer</strong>
+        <p>Highest FPS, liquid cooling, and fast touch sampling for BGMI.</p>
+        <span class="scenario-tag">Pro Gamer</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('students')">
+        <span class="scenario-icon">📚</span>
+        <strong>The College Student</strong>
+        <p>Value for money, good front camera, and large storage for notes.</p>
+        <span class="scenario-tag">Student Pick</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('influencer')">
+        <span class="scenario-icon">🌟</span>
+        <strong>The Influencer</strong>
+        <p>High-quality front camera and fast processing for Instagram Reels.</p>
+        <span class="scenario-tag">Reels Ready</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('rugged')">
+        <span class="scenario-icon">🔨</span>
+        <strong>The Rough User</strong>
+        <p>IP68 water resistance and strong build for clumsy or outdoor usage.</p>
+        <span class="scenario-tag">Drop Proof</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('night-owl')">
+        <span class="scenario-icon">🦉</span>
+        <strong>The Night Owl</strong>
+        <p>AMOLED screens with Eye Care certification for late-night scrolling.</p>
+        <span class="scenario-tag">Screen Time</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('wfh')">
+        <span class="scenario-icon">💻</span>
+        <strong>The WFH Worker</strong>
+        <p>Excellent front camera and noise-canceling mics for online meetings.</p>
+        <span class="scenario-tag">Meeting Ready</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('audiophile')">
+        <span class="scenario-icon">🎧</span>
+        <strong>The Audiophile</strong>
+        <p>Headphone jack, stereo speakers, and Hi-Res audio support.</p>
+        <span class="scenario-tag">Pure Sound</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('privacy')">
+        <span class="scenario-icon">🔐</span>
+        <strong>The Privacy Conscious</strong>
+        <p>Hardware security like Knox/ThinkShield and fast patches.</p>
+        <span class="scenario-tag">Enterprise Safe</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('compact')">
+        <span class="scenario-icon">🤏</span>
+        <strong>The Small Hands</strong>
+        <p>Lightweight and slim phones that are easy to use with one hand.</p>
+        <span class="scenario-tag">Compact</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('geek')">
+        <span class="scenario-icon">👨‍💻</span>
+        <strong>The Geek</strong>
+        <p>Easily unlockable bootloaders for custom ROMs and rooting.</p>
+        <span class="scenario-tag">Geek Choice</span>
+      </button>
+      <button class="usecase-card reveal" onclick="filterByTag('kids')">
+        <span class="scenario-icon">👶</span>
+        <strong>Kid's First Phone</strong>
+        <p>Durable build, good parental controls, and limited gaming.</p>
+        <span class="scenario-tag">Child Safe</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Phone Listings ── -->
+<section class="section" id="phones">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" id="phones-label">📡 Live Prices</span>
+      <h2 class="section-title" id="phones-title">Best Budget Smartphones</h2>
+      <p class="section-desc">Click any platform badge to buy directly. Green badge = lowest price.</p>
+      <p id="last-updated" class="last-updated"></p>
+    </div>
+    <div class="controls-bar reveal">
+      <div class="controls-left">
+        <div class="category-tabs">
+          <button class="tab-btn active" data-category="all" onclick="setCategory('all',this)">All</button>
+          <button class="tab-btn" data-category="under15k" onclick="setCategory('under15k',this)">Under ₹15K</button>
+          <button class="tab-btn" data-category="under20k" onclick="setCategory('under20k',this)">Under ₹20K</button>
+          <button class="tab-btn" data-category="under30k" onclick="setCategory('under30k',this)">Under ₹30K</button>
+          <button class="tab-btn" data-category="under50k" onclick="setCategory('under50k',this)">Under ₹50K</button>
+          <button class="tab-btn" data-category="under70k" onclick="setCategory('under70k',this)">Under ₹70K</button>
+          <button class="tab-btn" data-category="under1.25l" onclick="setCategory('under1.25l',this)">Flagship</button>
+        </div>
+        <select id="brand-select" class="sort-select" onchange="currentBrand=this.value;renderPhones()">
+          <option value="all">All Brands</option>
+          <option value="poco">POCO</option>
+          <option value="samsung">Samsung</option>
+          <option value="motorola">Motorola</option>
+          <option value="oneplus">OnePlus</option>
+          <option value="redmi">Redmi</option>
+          <option value="realme">Realme</option>
+          <option value="iqoo">iQOO</option>
+          <option value="vivo">Vivo</option>
+          <option value="lava">Lava</option>
+          <option value="tecno">Tecno</option>
+        </select>
+        <select id="sort-select" class="sort-select" onchange="sortBy=this.value;renderPhones()">
+          <option value="bestPrice">Sort: Best Price</option>
+          <option value="rating">Sort: Rating</option>
+          <option value="name">Sort: Name</option>
+        </select>
+      </div>
+      <div class="controls-right">
+        <div class="search-inline">
+          <input type="text" id="list-search" placeholder="Filter list by name..." oninput="renderPhones()">
+          <button onclick="startVoiceSearch()" class="search-btn" title="Voice Search">🎤</button>
+        </div>
+        <div class="search-inline">
+          <input type="text" id="custom-search" placeholder="Live web search..." onkeydown="if(event.key==='Enter')searchCustomPhone()">
+          <button onclick="searchCustomPhone()" class="search-btn">🔍</button>
+        </div>
+        <button id="reset-filters-btn" class="btn-outline btn-sm" onclick="resetFilters()">🧹 Reset</button>
+        <button id="fetch-all-btn" class="btn-primary btn-sm" onclick="startFullFetch()">🔄 Fetch Prices</button>
+      </div>
+    </div>
+    <div id="progress-container" class="progress-container" style="display:none">
+      <div class="progress-track"><div id="progress-bar" class="progress-fill"></div></div>
+      <p id="progress-text">Starting...</p>
+    </div>
+    <div class="phones-grid" id="phones-grid"></div>
+    <div id="wishlist-panel" class="wishlist-panel" style="display:none">
+      <h3>❤️ My Wishlist</h3>
+      <div id="wishlist-grid" class="phones-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Phone Finder Quiz ── -->
+<section class="section quiz-bg" id="quiz-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">📋 Smart Quiz</span>
+      <h2 class="section-title">Which Phone is Right for You?</h2>
+      <p class="section-desc">Answer 4 questions and get a personalized recommendation.</p>
+    </div>
+    <div class="quiz-card reveal" id="quiz-card">
+      <div class="quiz-steps">
+        <div class="quiz-step active" id="step-1">
+          <h3>💰 What's your budget?</h3>
+          <div class="quiz-options">
+            <button class="quiz-opt" onclick="quizAnswer('budget','under10k',this)">Under ₹11,000</button>
+            <button class="quiz-opt" onclick="quizAnswer('budget','under15k',this)">₹11K – ₹15K</button>
+            <button class="quiz-opt" onclick="quizAnswer('budget','under20k',this)">₹15K – ₹20K</button>
+          </div>
+        </div>
+        <div class="quiz-step" id="step-2">
+          <h3>⭐ What matters most?</h3>
+          <div class="quiz-options">
+            <button class="quiz-opt" onclick="quizAnswer('priority','battery',this)">🔋 Battery Life</button>
+            <button class="quiz-opt" onclick="quizAnswer('priority','camera',this)">📷 Camera Quality</button>
+            <button class="quiz-opt" onclick="quizAnswer('priority','display',this)">🖥️ Display Quality</button>
+            <button class="quiz-opt" onclick="quizAnswer('priority','performance',this)">⚡ Performance</button>
+            <button class="quiz-opt" onclick="quizAnswer('priority','value',this)">💸 Best Value</button>
+          </div>
+        </div>
+        <div class="quiz-step" id="step-3">
+          <h3>📱 How will you use it?</h3>
+          <div class="quiz-options">
+            <button class="quiz-opt" onclick="quizAnswer('usage','gaming',this)">🎮 Gaming</button>
+            <button class="quiz-opt" onclick="quizAnswer('usage','social',this)">📸 Photos & Social</button>
+            <button class="quiz-opt" onclick="quizAnswer('usage','work',this)">💼 Work & Calls</button>
+            <button class="quiz-opt" onclick="quizAnswer('usage','streaming',this)">🎬 Netflix & YouTube</button>
+            <button class="quiz-opt" onclick="quizAnswer('usage','all',this)">🌟 All-Round Use</button>
+          </div>
+        </div>
+        <div class="quiz-step" id="step-4">
+          <h3>📶 Is 5G mandatory?</h3>
+          <div class="quiz-options">
+            <button class="quiz-opt" onclick="quizAnswer('network','5g',this)">Yes, 5G is a must</button>
+            <button class="quiz-opt" onclick="quizAnswer('network','any',this)">4G is fine (saves money)</button>
+          </div>
+        </div>
+        <div class="quiz-step" id="step-5">
+          <h3>🖥️ Do you want an AMOLED screen?</h3>
+          <div class="quiz-options">
+            <button class="quiz-opt" onclick="quizAnswer('display_type','amoled',this)">Yes (Better colors)</button>
+            <button class="quiz-opt" onclick="quizAnswer('display_type','any',this)">No Preference</button>
+          </div>
+        </div>
+        <div class="quiz-step" id="step-6">
+          <h3>🏷️ Any brand preference?</h3>
+          <div class="quiz-options">
+            <button class="quiz-opt" onclick="quizAnswer('brand','any',this)">No Preference</button>
+            <button class="quiz-opt" onclick="quizAnswer('brand','samsung',this)">Samsung</button>
+            <button class="quiz-opt" onclick="quizAnswer('brand','motorola',this)">Motorola</button>
+            <button class="quiz-opt" onclick="quizAnswer('brand','poco',this)">POCO</button>
+            <button class="quiz-opt" onclick="quizAnswer('brand','vivo',this)">Vivo</button>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-progress-bar">
+        <div class="quiz-progress-fill" id="quiz-progress"></div>
+      </div>
+      <p class="quiz-step-label" id="quiz-step-label">Step 1 of 6</p>
+    </div>
+    <div id="quiz-results" class="quiz-results" style="display:none"></div>
+  </div>
+</section>
+
+<!-- ── Side-by-Side Comparator ── -->
+<section class="section" id="compare-section" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">⚖️ Side by Side</span>
+      <h2 class="section-title">Compare Phones</h2>
+      <p class="section-desc">Select up to 3 phones and compare every spec.</p>
+    </div>
+    <div class="comparator-select reveal">
+      <div class="compare-slot" id="slot-0"><button onclick="openPhonePicker(0)">+ Add Phone</button></div>
+      <div class="compare-slot" id="slot-1"><button onclick="openPhonePicker(1)">+ Add Phone</button></div>
+      <div class="compare-slot" id="slot-2"><button onclick="openPhonePicker(2)">+ Add Phone</button></div>
+    </div>
+    <div id="comparator-table"></div>
+  </div>
+</section>
+
+<!-- ── EMI Calculator ── -->
+<section class="section" id="emi-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">💳 EMI Calculator</span>
+      <h2 class="section-title">Can You Afford It on EMI?</h2>
+      <p class="section-desc">Calculate monthly installments for any phone price.</p>
+    </div>
+    <div class="emi-card reveal">
+      <div class="emi-inputs">
+        <div class="emi-field">
+          <label>Phone Price (₹)</label>
+          <input type="number" id="emi-price" value="16999" min="5000" max="50000" oninput="calcEMI()">
+        </div>
+        <div class="emi-field">
+          <label>Tenure (Months)</label>
+          <div class="tenure-btns">
+            <button class="tenure-btn active" onclick="setTenure(3,this)">3</button>
+            <button class="tenure-btn" onclick="setTenure(6,this)">6</button>
+            <button class="tenure-btn" onclick="setTenure(9,this)">9</button>
+            <button class="tenure-btn" onclick="setTenure(12,this)">12</button>
+            <button class="tenure-btn" onclick="setTenure(18,this)">18</button>
+            <button class="tenure-btn" onclick="setTenure(24,this)">24</button>
+          </div>
+        </div>
+        <div class="emi-field">
+          <label>Interest Rate (%/month)</label>
+          <div class="rate-row">
+            <input type="range" id="emi-rate" min="0" max="3" step="0.5" value="1.5" oninput="document.getElementById('rate-display').textContent=this.value+'%';calcEMI()">
+            <span id="rate-display">1.5%</span>
+          </div>
+          <small>Set 0% for No-Cost EMI</small>
+        </div>
+      </div>
+      <div class="emi-results" id="emi-results">
+        <div class="emi-result-card"><div class="emi-num" id="emi-monthly">₹0</div><div class="emi-label">Monthly EMI</div></div>
+        <div class="emi-result-card"><div class="emi-num" id="emi-total">₹0</div><div class="emi-label">Total Amount</div></div>
+        <div class="emi-result-card"><div class="emi-num" id="emi-interest">₹0</div><div class="emi-label">Interest Paid</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Bank Offers ── -->
+<section class="section" id="offers-section" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">🎁 Active Deals</span>
+      <h2 class="section-title">Bank Offers &amp; Coupons</h2>
+      <p class="section-desc">Save more with these active bank deals and exchange offers.</p>
+    </div>
+    <div class="offers-grid reveal" id="offers-grid"></div>
+  </div>
+</section>
+
+<!-- ── Upcoming Phones ── -->
+<section class="section" id="upcoming-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">🚀 Coming Soon</span>
+      <h2 class="section-title">Upcoming Budget Phones</h2>
+      <p class="section-desc">Phones launching in the next few months in India.</p>
+    </div>
+    <div class="upcoming-grid reveal" id="upcoming-grid"></div>
+  </div>
+</section>
+
+<!-- ── Brand Trust Scores ── -->
+<section class="section" id="brands-section" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">🏆 Brand Report</span>
+      <h2 class="section-title">Which Brand to Trust?</h2>
+      <p class="section-desc">Scored on updates, service centers, and value.</p>
+    </div>
+    <div class="brands-grid reveal" id="brands-grid"></div>
+  </div>
+</section>
+
+<!-- ── Buying Guide ── -->
+<section class="section" id="guide">
+  <div class="container">
+    <div class="section-header reveal"><span class="section-label">🎯 Expert Advice</span><h2 class="section-title">Buying Guide</h2></div>
+    <div class="guide-grid">
+      <div class="guide-image reveal"><img src="assets/images/buying-guide.png" alt="Guide" width="500"></div>
+      <ul class="guide-tips">
+        <li class="guide-tip reveal"><div class="tip-icon">⚡</div><div class="tip-content"><h4>Processor</h4><p>Dimensity 7300 or Snapdragon 6s/7s for smooth daily use and gaming.</p></div></li>
+        <li class="guide-tip reveal"><div class="tip-icon">🖥️</div><div class="tip-content"><h4>AMOLED Display</h4><p>120Hz+ AMOLED panels are now available under ₹20K. Don't settle for LCD.</p></div></li>
+        <li class="guide-tip reveal"><div class="tip-icon">🔋</div><div class="tip-content"><h4>Battery + Fast Charging</h4><p>6000mAh+ with 33W+ charging is the sweet spot in 2026.</p></div></li>
+        <li class="guide-tip reveal"><div class="tip-icon">🔄</div><div class="tip-content"><h4>Software Updates</h4><p>Samsung offers 4 years, Motorola 3 years. Avoid brands with no update policy.</p></div></li>
+        <li class="guide-tip reveal"><div class="tip-icon">🏷️</div><div class="tip-content"><h4>Use This Site!</h4><p>Compare prices across 6 platforms, set price alerts, and calculate EMI before buying.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── Scam Alert & Trust ── -->
+<section class="section" id="scam-alert" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="scam-banner reveal">
+      <div class="scam-icon">🛡️</div>
+      <div class="scam-text">
+        <h2>Fake Offer Detection</h2>
+        <p>Found a "too good to be true" deal? Check if it's a scam before you pay.</p>
+        <ul class="scam-tips">
+          <li>⚠️ **iPhone for ₹9,999?** Always fake. Do not click.</li>
+          <li>⚠️ **Check Seller Rating:** Below 3.5 stars is a red flag.</li>
+          <li>⚠️ **Refurbished vs New:** Look for the 'Refurbished' tag.</li>
+        </ul>
+      </div>
+      <div class="scam-actions">
+        <input type="text" id="scam-url" placeholder="Paste link here (e.g. flipkart.com/...)" class="scam-input">
+        <button class="btn-primary" onclick="verifyScamLink()">Verify Link 🛡️</button>
+      </div>
+    </div>
+    <div id="scam-result" class="scam-result-box" style="display:none"></div>
+  </div>
+</section>
+<section class="section" id="faq" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-header reveal"><span class="section-label">❓ FAQ</span><h2 class="section-title">Frequently Asked Questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-question">How does live price fetching work? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Our server scrapes Flipkart, Amazon, Croma, Reliance Digital, Vijay Sales & 91Mobiles. Click "Fetch Live Prices" to get latest data. Auto-refreshes every 6 hours.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-question">Can I search any phone? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes! Type any phone model in the search bar. Our server scrapes all 6 platforms and shows a live comparison in seconds.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-question">Are prices 100% accurate? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Prices are fetched in real-time but may differ due to flash sales, coupons, or bank offers. Always verify on the platform before purchase.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-question">How do price drop alerts work? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Click "Alert" on any phone card, enter your target price and email. We check prices every 6 hours and log alerts when your target is hit.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-question">What is No-Cost EMI? <span class="faq-icon">+</span></button><div class="faq-answer"><p>No-Cost EMI means 0% interest — you pay only the phone price split across months. Set the EMI calculator rate to 0% to see No-Cost EMI amounts.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Newsletter ── -->
+<section class="section" id="newsletter">
+  <div class="container">
+    <div class="newsletter reveal">
+      <h2>Get Price Drop Alerts 🔔</h2>
+      <p>Subscribe to get notified when your favorite phone's price drops on any platform.</p>
+      <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo"><div class="icon">📱</div><span>BudgetPick</span></div>
+        <p>India's #1 comparison platform for budget smartphones. We help you save money by tracking live prices and providing unbiased expert advice.</p>
+        <div class="social-links"><a href="#" title="Twitter">𝕏</a><a href="#" title="YouTube">▶</a><a href="#" title="Instagram">📷</a></div>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="#advantages">Why BudgetPick?</a></li><li><a href="#phones">Live Prices</a></li><li><a href="#quiz-section">Phone Finder</a></li><li><a href="#compare-section">Comparison Tool</a></li></ul></div>
+      <div class="footer-col"><h4>Support</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="#emi-section">EMI Calculator</a></li><li><a href="#guide">Buying Guide</a></li><li><a href="#newsletter">Price Alerts</a></li></ul></div>
+      <div class="footer-col"><h4>Top Categories</h4><ul><li><a href="#" onclick="filterByTag('battery')">Best Battery</a></li><li><a href="#" onclick="filterByTag('gaming')">Best Performance</a></li><li><a href="#" onclick="filterByTag('camera')">Best Camera</a></li><li><a href="#" onclick="filterByTag('students')">For Students</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 BudgetPick India. All prices are fetched live from retailer websites.</p>
+      <div id="db-status" class="db-status">
+        <span class="status-dot"></span> 
+        Last Sync: <span id="last-sync-time">Loading...</span>
+      </div>
+      <div class="footer-legal">
+        <a href="admin.html">🔐 Admin Panel</a> · 
+        <a href="#">Privacy Policy</a> · 
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Modals ── -->
+<div id="search-modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-content"><button class="modal-close" onclick="document.getElementById('search-modal').style.display='none'">✕</button><div id="search-results"></div></div>
+</div>
+<div id="history-modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-content modal-lg"><button class="modal-close" onclick="document.getElementById('history-modal').style.display='none'">✕</button><h2 id="history-title">Price History</h2><div id="history-content"></div></div>
+</div>
+<div id="phone-picker-modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-content"><button class="modal-close" onclick="document.getElementById('phone-picker-modal').style.display='none'">✕</button><h3>Select a Phone to Compare</h3><div id="phone-picker-list" class="picker-list"></div></div>
+</div>
+<div id="alert-modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-content">
+    <button class="modal-close" onclick="document.getElementById('alert-modal').style.display='none'">✕</button>
+    <h3>🔔 Set Price Alert</h3>
+    <p id="alert-phone-name" style="color:var(--text-secondary);margin:8px 0 16px"></p>
+    <input type="hidden" id="alert-phone-id">
+    <div class="emi-field"><label>Your Email</label><input type="email" id="alert-email" placeholder="you@email.com"></div>
+    <div class="emi-field"><label>Alert me when price drops below (₹)</label><input type="number" id="alert-price" placeholder="e.g. 14999"></div>
+    <button class="btn-primary" style="width:100%;margin-top:16px" onclick="submitAlert()">Set Alert 🔔</button>
+  </div>
+</div>
+<div id="specs-modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-content modal-lg"><button class="modal-close" onclick="document.getElementById('specs-modal').style.display='none'">✕</button><div id="specs-content"></div></div>
+</div>
+<div id="ai-modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-content modal-lg"><button class="modal-close" onclick="document.getElementById('ai-modal').style.display='none'">✕</button><div id="ai-content"></div></div>
+</div>
+<div id="checklist-modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)this.style.display='none'">
+  <div class="modal-content modal-lg">
+    <button class="modal-close" onclick="document.getElementById('checklist-modal').style.display='none'">✕</button>
+    <div class="checklist-container">
+      <h2>📦 The Perfect Unboxing Checklist</h2>
+      <p>Just received your phone? Perform these 7 checks to ensure you didn't get a defective unit.</p>
+      <div class="checklist-grid">
+        <div class="check-item"><input type="checkbox"> <div><strong>Physical Inspection</strong><p>Check for scratches, loose buttons, or a wobbly charging port.</p></div></div>
+        <div class="check-item"><input type="checkbox"> <div><strong>Dead Pixel Test</strong><p>Open a pure white and pure black image. Look for tiny dots that don't change color.</p></div></div>
+        <div class="check-item"><input type="checkbox"> <div><strong>Charging Speed</strong><p>Plug in the original charger. Ensure "Fast Charging" or "Dash/Dart" is shown on screen.</p></div></div>
+        <div class="check-item"><input type="checkbox"> <div><strong>IMEI Verification</strong><p>Dial *#06# and match the number with the box. Verify on the brand's official portal.</p></div></div>
+        <div class="check-item"><input type="checkbox"> <div><strong>Camera Focus & OIS</strong><p>Shake the phone slightly while recording video. It should look smooth, not shaky.</p></div></div>
+        <div class="check-item"><input type="checkbox"> <div><strong>Network & WiFi</strong><p>Check if 5G signal is stable and WiFi doesn't drop when you move 10 feet away.</p></div></div>
+        <div class="check-item"><input type="checkbox"> <div><strong>Sensor Check</strong><p>Verify fingerprint, face unlock, and proximity sensor (screen turns off during calls).</p></div></div>
+      </div>
+      <button class="btn-primary" style="width:100%;margin-top:20px" onclick="triggerConfetti(); document.getElementById('checklist-modal').style.display='none'">All Checks Passed! 🎉</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Floating AI Chatbot ── -->
+<div class="chatbot-container" id="chatbot" style="display:none;">
+  <div class="chatbot-header">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span class="bot-avatar">🤖</span>
+      <div>
+        <strong>BudgetBot AI</strong>
+        <div style="font-size:0.7rem;opacity:0.8;">Online | Powered by AI</div>
+      </div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chatbot-messages" id="chat-messages">
+    <div class="msg-bot">Hello! I'm BudgetBot. Tell me your budget or what you need (gaming, camera, battery), and I'll find the perfect phone for you!</div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chat-input" placeholder="Type a message (e.g., 'Best gaming under 15k')" onkeydown="if(event.key==='Enter')sendChatMessage()">
+    <button onclick="sendChatMessage()">➔</button>
+  </div>
+</div>
+
+<div id="floating-compare" class="floating-compare" style="display:none" onclick="document.getElementById('compare-section').scrollIntoView({behavior:'smooth'})">
+  ⚖️ Compare (<span id="floating-compare-count">0</span>)
+</div>
+
+<button class="chatbot-trigger" id="chat-trigger" onclick="toggleChat()">
+  <span class="trigger-icon">💬</span>
+  <span class="trigger-text">Ask AI</span>
+</button>
+
+<button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script src="script.js"></script>
+<script src="features.js"></script>
+<script src="utils.js"></script>
+</body>
+</html>
