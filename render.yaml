@@ -1,9 +1,18 @@
-services:
-  - type: web
-    name: budgetpick-backend
-    env: node
-    buildCommand: npm install
-    startCommand: npm start
-    envVars:
-      - key: GEMINI_API_KEY
-        sync: false
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: Compare-mobile
+      runtime: node
+      repo: https://github.com/amitbiswas00001234-cmyk/Compare-mobile
+      plan: free
+      region: oregon
+      buildCommand: npm install
+      startCommand: node server.js
+      autoDeployTrigger: commit
+      envVars:
+        - key: GEMINI_API_KEY
+          sync: false
