@@ -567,6 +567,10 @@ a { text-decoration: none; color: inherit; }
   background: var(--bg-glass); border: 1px solid var(--border-color); border-radius: 50px;
   color: var(--text-primary); font-size: 0.8rem; padding: 4px 10px; outline: none; cursor: pointer;
 }
+.lang-selector option {
+  background-color: #0a0a1a;
+  color: #ffffff;
+}
 @media (max-width: 900px) { .nav-extra { display: none; } }
 .quiz-bg { background: var(--bg-secondary); }
 .quiz-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 40px; max-width: 700px; margin: 0 auto; }
