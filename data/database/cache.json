@@ -531,19 +531,19 @@
           "image": null,
           "platform": "Flipkart",
           "inStock": null,
-          "fetchedAt": "2026-05-09T18:31:39.200Z",
+          "fetchedAt": "2026-05-09T19:41:26.560Z",
           "isFallback": true
         },
         "Amazon": {
-          "title": "Samsung Galaxy M56 5G Mobile (Light Green,8GB RAM,128GB Storage)| Segment Slimmest | Gorilla Glass V",
-          "price": 21998,
-          "priceFormatted": "₹21,998",
-          "rating": 4.3,
-          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyMDY4NjI4MjQyODM3NjAzOjE3NzgzNTE0OTM6c3BfYXRmOjMwMDU0MjE5OTI0NTczMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.a5i8bNL5cnOblRFh4E0NGTWEZGMYND9yrpdrUJ7ahEHsIuQFrUE3WWTyHHj0q_gYkmoGquFdwzmTzSEkYnCEqZP1lcsNoUbHLlxBAwzIXhajrNJjE8R4toAnvfexkb5vFet57xnB2DV3cQcJvf4wyIGLeGoq7D1n_zfR5fREo0C82e79Wcjk2zzKbfP657F7C_l-DxyTNTw4fJqabGxJumGMuLBkyKD0Kz2zzX5uY6U.UkE7HUrRwkL--ghPn18HLmBI4b8lcDLtIiaNpBYF2dA%26dib_tag%3Dse%26keywords%3DPOCO%2BX7%2B5G%26qid%3D1778351493%26sr%3D8-1-spons%26aref%3DgtZeLMu0S6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=gtZeLMu0S6&sp_cr=ZAZ",
-          "image": "https://m.media-amazon.com/images/I/71PQ2tp0jwL._AC_UY218_.jpg",
+          "title": "REDMI Note 15 5G (Glacier Blue, 8GB RAM 256GB Storage) | 108MP OIS Camera | Snapdragon 6 Gen 3 | 17.",
+          "price": 27999,
+          "priceFormatted": "₹27,999",
+          "rating": 4.2,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo2MzA1OTQ2MDg3OTM3ODAyOjE3NzgzNTU2ODA6c3BfYXRmOjMwMDg5NDA0MjgyNTAzMjo6MDo6&url=%2FGlacier-Storage-Snapdragon-5520mAh-Charging%2Fdp%2FB0G5G7LNCV%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xCKYf9e2K108c8wy4ND8EyEd-L3MWhB2kgakhY_6j9SEgVlLlH4QtgU7kLLifjwGvoPp1QPHs7hxwymD6JlKB5NbZcp-DE52emuHGS0dq6y-PwD2INTfUp_0azIA41UT0fxSbEER_vLMGerj0G87Ub5YRr9OLkKzlQFHzaMkefNkulylZnZuqbLf9ghtpN3i8qBDrBdbvt-qTqSOtpq1JAI9ox1qk28loAFEC7Ujp80.e3nSu_dGGQcOYqZtqwmpjqXuQeUXOJ-Ayye8-RQIhyE%26dib_tag%3Dse%26keywords%3DPOCO%2BX7%2B5G%26qid%3D1778355680%26sr%3D8-1-spons%26aref%3DCmVExTPJT1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=CmVExTPJT1&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/81SxS-bDvVL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T18:31:43.250Z"
+          "fetchedAt": "2026-05-09T19:41:30.145Z"
         },
         "Croma": {
           "title": null,
@@ -554,7 +554,7 @@
           "image": null,
           "platform": "Croma",
           "inStock": null,
-          "fetchedAt": "2026-05-09T18:31:45.713Z",
+          "fetchedAt": "2026-05-09T19:41:45.408Z",
           "isFallback": true
         },
         "Reliance Digital": {
@@ -566,7 +566,7 @@
           "image": null,
           "platform": "Reliance Digital",
           "inStock": null,
-          "fetchedAt": "2026-05-09T18:31:48.005Z",
+          "fetchedAt": "2026-05-09T19:42:04.350Z",
           "isFallback": true
         },
         "Vijay Sales": {
@@ -578,7 +578,7 @@
           "image": null,
           "platform": "Vijay Sales",
           "inStock": null,
-          "fetchedAt": "2026-05-09T18:31:51.252Z",
+          "fetchedAt": "2026-05-09T19:42:24.786Z",
           "isFallback": true
         },
         "91Mobiles": {
@@ -590,17 +590,17 @@
           "image": null,
           "platform": "91Mobiles",
           "inStock": null,
-          "fetchedAt": "2026-05-09T18:31:52.387Z",
+          "fetchedAt": "2026-05-09T19:42:46.614Z",
           "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 21998,
+        "price": 27999,
         "platform": "Amazon",
-        "formatted": "₹21,998",
-        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyMDY4NjI4MjQyODM3NjAzOjE3NzgzNTE0OTM6c3BfYXRmOjMwMDU0MjE5OTI0NTczMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.a5i8bNL5cnOblRFh4E0NGTWEZGMYND9yrpdrUJ7ahEHsIuQFrUE3WWTyHHj0q_gYkmoGquFdwzmTzSEkYnCEqZP1lcsNoUbHLlxBAwzIXhajrNJjE8R4toAnvfexkb5vFet57xnB2DV3cQcJvf4wyIGLeGoq7D1n_zfR5fREo0C82e79Wcjk2zzKbfP657F7C_l-DxyTNTw4fJqabGxJumGMuLBkyKD0Kz2zzX5uY6U.UkE7HUrRwkL--ghPn18HLmBI4b8lcDLtIiaNpBYF2dA%26dib_tag%3Dse%26keywords%3DPOCO%2BX7%2B5G%26qid%3D1778351493%26sr%3D8-1-spons%26aref%3DgtZeLMu0S6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=gtZeLMu0S6&sp_cr=ZAZ"
+        "formatted": "₹27,999",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo2MzA1OTQ2MDg3OTM3ODAyOjE3NzgzNTU2ODA6c3BfYXRmOjMwMDg5NDA0MjgyNTAzMjo6MDo6&url=%2FGlacier-Storage-Snapdragon-5520mAh-Charging%2Fdp%2FB0G5G7LNCV%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xCKYf9e2K108c8wy4ND8EyEd-L3MWhB2kgakhY_6j9SEgVlLlH4QtgU7kLLifjwGvoPp1QPHs7hxwymD6JlKB5NbZcp-DE52emuHGS0dq6y-PwD2INTfUp_0azIA41UT0fxSbEER_vLMGerj0G87Ub5YRr9OLkKzlQFHzaMkefNkulylZnZuqbLf9ghtpN3i8qBDrBdbvt-qTqSOtpq1JAI9ox1qk28loAFEC7Ujp80.e3nSu_dGGQcOYqZtqwmpjqXuQeUXOJ-Ayye8-RQIhyE%26dib_tag%3Dse%26keywords%3DPOCO%2BX7%2B5G%26qid%3D1778355680%26sr%3D8-1-spons%26aref%3DCmVExTPJT1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=CmVExTPJT1&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T18:31:53.557Z"
+      "lastUpdated": "2026-05-09T19:42:47.596Z"
     },
     "moto-g86-power": {
       "id": "moto-g86-power",
@@ -609,79 +609,84 @@
       "category": "under20k",
       "platforms": {
         "Flipkart": {
-          "title": "Moto G86 Power 5G",
-          "price": 17665,
-          "priceFormatted": "₹17,665",
-          "rating": "4.1",
-          "link": "https://www.flipkart.com/search?q=Moto%20G86%20Power%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g85.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:21.603Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:43:06.376Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Moto G86 Power 5G",
-          "price": 16373,
-          "priceFormatted": "₹16,373",
-          "rating": "4.9",
-          "link": "https://www.amazon.in/s?k=Moto%20G86%20Power%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g85.jpg",
+          "title": "Redmi",
+          "price": 27999,
+          "priceFormatted": "₹27,999",
+          "rating": 4.2,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyNDkzOTc3MzE3NzU1NjA4OjE3NzgzNTU3ODA6c3BfYXRmOjMwMDg5NDA0MjgyNTAzMjo6MDo6&url=%2FGlacier-Storage-Snapdragon-5520mAh-Charging%2Fdp%2FB0G5G7LNCV%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xfOq91YTGvz6HRpQ3cpJmOLascEQ9jx7AlPOTXxTobIC4oANMc1DDR-pBxauDyMNEdTyKOD_j1j4KWoQSkAKF1C3s6QQKb7zLFt9UBbJtHGFMJoPYU0qG-y6d8C1alf3dIbYjxfUpMEV4o_kGIigTcbi8fTrWv3JzK1sGuhbHoZQWZsF-kYwonNuT3GPfQu3aqa2U7Adm0keDXOXdnsZ9Fyl4BD-0S1ctiD1vfeU_T0.mGAIKsN-x4UbVentEWs6yuXcLly1tXBSLR1MuptEj8M%26dib_tag%3Dse%26keywords%3DMotorola%2BMoto%2BG86%2BPower%2B5G%26qid%3D1778355780%26sr%3D8-1-spons%26aref%3DCmVExTPJT1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=CmVExTPJT1&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/81SxS-bDvVL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:21.603Z"
+          "fetchedAt": "2026-05-09T19:43:09.758Z"
         },
         "Croma": {
-          "title": "Moto G86 Power 5G",
-          "price": 17554,
-          "priceFormatted": "₹17,554",
-          "rating": "4.4",
-          "link": "https://www.croma.com/searchB?q=Moto%20G86%20Power%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g85.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:21.603Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:43:44.274Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Moto G86 Power 5G",
-          "price": 16709,
-          "priceFormatted": "₹16,709",
-          "rating": "4.8",
-          "link": "https://www.reliancedigital.in/search?q=Moto%20G86%20Power%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g85.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:21.603Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:44:04.967Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Moto G86 Power 5G",
-          "price": 16107,
-          "priceFormatted": "₹16,107",
-          "rating": "4.0",
-          "link": "https://www.vijaysales.com/search/Moto%20G86%20Power%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g85.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:21.603Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:44:19.647Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Moto G86 Power 5G",
-          "price": 16808,
-          "priceFormatted": "₹16,808",
-          "rating": "4.6",
-          "link": "https://www.91mobiles.com/search?q=Moto%20G86%20Power%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g85.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Motorola%20Moto%20G86%20Power%205G",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:21.603Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:44:35.414Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 16107,
-        "platform": "Vijay Sales",
-        "formatted": "₹16,107",
-        "link": "https://www.vijaysales.com/search/Moto%20G86%20Power%205G"
+        "price": 27999,
+        "platform": "Amazon",
+        "formatted": "₹27,999",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyNDkzOTc3MzE3NzU1NjA4OjE3NzgzNTU3ODA6c3BfYXRmOjMwMDg5NDA0MjgyNTAzMjo6MDo6&url=%2FGlacier-Storage-Snapdragon-5520mAh-Charging%2Fdp%2FB0G5G7LNCV%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xfOq91YTGvz6HRpQ3cpJmOLascEQ9jx7AlPOTXxTobIC4oANMc1DDR-pBxauDyMNEdTyKOD_j1j4KWoQSkAKF1C3s6QQKb7zLFt9UBbJtHGFMJoPYU0qG-y6d8C1alf3dIbYjxfUpMEV4o_kGIigTcbi8fTrWv3JzK1sGuhbHoZQWZsF-kYwonNuT3GPfQu3aqa2U7Adm0keDXOXdnsZ9Fyl4BD-0S1ctiD1vfeU_T0.mGAIKsN-x4UbVentEWs6yuXcLly1tXBSLR1MuptEj8M%26dib_tag%3Dse%26keywords%3DMotorola%2BMoto%2BG86%2BPower%2B5G%26qid%3D1778355780%26sr%3D8-1-spons%26aref%3DCmVExTPJT1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=CmVExTPJT1&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:21.603Z"
+      "lastUpdated": "2026-05-09T19:44:36.412Z"
     },
     "cmf-phone2-pro": {
       "id": "cmf-phone2-pro",
@@ -2223,5 +2228,5 @@
       "lastUpdated": "2026-05-09T14:31:18.450Z"
     }
   },
-  "lastFullFetch": "2026-05-09T19:41:18.184Z"
+  "lastFullFetch": "2026-05-09T19:44:36.417Z"
 }

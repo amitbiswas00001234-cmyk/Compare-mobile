@@ -256,6 +256,12 @@
       "prices": {
         "Amazon": 21998
       }
+    },
+    {
+      "date": "2026-05-09T19:42:47.596Z",
+      "prices": {
+        "Amazon": 27999
+      }
     }
   ],
   "moto-g86-power": [
@@ -280,6 +286,12 @@
         "Reliance Digital": 16709,
         "Vijay Sales": 16107,
         "91Mobiles": 16808
+      }
+    },
+    {
+      "date": "2026-05-09T19:44:36.415Z",
+      "prices": {
+        "Amazon": 27999
       }
     }
   ],
