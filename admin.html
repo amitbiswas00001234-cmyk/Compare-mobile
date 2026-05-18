@@ -14,7 +14,7 @@
     .admin-container { max-width: 1200px; margin: 40px auto; padding: 20px; }
     .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
     .admin-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
-    .admin-card { background: var(--card-admin); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; backdrop-filter: blur(10px); }
+    .admin-card { background: var(--card-admin); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
     .status-badge { padding: 6px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; }
     .status-badge.green { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
     .status-badge.yellow { background: rgba(234, 179, 8, 0.2); color: #fde047; }
@@ -31,7 +31,7 @@
     <div class="admin-header">
       <div>
         <h1>🎛️ BudgetPick Admin</h1>
-        <p style="color: var(--text-muted)">System Control & Scenario Simulator</p>
+        <p class="admin-subtitle">System Control & Scenario Simulator</p>
       </div>
       <div id="system-status" class="status-badge yellow">Checking System...</div>
     </div>
@@ -40,7 +40,7 @@
       <!-- Left Column: Logs and Controls -->
       <div class="space-y">
         <div class="admin-card">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div class="admin-card-header">
             <h3>📡 Live Fetch Logs</h3>
             <button class="btn-primary btn-sm" onclick="triggerFetch()">Run Manual Fetch</button>
           </div>
@@ -49,9 +49,9 @@
           </div>
         </div>
 
-        <div class="admin-card" style="margin-top: 30px;">
+        <div class="admin-card admin-card-offset">
           <h3>📊 Active Database Stats</h3>
-          <div class="emi-results" style="margin-top: 20px;">
+          <div class="emi-results admin-card-stats">
             <div class="emi-result-card"><div class="emi-num" id="total-phones">0</div><div class="emi-label">Phones Tracked</div></div>
             <div class="emi-result-card"><div class="emi-num" id="total-alerts">0</div><div class="emi-label">Active Alerts</div></div>
             <div class="emi-result-card"><div class="emi-num" id="scam-score">100%</div><div class="emi-label">Scam Accuracy</div></div>
@@ -62,19 +62,19 @@
       <!-- Right Column: Scenario Simulator -->
       <div class="admin-card">
         <h3>🎭 Scenario Simulator</h3>
-        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 20px;">Test edge cases without waiting for live data.</p>
+        <p class="admin-scenario-desc">Test edge cases without waiting for live data.</p>
         
         <button class="sim-btn" onclick="simulateScenario('price_drop')">📉 Force Price Drop <span>Run →</span></button>
         <button class="sim-btn" onclick="simulateScenario('stock_out')">❌ Simulate Out of Stock <span>Run →</span></button>
         <button class="sim-btn" onclick="simulateScenario('new_phone')">🚀 Inject Upcoming Phone <span>Run →</span></button>
         <button class="sim-btn" onclick="simulateScenario('scam_hit')">🛡️ Test Scam URL Match <span>Run →</span></button>
         <button class="sim-btn" onclick="simulateScenario('fail_fetch')">⚠️ Simulate Scraper Fail <span>Run →</span></button>
-        <button class="sim-btn" onclick="simulateScenario('flash_sale')" style="border-color: #ffd700; color: #ffd700;">⚡ Trigger Flash Sale <span>Run →</span></button>
+        <button class="sim-btn admin-flash-btn" onclick="simulateScenario('flash_sale')">⚡ Trigger Flash Sale <span>Run →</span></button>
         
-        <hr style="opacity: 0.1; margin: 20px 0;">
+        <hr class="admin-hr">
         
         <h4>Quick Actions</h4>
-        <button class="btn-outline" style="width: 100%; margin-top: 10px;" onclick="location.href='/'">← Back to Main Site</button>
+        <button class="btn-outline admin-back-btn" onclick="location.href='/'">← Back to Main Site</button>
       </div>
     </div>
   </div>
