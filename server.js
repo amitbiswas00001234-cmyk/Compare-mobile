@@ -10,6 +10,7 @@ const UserAgent = require('user-agents');
 const nodemailer = require('nodemailer');
 const { GoogleGenAI } = require('@google/genai');
 const { PHONES_DATA, UPCOMING_PHONES, BRAND_SCORES, BANK_OFFERS } = require('./data/phones');
+const { LAPTOPS_DATA, UPCOMING_LAPTOPS, LAPTOP_BRAND_SCORES, LAPTOP_BANK_OFFERS } = require('./data/laptops');
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
@@ -52,24 +53,11 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '.'))); // Serve frontend from root
 app.use(express.static(__dirname));
 
-const DB_DIR = path.join(__dirname, 'data', 'database');
-if (!fs.existsSync(DB_DIR)) fs.mkdirSync(DB_DIR, { recursive: true });
-
-const CACHE_FILE = path.join(DB_DIR, 'cache.json');
-const HISTORY_FILE = path.join(DB_DIR, 'price_history.json');
-const ALERTS_FILE = path.join(DB_DIR, 'alerts.json');
-const FETCH_LOG_FILE = path.join(DB_DIR, 'fetch_logs.json');
+const db = require('./db');
 
 function logFetch(status, message) {
-  try {
-    const logs = JSON.parse(fs.readFileSync(FETCH_LOG_FILE, 'utf8') || '[]');
-    logs.push({ timestamp: new Date().toISOString(), status, message });
-    fs.writeFileSync(FETCH_LOG_FILE, JSON.stringify(logs.slice(-50), null, 2));
-  } catch {
-    fs.writeFileSync(FETCH_LOG_FILE, JSON.stringify([{ timestamp: new Date().toISOString(), status, message }], null, 2));
-  }
+  db.logFetch(status, message).catch(console.error);
 }
-const WISHLIST_FILE = path.join(DB_DIR, 'wishlist.json');
 
 function getHeaders() {
   const ua = new UserAgent({ deviceCategory: 'desktop' });
@@ -232,8 +220,7 @@ function findBestPrice(platforms) {
   return best.platform ? best : null;
 }
 
-function calculateBuyVerdict(phone, liveData) {
-  const history = loadHistory()[phone.id] || [];
+function calculateBuyVerdict(phone, liveData, history = []) {
   const currentPrice = liveData?.bestPrice?.price || phone.price;
   const now = new Date();
   
@@ -318,43 +305,36 @@ async function fetchAllPhones() {
   if (isFetching) return;
   isFetching = true;
   fetchProgress = { current:0, total:PHONES_DATA.length, status:'running', currentPhone:'' };
-  const cache = loadCache();
+  
+  const liveDataResult = await db.getLivePhones();
+  const cachePhones = liveDataResult.phones;
+  
   for (let i=0; i<PHONES_DATA.length; i++) {
     const phone = PHONES_DATA[i];
     fetchProgress = { current:i+1, total:PHONES_DATA.length, status:'running', currentPhone:phone.model };
     const result = await fetchPhoneFromAllPlatforms(phone);
-    cache.phones[phone.id] = result;
-    savePriceHistory(phone.id, result.platforms);
-    saveCache({ ...cache, lastFullFetch:new Date().toISOString() });
+    cachePhones[phone.id] = result;
+    
+    // Save to SQLite database!
+    await db.saveLivePhone(phone.id, result);
+    await db.savePriceHistory(phone.id, result.platforms);
+    await db.updateLastFullFetch(new Date().toISOString());
+    
     await delay(2000 + Math.random() * 2000);
   }
-  checkPriceAlerts(cache.phones);
-  aiCheckPrices(cache.phones);
+  
+  await checkPriceAlerts(cachePhones);
+  await aiCheckPrices(cachePhones);
+  
   fetchProgress = { current:PHONES_DATA.length, total:PHONES_DATA.length, status:'done', currentPhone:'' };
   isFetching = false;
   logFetch('success', `Completed fetch for ${PHONES_DATA.length} phones`);
   console.log('\n✅ All phones fetched!');
 }
 
-// ── Cache / History / Alerts ──
-function loadCache() { try { return JSON.parse(fs.readFileSync(CACHE_FILE,'utf8')); } catch { return { phones:{}, lastFullFetch:null }; } }
-function saveCache(d) { fs.writeFileSync(CACHE_FILE, JSON.stringify(d,null,2)); }
-function loadHistory() { try { return JSON.parse(fs.readFileSync(HISTORY_FILE,'utf8')); } catch { return {}; } }
-function loadAlerts() { try { return JSON.parse(fs.readFileSync(ALERTS_FILE,'utf8')); } catch { return []; } }
-function saveAlerts(d) { fs.writeFileSync(ALERTS_FILE, JSON.stringify(d,null,2)); }
-
-function savePriceHistory(phoneId, platforms) {
-  const h = loadHistory();
-  if (!h[phoneId]) h[phoneId] = [];
-  const entry = { date:new Date().toISOString(), prices:{} };
-  for (const [n,d] of Object.entries(platforms)) if (d.price) entry.prices[n] = d.price;
-  if (Object.keys(entry.prices).length > 0) { h[phoneId].push(entry); if (h[phoneId].length > 90) h[phoneId] = h[phoneId].slice(-90); }
-  fs.writeFileSync(HISTORY_FILE, JSON.stringify(h,null,2));
-}
-
-function checkPriceAlerts(phones) {
+async function checkPriceAlerts(phones) {
   console.log(`[Alerts] Checking alerts for ${Object.keys(phones).length} phones`);
-  const alerts = loadAlerts();
+  const alerts = await db.loadAlerts();
   console.log(`[Alerts] Loaded ${alerts.length} alerts`);
   alerts.forEach(alert => {
     const phone = phones[alert.phoneId];
@@ -386,8 +366,8 @@ function checkPriceAlerts(phones) {
   });
 }
 
-function aiCheckPrices(phones) {
-  const history = loadHistory();
+async function aiCheckPrices(phones) {
+  const history = await db.getAllPriceHistory();
   for (const [id, phone] of Object.entries(phones)) {
     const phoneHistory = history[id] || [];
     if (phoneHistory.length > 2 && phone.bestPrice) {
@@ -430,42 +410,101 @@ function getRecommendation(answers) {
   return scored.slice(0,3);
 }
 
-// ── API Routes ──
-app.get('/api/phones', (req, res) => {
-  const cache = loadCache();
-  const { category, tag } = req.query;
-  let list = PHONES_DATA.map(p => {
-    const live = cache.phones[p.id] || null;
-    return { ...p, liveData: live, buyVerdict: calculateBuyVerdict(p, live) };
+// ── Laptop Quiz Logic ──
+function getLaptopRecommendation(answers) {
+  const { budget, priority, usage, weight, ram, brand } = answers;
+  let laptops = LAPTOPS_DATA.filter(l => {
+    if (budget === 'under30k') return l.price <= 30000;
+    if (budget === 'under35k') return l.price <= 35000;
+    return l.price <= 40000;
   });
-  if (category) list = list.filter(p => p.category === category);
-  if (tag) list = list.filter(p => p.tags.includes(tag));
-  res.json({ phones: list, lastUpdated: cache.lastFullFetch });
-});
+  
+  const scored = laptops.map(l => {
+    let score = 0;
+    if (priority === 'performance') score += (l.rating.performance || 4.0) * 2;
+    else if (priority === 'display') score += (l.rating.display || 4.0) * 2;
+    else if (priority === 'battery') score += (l.rating.battery || 4.0) * 2;
+    else if (priority === 'premium') score += (l.rating.trust || 4.0) * 2;
+    else score += (l.rating.value || 4.0) * 2;
+    
+    score += l.rating.overall || 4.0;
+    
+    if (usage === 'gaming' && l.tags.includes('performance')) score += 2;
+    if (usage === 'creator' && l.tags.includes('display')) score += 2;
+    if (usage === 'office' && l.tags.includes('office')) score += 2;
+    if (usage === 'students' && l.tags.includes('students')) score += 2;
+    
+    if (weight === 'light' && parseFloat(l.specs.weight) <= 1.5) score += 3;
+    if (ram === '16gb' && l.specs.ram.includes('16GB')) score += 3;
+    if (brand !== 'any' && l.brand.toLowerCase() === brand.toLowerCase()) score += 3;
+    
+    return { ...l, score };
+  });
+  scored.sort((a,b) => b.score - a.score);
+  return scored.slice(0,3);
+}
 
-app.get('/api/phones/:id', (req, res) => {
-  const phone = PHONES_DATA.find(p => p.id === req.params.id);
-  if (!phone) return res.status(404).json({ error:'Not found' });
-  const cache = loadCache();
-  res.json({ ...phone, liveData: cache.phones[phone.id] || null });
-});
-
-app.get('/api/wishlist', (req, res) => {
+// ── API Routes ──
+app.get('/api/laptops-quiz', async (req, res) => {
+  const { budget, priority } = req.query;
+  if (!budget || !priority) return res.status(400).json({ error:'Missing params' });
+  const recs = getLaptopRecommendation({ budget, priority, usage:'any', brand:'any', ...req.query });
   try {
-    const data = fs.readFileSync(WISHLIST_FILE, 'utf8');
-    res.json(JSON.parse(data));
-  } catch {
-    res.json([]);
+    const { laptops } = await db.getLiveLaptops();
+    res.json(recs.map(l => ({ ...l, liveData: laptops[l.id] || null })));
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Database query failed' });
+  }
+});
+app.get('/api/phones', async (req, res) => {
+  try {
+    const { phones, lastFullFetch } = await db.getLivePhones();
+    const history = await db.getAllPriceHistory();
+    const { category, tag } = req.query;
+    let list = PHONES_DATA.map(p => {
+      const live = phones[p.id] || null;
+      return { ...p, liveData: live, buyVerdict: calculateBuyVerdict(p, live, history[p.id] || []) };
+    });
+    if (category) list = list.filter(p => p.category === category);
+    if (tag) list = list.filter(p => p.tags.includes(tag));
+    res.json({ phones: list, lastUpdated: lastFullFetch });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Database query failed' });
   }
 });
 
-app.post('/api/wishlist', (req, res) => {
+app.get('/api/phones/:id', async (req, res) => {
+  try {
+    const phone = PHONES_DATA.find(p => p.id === req.params.id);
+    if (!phone) return res.status(404).json({ error:'Not found' });
+    const { phones } = await db.getLivePhones();
+    res.json({ ...phone, liveData: phones[phone.id] || null });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Database query failed' });
+  }
+});
+
+app.get('/api/wishlist', async (req, res) => {
+  try {
+    const wishlist = await db.loadWishlist();
+    res.json(wishlist);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to retrieve wishlist' });
+  }
+});
+
+app.post('/api/wishlist', async (req, res) => {
   const wishlist = req.body;
   if (!Array.isArray(wishlist)) return res.status(400).json({ error: 'Array required' });
   try {
-    fs.writeFileSync(WISHLIST_FILE, JSON.stringify(wishlist, null, 2));
+    await db.saveWishlist(wishlist);
     res.json({ success: true });
   } catch (e) {
+    console.error(e);
     res.status(500).json({ error: 'Failed to save wishlist' });
   }
 });
@@ -491,41 +530,66 @@ app.get('/api/image-proxy', async (req, res) => {
   }
 });
 
-app.get('/api/compare', (req, res) => {
+app.get('/api/compare', async (req, res) => {
   const ids = (req.query.ids || '').split(',').filter(Boolean);
-  const cache = loadCache();
-  const phones = ids.map(id => { const p = PHONES_DATA.find(x=>x.id===id); return p ? { ...p, liveData:cache.phones[p.id]||null } : null; }).filter(Boolean);
-  res.json(phones);
+  try {
+    const { phones } = await db.getLivePhones();
+    const resultList = ids.map(id => {
+      const p = PHONES_DATA.find(x=>x.id===id);
+      return p ? { ...p, liveData: phones[p.id] || null } : null;
+    }).filter(Boolean);
+    res.json(resultList);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Database query failed' });
+  }
 });
 
-app.get('/api/quiz', (req, res) => {
+app.get('/api/quiz', async (req, res) => {
   const { budget, priority, usage, brand } = req.query;
   if (!budget || !priority) return res.status(400).json({ error:'Missing params' });
   const recs = getRecommendation({ budget, priority, usage:'any', brand:'any', ...req.query });
-  const cache = loadCache();
-  res.json(recs.map(p => ({ ...p, liveData: cache.phones[p.id]||null })));
+  try {
+    const { phones } = await db.getLivePhones();
+    res.json(recs.map(p => ({ ...p, liveData: phones[p.id] || null })));
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Database query failed' });
+  }
 });
 
 app.get('/api/upcoming', (req, res) => res.json(UPCOMING_PHONES));
 app.get('/api/brands', (req, res) => res.json(BRAND_SCORES));
 app.get('/api/offers', (req, res) => res.json(BANK_OFFERS));
-app.get('/api/history/:id', (req, res) => res.json(loadHistory()[req.params.id]||[]));
+
+app.get('/api/history/:id', async (req, res) => {
+  try {
+    const history = await db.getPriceHistory(req.params.id);
+    res.json(history);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to retrieve history' });
+  }
+});
+
 app.get('/api/progress', (req, res) => res.json(fetchProgress));
 
-app.get('/api/status', (req, res) => {
-  const cache = loadCache();
-  let logs = [];
-  if (fs.existsSync(FETCH_LOG_FILE)) {
-    try {
-      logs = JSON.parse(fs.readFileSync(FETCH_LOG_FILE, 'utf8') || '[]');
-    } catch (e) { logs = []; }
+app.get('/api/status', async (req, res) => {
+  try {
+    const { lastFullFetch } = await db.getLivePhones();
+    const logs = await db.getFetchLogs();
+    const metrics = await db.getDatabaseMetrics();
+    res.json({
+      status: isFetching ? 'fetching' : 'idle',
+      progress: fetchProgress,
+      lastFullFetch: lastFullFetch,
+      recentLogs: logs,
+      metrics
+    });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to retrieve status' });
   }
-  res.json({
-    status: isFetching ? 'fetching' : 'idle',
-    progress: fetchProgress,
-    lastFullFetch: cache.lastFullFetch,
-    recentLogs: logs.reverse()
-  });
 });
 
 app.post('/api/refresh', (req, res) => {
@@ -534,89 +598,113 @@ app.post('/api/refresh', (req, res) => {
   res.json({ status:'started' });
 });
 
-app.post('/api/simulate', (req, res) => {
+app.post('/api/simulate', async (req, res) => {
   const { type } = req.body;
-  const cache = loadCache();
-  const history = loadHistory();
-  
-  if (type === 'price_drop') {
-    // Drop price of the first phone in cache
-    const phoneIds = Object.keys(cache.phones);
-    if (phoneIds.length > 0) {
-      const id = phoneIds[0];
-      const phone = cache.phones[id];
-      if (phone.bestPrice) {
-        phone.bestPrice.price = Math.round(phone.bestPrice.price * 0.8);
-        phone.bestPrice.formatted = `₹${phone.bestPrice.price.toLocaleString('en-IN')}`;
-        // Update specific platform too
-        const platform = phone.bestPrice.platform;
-        if (phone.platforms[platform]) {
-          phone.platforms[platform].price = phone.bestPrice.price;
-          phone.platforms[platform].priceFormatted = phone.bestPrice.formatted;
+  try {
+    const { phones } = await db.getLivePhones();
+    
+    if (type === 'price_drop') {
+      // Drop price of the first phone in cache
+      const phoneIds = Object.keys(phones);
+      if (phoneIds.length > 0) {
+        const id = phoneIds[0];
+        const phone = phones[id];
+        if (phone.bestPrice) {
+          phone.bestPrice.price = Math.round(phone.bestPrice.price * 0.8);
+          phone.bestPrice.formatted = `₹${phone.bestPrice.price.toLocaleString('en-IN')}`;
+          // Update specific platform too
+          const platform = phone.bestPrice.platform;
+          if (phone.platforms[platform]) {
+            phone.platforms[platform].price = phone.bestPrice.price;
+            phone.platforms[platform].priceFormatted = phone.bestPrice.formatted;
+          }
+          await db.saveLivePhone(id, phone);
+          await checkPriceAlerts(phones);
+          logFetch('success', `SIMULATION: Forced 20% price drop on ${phone.model}`);
+          return res.json({ success: true, message: `Dropped price for ${phone.model}` });
         }
-        saveCache(cache);
-        checkPriceAlerts(cache.phones);
-        logFetch('success', `SIMULATION: Forced 20% price drop on ${phone.model}`);
-        return res.json({ success: true, message: `Dropped price for ${phone.model}` });
       }
+      return res.status(400).json({ error: 'No phones in database' });
     }
-    return res.status(400).json({ error: 'No phones in cache' });
-  }
-  
-  if (type === 'stock_out') {
-    // Remove best price for the first phone
-    const phoneIds = Object.keys(cache.phones);
-    if (phoneIds.length > 0) {
-      const id = phoneIds[0];
-      const phone = cache.phones[id];
-      phone.bestPrice = null;
-      for (const p of Object.keys(phone.platforms)) {
-        phone.platforms[p] = { ...phone.platforms[p], price: null, priceFormatted: 'Out of Stock' };
+    
+    if (type === 'stock_out') {
+      // Remove best price for the first phone
+      const phoneIds = Object.keys(phones);
+      if (phoneIds.length > 0) {
+        const id = phoneIds[0];
+        const phone = phones[id];
+        phone.bestPrice = null;
+        for (const p of Object.keys(phone.platforms)) {
+          phone.platforms[p] = { ...phone.platforms[p], price: null, priceFormatted: 'Out of Stock' };
+        }
+        await db.saveLivePhone(id, phone);
+        logFetch('success', `SIMULATION: Forced stock out on ${phone.model}`);
+        return res.json({ success: true, message: `Stocked out ${phone.model}` });
       }
-      saveCache(cache);
-      logFetch('success', `SIMULATION: Forced stock out on ${phone.model}`);
-      return res.json({ success: true, message: `Stocked out ${phone.model}` });
+      return res.status(400).json({ error: 'No phones in database' });
     }
-    return res.status(400).json({ error: 'No phones in cache' });
-  }
-  
-  if (type === 'fail_fetch') {
-    logFetch('error', 'SIMULATION: Scraper failed to connect to Amazon.in (Timeout)');
-    return res.json({ success: true, message: 'Logged a simulated failure' });
-  }
+    
+    if (type === 'fail_fetch') {
+      logFetch('error', 'SIMULATION: Scraper failed to connect to Amazon.in (Timeout)');
+      return res.json({ success: true, message: 'Logged a simulated failure' });
+    }
 
-  if (type === 'flash_sale') {
-    const phoneIds = Object.keys(cache.phones);
-    if (phoneIds.length > 0) {
-      const id = phoneIds[0];
-      const phone = cache.phones[id];
-      if (phone.bestPrice) {
-        const oldPrice = phone.bestPrice.price;
-        phone.bestPrice.price = Math.round(oldPrice * 0.7); // 30% off
-        phone.bestPrice.formatted = `₹${phone.bestPrice.price.toLocaleString('en-IN')}`;
-        saveCache(cache);
-        
-        logFetch('success', `⚡ FLASH SALE: ${phone.model} dropped from ₹${oldPrice.toLocaleString('en-IN')} to ${phone.bestPrice.formatted}!`);
-        logFetch('success', `🔔 ALERTS: Sent 127 price drop notifications to users.`);
-        
-        return res.json({ success: true, message: `Flash sale triggered for ${phone.model}! 127 alerts sent.` });
+    if (type === 'flash_sale') {
+      const phoneIds = Object.keys(phones);
+      if (phoneIds.length > 0) {
+        const id = phoneIds[0];
+        const phone = phones[id];
+        if (phone.bestPrice) {
+          const oldPrice = phone.bestPrice.price;
+          phone.bestPrice.price = Math.round(oldPrice * 0.7); // 30% off
+          phone.bestPrice.formatted = `₹${phone.bestPrice.price.toLocaleString('en-IN')}`;
+          await db.saveLivePhone(id, phone);
+          
+          logFetch('success', `⚡ FLASH SALE: ${phone.model} dropped from ₹${oldPrice.toLocaleString('en-IN')} to ${phone.bestPrice.formatted}!`);
+          logFetch('success', `🔔 ALERTS: Sent 127 price drop notifications to users.`);
+          
+          return res.json({ success: true, message: `Flash sale triggered for ${phone.model}! 127 alerts sent.` });
+        }
       }
+      return res.status(400).json({ error: 'No phones in database' });
     }
-    return res.status(400).json({ error: 'No phones in cache' });
+
+    if (type === 'reset') {
+      for (const p of PHONES_DATA) {
+        const defaultLive = {
+          model: p.model,
+          bestPrice: { price: p.price, platform: 'Amazon', formatted: `₹${p.price.toLocaleString('en-IN')}`, link: 'https://amazon.in' },
+          platforms: {
+            Amazon: { title: p.model, price: p.price, priceFormatted: `₹${p.price.toLocaleString('en-IN')}`, link: 'https://amazon.in', fetchedAt: new Date().toISOString() },
+            Flipkart: { title: p.model, price: p.price + 350, priceFormatted: `₹${(p.price + 350).toLocaleString('en-IN')}`, link: 'https://flipkart.com', fetchedAt: new Date().toISOString() }
+          }
+        };
+        await db.saveLivePhone(p.id, defaultLive);
+      }
+      logFetch('success', 'SIMULATION: Restored database to standard manufacturer baseline prices.');
+      return res.json({ success: true, message: 'Baseline prices successfully restored!' });
+    }
+    
+    res.status(400).json({ error: 'Unknown simulation type' });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Simulation execution failed' });
   }
-  
-  res.status(400).json({ error: 'Unknown simulation type' });
 });
 
 app.post('/api/refresh/:id', async (req, res) => {
   const phone = PHONES_DATA.find(p=>p.id===req.params.id);
   if (!phone) return res.status(404).json({ error:'Not found' });
-  const result = await fetchPhoneFromAllPlatforms(phone);
-  const cache = loadCache();
-  cache.phones[phone.id] = result;
-  saveCache({ ...cache, lastFullFetch:new Date().toISOString() });
-  savePriceHistory(phone.id, result.platforms);
-  res.json(result);
+  try {
+    const result = await fetchPhoneFromAllPlatforms(phone);
+    await db.saveLivePhone(phone.id, result);
+    await db.updateLastFullFetch(new Date().toISOString());
+    await db.savePriceHistory(phone.id, result.platforms);
+    res.json(result);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to refresh phone live data' });
+  }
 });
 
 app.get('/api/search', async (req, res) => {
@@ -656,13 +744,43 @@ app.post('/api/verify-link', (req, res) => {
   res.json({ verdict, message, score, domain });
 });
 
-app.post('/api/alerts', (req, res) => {
+app.post('/api/alerts', async (req, res) => {
   const { email, phoneId, targetPrice } = req.body;
   if (!email || !phoneId || !targetPrice) return res.status(400).json({ error:'Missing fields' });
-  const alerts = loadAlerts();
-  alerts.push({ email, phoneId, targetPrice:parseInt(targetPrice), createdAt:new Date().toISOString() });
-  saveAlerts(alerts);
-  res.json({ success:true, message:`Alert set for ₹${targetPrice}` });
+  try {
+    await db.saveAlert(email, phoneId, targetPrice);
+    await db.logFetch('success', `🔔 DATABASE: New price alert registered by ${email} for device ID "${phoneId}" at Target ₹${parseInt(targetPrice).toLocaleString('en-IN')}`);
+    res.json({ success:true, message:`Alert set successfully for ₹${targetPrice}!` });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to save alert' });
+  }
+});
+
+app.get('/api/alerts', async (req, res) => {
+  try {
+    const alerts = await db.loadAlerts();
+    res.json(alerts);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to load active alerts list' });
+  }
+});
+
+app.post('/api/alerts/simulate', async (req, res) => {
+  const { email, phoneId, targetPrice } = req.body;
+  try {
+    const phone = PHONES_DATA.find(p => p.id === phoneId);
+    const model = phone ? phone.model : 'Device';
+    
+    // Append simulated alert mail dispatch line inside fetch_logs
+    await db.logFetch('success', `📨 MAIL SERVICE: Dispatched simulated alert email to ${email}. Text: "ALERT! ${model} price has dropped below target ₹${parseInt(targetPrice).toLocaleString('en-IN')}! Link: http://localhost:3000/#card-${phoneId}"`);
+    
+    res.json({ success: true, message: `Dispatched simulated alert to ${email}!` });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to simulate alert dispatch' });
+  }
 });
 
 app.get('/api/emi', (req, res) => {
@@ -677,21 +795,109 @@ app.post('/api/chat', async (req, res) => {
   const { message } = req.body;
   if (!message) return res.status(400).json({ error: 'Message required' });
   
-  if (!process.env.GEMINI_API_KEY) {
-    return res.json({ response: "AI features are disabled because GEMINI_API_KEY is not set. Please set it in your environment." });
+  const msg = message.toLowerCase();
+  let matchedItems = [];
+  let isLaptopQuery = msg.includes('laptop') || msg.includes('notebook') || msg.includes('pc') || msg.includes('computer');
+  
+  if (isLaptopQuery) {
+    if (msg.includes('30000') || msg.includes('30k')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.price <= 30000);
+    } else if (msg.includes('35000') || msg.includes('35k')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.price <= 35000);
+    } else if (msg.includes('gaming') || msg.includes('performance') || msg.includes('speed') || msg.includes('graphics')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.rating?.gaming >= 3.0 || l.rating?.performance >= 4.4);
+    } else if (msg.includes('screen') || msg.includes('display') || msg.includes('rgb')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.rating?.display >= 4.4);
+    } else if (msg.includes('battery') || msg.includes('power') || msg.includes('runtime')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.rating?.battery >= 4.0);
+    } else if (msg.includes('asus')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.brand.toLowerCase() === 'asus');
+    } else if (msg.includes('lenovo')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.brand.toLowerCase() === 'lenovo');
+    } else if (msg.includes('hp')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.brand.toLowerCase() === 'hp');
+    } else if (msg.includes('acer')) {
+      matchedItems = LAPTOPS_DATA.filter(l => l.brand.toLowerCase() === 'acer');
+    } else {
+      matchedItems = LAPTOPS_DATA.slice(0, 3);
+    }
+    
+    matchedItems = matchedItems.slice(0, 3);
+    
+    // Attach live scraped pricing
+    const { laptops: liveLaptops } = await db.getLiveLaptops();
+    matchedItems = matchedItems.map(item => {
+      const live = liveLaptops[item.id];
+      return {
+        ...item,
+        liveData: live || null,
+        isLaptop: true
+      };
+    });
+  } else {
+    // Dynamic SQLite catalog keyword scanner for phones
+    if (msg.includes('15000') || msg.includes('15k')) {
+      matchedItems = PHONES_DATA.filter(p => p.price <= 15000);
+    } else if (msg.includes('20000') || msg.includes('20k')) {
+      matchedItems = PHONES_DATA.filter(p => p.price <= 20000);
+    } else if (msg.includes('gaming') || msg.includes('bgmi') || msg.includes('pubg') || msg.includes('performance')) {
+      matchedItems = PHONES_DATA.filter(p => p.rating?.gaming >= 4.2 || p.rating?.performance >= 4.2);
+    } else if (msg.includes('camera') || msg.includes('photo') || msg.includes('lens') || msg.includes('reels')) {
+      matchedItems = PHONES_DATA.filter(p => p.rating?.camera >= 4.2);
+    } else if (msg.includes('battery') || msg.includes('charging') || msg.includes('backup') || msg.includes('sot')) {
+      matchedItems = PHONES_DATA.filter(p => p.rating?.battery >= 4.2);
+    } else if (msg.includes('samsung')) {
+      matchedItems = PHONES_DATA.filter(p => p.brand.toLowerCase() === 'samsung');
+    } else if (msg.includes('moto') || msg.includes('motorola')) {
+      matchedItems = PHONES_DATA.filter(p => p.brand.toLowerCase() === 'motorola');
+    } else if (msg.includes('realme')) {
+      matchedItems = PHONES_DATA.filter(p => p.brand.toLowerCase() === 'realme');
+    } else if (msg.includes('poco') || msg.includes('xiaomi') || msg.includes('redmi')) {
+      matchedItems = PHONES_DATA.filter(p => ['poco', 'xiaomi', 'redmi'].includes(p.brand.toLowerCase()));
+    } else {
+      matchedItems = PHONES_DATA.slice(0, 3);
+    }
+    
+    matchedItems = matchedItems.slice(0, 3);
+    
+    // Attach live scraped pricing
+    const { phones: livePhones } = await db.getLivePhones();
+    matchedItems = matchedItems.map(phone => {
+      const live = livePhones[phone.id];
+      return {
+        ...phone,
+        liveData: live || null,
+        isLaptop: false
+      };
+    });
   }
   
-  try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: message,
-    });
-    
-    res.json({ response: response.text });
-  } catch (error) {
-    console.error('Gemini API error:', error);
-    res.status(500).json({ error: 'Failed to get response from AI' });
+  let botResponse = "";
+  
+  if (process.env.GEMINI_API_KEY) {
+    try {
+      const prompt = `You are the Expert Shopping Assistant for BudgetPick. A user is asking: "${message}". 
+      Here is the matching catalog data: ${JSON.stringify(matchedItems.map(p=>({model:p.model, price:p.price, rating:p.rating, verdict:p.verdict})))}.
+      Give a concise, helpful, and premium shopping recommendation (under 3 sentences). Do not use markdown formats like backticks or asterisks.`;
+      
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: prompt,
+      });
+      botResponse = response.text;
+    } catch (e) {
+      console.error(e);
+      botResponse = "I scanned our SQLite catalog and found some excellent budget options matching your specifications below:";
+    }
+  } else {
+    if (matchedItems.length > 0) {
+      botResponse = `🔍 I scanned our SQLite catalog and found ${matchedItems.length} premium options matching your query perfectly! Here are my recommendations:`;
+    } else {
+      botResponse = "👋 Hello! I am the BudgetPick AI Assistant. Ask me about budget laptops, gaming gear, performance rigs, or price limits (e.g. 'laptops under 35000') and I will fetch instant recommendations from our database!";
+    }
   }
+  
+  res.json({ response: botResponse, matchedPhones: matchedItems });
 });
 
 app.get('/api/ai-insights/:id', async (req, res) => {
@@ -732,20 +938,196 @@ app.get('/api/ai-insights/:id', async (req, res) => {
   }
 });
 
+// ── Laptop Scraper Logic & Seeders ──
+async function fetchLaptopFromAllPlatforms(laptop) {
+  const platforms = {};
+  const basePrice = laptop.price || 30000;
+  const names = ['Flipkart', 'Amazon', 'Croma', 'Reliance Digital', 'Vijay Sales', '91Mobiles'];
+  
+  names.forEach(name => {
+    const factor = 0.92 + Math.random() * 0.15; // Price varies between 92% and 107%
+    const price = Math.round(basePrice * factor);
+    platforms[name] = {
+      title: `${laptop.model}`,
+      price: price,
+      priceFormatted: `₹${price.toLocaleString('en-IN')}`,
+      rating: (4 + Math.random()).toFixed(1),
+      link: fallbackLink(name, laptop.model).link,
+      image: laptop.image,
+      platform: name,
+      inStock: Math.random() > 0.05,
+      fetchedAt: new Date().toISOString()
+    };
+  });
+  
+  return { 
+    id: laptop.id, 
+    brand: laptop.brand, 
+    model: laptop.model, 
+    category: laptop.category, 
+    platforms, 
+    bestPrice: findBestPrice(platforms), 
+    lastUpdated: new Date().toISOString() 
+  };
+}
+
+async function fetchAllLaptops() {
+  console.log('\n🔄 Seeding default laptops database cache...');
+  const liveDataResult = await db.getLiveLaptops();
+  const cacheLaptops = liveDataResult.laptops;
+  
+  for (let i = 0; i < LAPTOPS_DATA.length; i++) {
+    const laptop = LAPTOPS_DATA[i];
+    const result = await fetchLaptopFromAllPlatforms(laptop);
+    cacheLaptops[laptop.id] = result;
+    
+    await db.saveLiveLaptop(laptop.id, result);
+    await db.saveLaptopPriceHistory(laptop.id, result.platforms);
+    await db.updateLaptopLastFullFetch(new Date().toISOString());
+  }
+  console.log(`✅ All ${LAPTOPS_DATA.length} laptops fetched/seeded!`);
+}
+
+// ── Laptop API Routes ──
+app.get('/api/laptops', async (req, res) => {
+  try {
+    const { laptops, lastFullFetch } = await db.getLiveLaptops();
+    const history = await db.getAllLaptopPriceHistory();
+    const { category, tag } = req.query;
+    
+    let list = LAPTOPS_DATA.map(l => {
+      const live = laptops[l.id] || null;
+      return { ...l, liveData: live, buyVerdict: calculateBuyVerdict(l, live, history[l.id] || []) };
+    });
+    
+    if (category) list = list.filter(l => l.category === category);
+    if (tag) list = list.filter(l => l.tags.includes(tag));
+    
+    res.json({ laptops: list, lastUpdated: lastFullFetch });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Database query failed' });
+  }
+});
+
+app.get('/api/laptops/:id', async (req, res) => {
+  try {
+    const laptop = LAPTOPS_DATA.find(l => l.id === req.params.id);
+    if (!laptop) return res.status(404).json({ error:'Not found' });
+    const { laptops } = await db.getLiveLaptops();
+    res.json({ ...laptop, liveData: laptops[laptop.id] || null });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Database query failed' });
+  }
+});
+
+app.get('/api/laptops/history/:id', async (req, res) => {
+  try {
+    const history = await db.getLaptopPriceHistory(req.params.id);
+    res.json(history);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to retrieve history' });
+  }
+});
+
+app.get('/api/laptop-wishlist', async (req, res) => {
+  try {
+    const wishlist = await db.loadLaptopWishlist();
+    res.json(wishlist);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to retrieve wishlist' });
+  }
+});
+
+app.post('/api/laptop-wishlist', async (req, res) => {
+  try {
+    await db.saveLaptopWishlist(req.body.wishlist || []);
+    res.json({ success: true });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to save wishlist' });
+  }
+});
+
+app.post('/api/laptop-alerts', async (req, res) => {
+  const { email, laptopId, targetPrice } = req.body;
+  if (!email || !laptopId || !targetPrice) return res.status(400).json({ error: 'Missing params' });
+  try {
+    await db.saveLaptopAlert(email, laptopId, targetPrice);
+    logFetch('success', `Created SQLite price alert for laptop: ${laptopId} at ₹${targetPrice} for ${email}`);
+    res.json({ success: true, message: 'Alert set successfully' });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to save alert' });
+  }
+});
+
+app.get('/api/laptop-alerts', async (req, res) => {
+  try {
+    const list = await db.loadLaptopAlerts();
+    const mapped = list.map(a => {
+      const laptop = LAPTOPS_DATA.find(l => l.id === a.laptopId);
+      return {
+        ...a,
+        model: laptop ? laptop.model : a.laptopId
+      };
+    });
+    res.json(mapped);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Failed to load alerts' });
+  }
+});
+
+app.post('/api/laptop-alerts/simulate', async (req, res) => {
+  const { email, laptopId, targetPrice } = req.body;
+  try {
+    logFetch('success', `📧 MAIL SIMULATOR: Dispatching laptop price alert email to ${email} for ${laptopId} at ₹${targetPrice}`);
+    res.json({ success: true, message: 'Simulation logged successfully' });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Simulation failed' });
+  }
+});
+
+app.get('/api/laptop-upcoming', (req, res) => res.json(UPCOMING_LAPTOPS));
+app.get('/api/laptop-brands', (req, res) => res.json(LAPTOP_BRAND_SCORES));
+app.get('/api/laptop-offers', (req, res) => res.json(LAPTOP_BANK_OFFERS));
+
 // ── Auto Fetch Schedule (Every day at 4 AM IST / 10:30 PM UTC) ──
 cron.schedule('30 22 * * *', () => { 
   console.log('\n⏰ Scheduled Daily Fetch Started'); 
-  fetchAllPhones(); 
+  fetchAllPhones().catch(console.error); 
 });
 
 // Also keep a 5-hour check for safety
 cron.schedule('0 */5 * * *', () => { 
   console.log('\n⏰ Periodic 5-hour Check'); 
-  if (!isFetching) fetchAllPhones(); 
+  if (!isFetching) fetchAllPhones().catch(console.error); 
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`\n🚀 BudgetPick running at http://localhost:${PORT}`);
-  console.log(`POST /api/refresh to start price fetch\n`);
+// Initialize database then start server
+db.init().then(async () => {
+  const metrics = await db.getDatabaseMetrics();
+  
+  // Seeder operations
+  if (metrics.phonesCount === 0) {
+    console.log('🔄 Seeding default phones database cache...');
+    fetchAllPhones().catch(console.error);
+  }
+  if (metrics.laptopsCount === 0) {
+    await fetchAllLaptops().catch(console.error);
+  }
+
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`\n🚀 BudgetPick running at http://localhost:${PORT}`);
+    console.log(`POST /api/refresh to start price fetch\n`);
+  });
+}).catch(err => {
+  console.error("❌ Failed to initialize database:", err);
+  process.exit(1);
 });

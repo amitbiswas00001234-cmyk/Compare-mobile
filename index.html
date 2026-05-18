@@ -54,6 +54,7 @@
       <li><a href="#compare-section">Compare</a></li>
       <li><a href="#emi-section">EMI</a></li>
       <li><a href="#upcoming-section">Upcoming <span class="nav-badge">HOT</span></a></li>
+      <li><a href="#control-center">Control Panel</a></li>
     </ul>
     <div class="nav-extra">
       <button class="action-btn" onclick="toggleTheme()" style="padding: 6px 12px; font-size: 0.75rem;">🌓 Theme</button>
@@ -63,7 +64,7 @@
         <option value="hi">हिन्दी</option>
         <option value="ta">தமிழ்</option>
       </select>
-      <button class="nav-cta" onclick="openQuiz()">📋 Find My Phone</button>
+      <button class="nav-cta" onclick="openQuiz()">📋 Find My Pick</button>
     </div>
     <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
   </div>
@@ -271,9 +272,17 @@
   </div>
 </section>
 
-<!-- ── Phone Listings ── -->
+<!-- ── Listings Section ── -->
 <section class="section" id="phones">
   <div class="container">
+    <!-- Platform Mode Selector -->
+    <div class="platform-selector-wrap reveal">
+      <div class="platform-toggle-pill">
+        <button id="mode-phones-btn" class="platform-btn active" onclick="setPlatformMode('phones')">📱 Smartphones</button>
+        <button id="mode-laptops-btn" class="platform-btn inactive" onclick="setPlatformMode('laptops')">💻 Laptops</button>
+      </div>
+    </div>
+
     <div class="section-header reveal">
       <span class="section-label" id="phones-label">📡 Live Prices</span>
       <h2 class="section-title" id="phones-title">Best Budget Smartphones</h2>
@@ -340,63 +349,12 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">📋 Smart Quiz</span>
-      <h2 class="section-title">Which Phone is Right for You?</h2>
-      <p class="section-desc">Answer 4 questions and get a personalized recommendation.</p>
+      <h2 class="section-title" id="quiz-title">Which Phone is Right for You?</h2>
+      <p class="section-desc">Answer 6 questions and get a personalized recommendation.</p>
     </div>
     <div class="quiz-card reveal" id="quiz-card">
-      <div class="quiz-steps">
-        <div class="quiz-step active" id="step-1">
-          <h3>💰 What's your budget?</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" onclick="quizAnswer('budget','under10k',this)">Under ₹11,000</button>
-            <button class="quiz-opt" onclick="quizAnswer('budget','under15k',this)">₹11K – ₹15K</button>
-            <button class="quiz-opt" onclick="quizAnswer('budget','under20k',this)">₹15K – ₹20K</button>
-          </div>
-        </div>
-        <div class="quiz-step" id="step-2">
-          <h3>⭐ What matters most?</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" onclick="quizAnswer('priority','battery',this)">🔋 Battery Life</button>
-            <button class="quiz-opt" onclick="quizAnswer('priority','camera',this)">📷 Camera Quality</button>
-            <button class="quiz-opt" onclick="quizAnswer('priority','display',this)">🖥️ Display Quality</button>
-            <button class="quiz-opt" onclick="quizAnswer('priority','performance',this)">⚡ Performance</button>
-            <button class="quiz-opt" onclick="quizAnswer('priority','value',this)">💸 Best Value</button>
-          </div>
-        </div>
-        <div class="quiz-step" id="step-3">
-          <h3>📱 How will you use it?</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" onclick="quizAnswer('usage','gaming',this)">🎮 Gaming</button>
-            <button class="quiz-opt" onclick="quizAnswer('usage','social',this)">📸 Photos & Social</button>
-            <button class="quiz-opt" onclick="quizAnswer('usage','work',this)">💼 Work & Calls</button>
-            <button class="quiz-opt" onclick="quizAnswer('usage','streaming',this)">🎬 Netflix & YouTube</button>
-            <button class="quiz-opt" onclick="quizAnswer('usage','all',this)">🌟 All-Round Use</button>
-          </div>
-        </div>
-        <div class="quiz-step" id="step-4">
-          <h3>📶 Is 5G mandatory?</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" onclick="quizAnswer('network','5g',this)">Yes, 5G is a must</button>
-            <button class="quiz-opt" onclick="quizAnswer('network','any',this)">4G is fine (saves money)</button>
-          </div>
-        </div>
-        <div class="quiz-step" id="step-5">
-          <h3>🖥️ Do you want an AMOLED screen?</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" onclick="quizAnswer('display_type','amoled',this)">Yes (Better colors)</button>
-            <button class="quiz-opt" onclick="quizAnswer('display_type','any',this)">No Preference</button>
-          </div>
-        </div>
-        <div class="quiz-step" id="step-6">
-          <h3>🏷️ Any brand preference?</h3>
-          <div class="quiz-options">
-            <button class="quiz-opt" onclick="quizAnswer('brand','any',this)">No Preference</button>
-            <button class="quiz-opt" onclick="quizAnswer('brand','samsung',this)">Samsung</button>
-            <button class="quiz-opt" onclick="quizAnswer('brand','motorola',this)">Motorola</button>
-            <button class="quiz-opt" onclick="quizAnswer('brand','poco',this)">POCO</button>
-            <button class="quiz-opt" onclick="quizAnswer('brand','vivo',this)">Vivo</button>
-          </div>
-        </div>
+      <div class="quiz-steps" id="quiz-steps-container">
+        <!-- Dynamically rendered via renderQuizSteps() -->
       </div>
       <div class="quiz-progress-bar">
         <div class="quiz-progress-fill" id="quiz-progress"></div>
@@ -412,13 +370,13 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">⚖️ Side by Side</span>
-      <h2 class="section-title">Compare Phones</h2>
-      <p class="section-desc">Select up to 3 phones and compare every spec.</p>
+      <h2 class="section-title" id="compare-title">Compare Phones</h2>
+      <p class="section-desc" id="compare-desc">Select up to 3 phones and compare every spec.</p>
     </div>
     <div class="comparator-select reveal">
-      <div class="compare-slot" id="slot-0"><button onclick="openPhonePicker(0)">+ Add Phone</button></div>
-      <div class="compare-slot" id="slot-1"><button onclick="openPhonePicker(1)">+ Add Phone</button></div>
-      <div class="compare-slot" id="slot-2"><button onclick="openPhonePicker(2)">+ Add Phone</button></div>
+      <div class="compare-slot" id="slot-0"><button id="slot-btn-0" onclick="openPhonePicker(0)">+ Add Device</button></div>
+      <div class="compare-slot" id="slot-1"><button id="slot-btn-1" onclick="openPhonePicker(1)">+ Add Device</button></div>
+      <div class="compare-slot" id="slot-2"><button id="slot-btn-2" onclick="openPhonePicker(2)">+ Add Device</button></div>
     </div>
     <div id="comparator-table"></div>
   </div>
@@ -484,8 +442,8 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">🚀 Coming Soon</span>
-      <h2 class="section-title">Upcoming Budget Phones</h2>
-      <p class="section-desc">Phones launching in the next few months in India.</p>
+      <h2 class="section-title" id="upcoming-title">Upcoming Budget Phones</h2>
+      <p class="section-desc" id="upcoming-desc">Phones launching in the next few months in India.</p>
     </div>
     <div class="upcoming-grid reveal" id="upcoming-grid"></div>
   </div>
@@ -496,8 +454,8 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">🏆 Brand Report</span>
-      <h2 class="section-title">Which Brand to Trust?</h2>
-      <p class="section-desc">Scored on updates, service centers, and value.</p>
+      <h2 class="section-title" id="brands-title">Which Brand to Trust?</h2>
+      <p class="section-desc" id="brands-desc">Scored on updates, service centers, and value.</p>
     </div>
     <div class="brands-grid reveal" id="brands-grid"></div>
   </div>
@@ -551,6 +509,73 @@
       <div class="faq-item reveal"><button class="faq-question">Are prices 100% accurate? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Prices are fetched in real-time but may differ due to flash sales, coupons, or bank offers. Always verify on the platform before purchase.</p></div></div>
       <div class="faq-item reveal"><button class="faq-question">How do price drop alerts work? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Click "Alert" on any phone card, enter your target price and email. We check prices every 6 hours and log alerts when your target is hit.</p></div></div>
       <div class="faq-item reveal"><button class="faq-question">What is No-Cost EMI? <span class="faq-icon">+</span></button><div class="faq-answer"><p>No-Cost EMI means 0% interest — you pay only the phone price split across months. Set the EMI calculator rate to 0% to see No-Cost EMI amounts.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Scraper Control Center & Simulation Dashboard ── -->
+<section class="control-center-section" id="control-center">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">🛡️ Control Center</span>
+      <h2 class="section-title">SQLite Scraper Dashboard</h2>
+      <p class="section-desc">Monitor live scraping logs, database metrics, and simulate market fluctuations in real-time.</p>
+    </div>
+    
+    <div class="dashboard-grid reveal">
+      <div class="dashboard-card">
+        <p>Active Price Alerts</p>
+        <h3 id="metric-alerts">0</h3>
+        <span>SQLite PERSISTENT</span>
+      </div>
+      <div class="dashboard-card">
+        <p>Scraped Price History</p>
+        <h3 id="metric-histories">0</h3>
+        <span>Total Records</span>
+      </div>
+      <div class="dashboard-card">
+        <p>Monitored Devices</p>
+        <h3 id="metric-phones">0</h3>
+        <span>Online Catalog</span>
+      </div>
+      <div class="dashboard-card">
+        <p>SQLite Status</p>
+        <h3 style="color:#00cec9 !important">ACTIVE</h3>
+        <span>Zero Cache reliance</span>
+      </div>
+    </div>
+
+    <div class="control-panel-grid reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px; margin-top:24px;">
+      <div class="logs-terminal-wrap">
+        <div class="terminal-header">
+          <div class="terminal-dots"><span></span><span></span><span></span></div>
+          <span class="terminal-title">sqlite_fetch_logs.sh</span>
+          <button onclick="clearTerminalLogs()" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:0.75rem;">Clear</button>
+        </div>
+        <div class="terminal-body" id="terminal-body" style="height:250px;">
+          <div class="terminal-line success">> Database initialized. SQLite tables ready.</div>
+          <div class="terminal-line success">> Server started. All systems operational.</div>
+        </div>
+      </div>
+
+      <div class="logs-terminal-wrap">
+        <div class="terminal-header">
+          <div class="terminal-dots"><span></span><span></span><span></span></div>
+          <span class="terminal-title">active_price_alerts.db</span>
+          <span style="font-size:0.75rem; color:var(--text-muted)">Live Subscriptions</span>
+        </div>
+        <div class="terminal-body" id="alerts-monitor-body" style="height:250px;">
+          <div style="text-align:center; color:var(--text-secondary); padding:40px 0; font-size:0.8rem;">💤 Loading active SQLite alert subscriptions...</div>
+        </div>
+      </div>
+      
+      <div class="sim-actions-card">
+        <h4>⚡ Market Simulator</h4>
+        <button class="sim-btn" onclick="simulateScraperAction('price-drop')">💥 Force 15% Price Drop</button>
+        <button class="sim-btn" onclick="simulateScraperAction('flash-sale')">⚡ Simulate Flash Sale (5G Under 10K)</button>
+        <button class="sim-btn" onclick="simulateScraperAction('out-of-stock')">🚫 Simulate Stock-Out Event</button>
+        <button class="sim-btn" onclick="simulateScraperAction('reset')">🔄 Restore Standard DB Values</button>
+      </div>
     </div>
   </div>
 </section>

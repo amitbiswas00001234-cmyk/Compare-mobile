@@ -380,6 +380,12 @@
         "Vijay Sales": 15342,
         "91Mobiles": 14554
       }
+    },
+    {
+      "date": "2026-05-09T19:48:22.388Z",
+      "prices": {
+        "Amazon": 17799
+      }
     }
   ],
   "realme-13-pro": [
@@ -404,6 +410,12 @@
         "Reliance Digital": 21302,
         "Vijay Sales": 20751,
         "91Mobiles": 20271
+      }
+    },
+    {
+      "date": "2026-05-09T19:49:38.002Z",
+      "prices": {
+        "Amazon": 27490
       }
     }
   ],
@@ -430,6 +442,12 @@
         "Vijay Sales": 19790,
         "91Mobiles": 18508
       }
+    },
+    {
+      "date": "2026-05-09T19:51:03.853Z",
+      "prices": {
+        "Amazon": 21998
+      }
     }
   ],
   "nord-ce-4-lite": [
@@ -448,6 +466,12 @@
         "Reliance Digital": 19278,
         "Vijay Sales": 18919,
         "91Mobiles": 17506
+      }
+    },
+    {
+      "date": "2026-05-09T19:52:22.650Z",
+      "prices": {
+        "Amazon": 14998
       }
     }
   ],
@@ -468,6 +492,12 @@
         "Vijay Sales": 27593,
         "91Mobiles": 26483
       }
+    },
+    {
+      "date": "2026-05-09T19:53:43.842Z",
+      "prices": {
+        "Amazon": 32998
+      }
     }
   ],
   "iqoo-neo-9": [
@@ -486,6 +516,12 @@
         "Reliance Digital": 28479,
         "Vijay Sales": 31217,
         "91Mobiles": 28145
+      }
+    },
+    {
+      "date": "2026-05-09T19:54:56.111Z",
+      "prices": {
+        "Amazon": 21998
       }
     }
   ],
@@ -506,6 +542,12 @@
         "Vijay Sales": 53169,
         "91Mobiles": 55219
       }
+    },
+    {
+      "date": "2026-05-09T19:56:10.611Z",
+      "prices": {
+        "Amazon": 16999
+      }
     }
   ],
   "oneplus-12": [
@@ -524,6 +566,12 @@
         "Reliance Digital": 61086,
         "Vijay Sales": 69234,
         "91Mobiles": 66365
+      }
+    },
+    {
+      "date": "2026-05-09T19:57:23.946Z",
+      "prices": {
+        "Amazon": 29998
       }
     }
   ],
@@ -544,6 +592,12 @@
         "Vijay Sales": 121348,
         "91Mobiles": 120191
       }
+    },
+    {
+      "date": "2026-05-09T19:58:35.999Z",
+      "prices": {
+        "Amazon": 59900
+      }
     }
   ],
   "s24-ultra": [
@@ -563,6 +617,12 @@
         "Vijay Sales": 134911,
         "91Mobiles": 120467
       }
+    },
+    {
+      "date": "2026-05-09T19:59:47.796Z",
+      "prices": {
+        "Amazon": 99999
+      }
     }
   ],
   "redmi-note-13-pro": [
@@ -575,6 +635,12 @@
         "Reliance Digital": 26369,
         "Vijay Sales": 24526,
         "91Mobiles": 26050
+      }
+    },
+    {
+      "date": "2026-05-09T20:00:58.931Z",
+      "prices": {
+        "Amazon": 22499
       }
     }
   ],
@@ -589,6 +655,12 @@
         "Vijay Sales": 29153,
         "91Mobiles": 31649
       }
+    },
+    {
+      "date": "2026-05-09T20:02:11.009Z",
+      "prices": {
+        "Amazon": 30499
+      }
     }
   ],
   "galaxy-a55": [
@@ -601,6 +673,12 @@
         "Reliance Digital": 39222,
         "Vijay Sales": 41582,
         "91Mobiles": 39330
+      }
+    },
+    {
+      "date": "2026-05-09T20:03:23.861Z",
+      "prices": {
+        "Amazon": 21998
       }
     }
   ],
@@ -615,6 +693,12 @@
         "Vijay Sales": 32218,
         "91Mobiles": 33064
       }
+    },
+    {
+      "date": "2026-05-09T20:04:40.109Z",
+      "prices": {
+        "Amazon": 29999
+      }
     }
   ],
   "poco-f6": [
@@ -627,6 +711,12 @@
         "Reliance Digital": 31570,
         "Vijay Sales": 31828,
         "91Mobiles": 27842
+      }
+    },
+    {
+      "date": "2026-05-09T20:06:06.732Z",
+      "prices": {
+        "Amazon": 21998
       }
     }
   ],
@@ -641,6 +731,12 @@
         "Vijay Sales": 71712,
         "91Mobiles": 73578
       }
+    },
+    {
+      "date": "2026-05-09T20:07:37.088Z",
+      "prices": {
+        "Amazon": 59900
+      }
     }
   ],
   "pixel-8a": [
@@ -653,6 +749,12 @@
         "Reliance Digital": 50895,
         "Vijay Sales": 55371,
         "91Mobiles": 53061
+      }
+    },
+    {
+      "date": "2026-05-09T20:09:02.748Z",
+      "prices": {
+        "Amazon": 27999
       }
     }
   ]

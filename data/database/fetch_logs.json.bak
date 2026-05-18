@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": "2026-05-09T14:07:05.814Z",
+    "status": "success",
+    "message": "Completed fetch for 20 phones"
+  },
+  {
+    "timestamp": "2026-05-09T14:12:27.813Z",
+    "status": "success",
+    "message": "SIMULATION: Forced 20% price drop on POCO M7 Plus 5G"
+  },
+  {
+    "timestamp": "2026-05-09T14:12:30.797Z",
+    "status": "success",
+    "message": "SIMULATION: Forced stock out on POCO M7 Plus 5G"
+  },
+  {
+    "timestamp": "2026-05-09T14:12:38.204Z",
+    "status": "error",
+    "message": "SIMULATION: Scraper failed to connect to Amazon.in (Timeout)"
+  },
+  {
+    "timestamp": "2026-05-09T14:31:22.370Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on POCO M7 Plus 5G (Saved ₹3377)!"
+  },
+  {
+    "timestamp": "2026-05-09T14:31:22.371Z",
+    "status": "success",
+    "message": "Completed fetch for 27 phones"
+  },
+  {
+    "timestamp": "2026-05-09T18:48:53.481Z",
+    "status": "success",
+    "message": "SIMULATION: Forced 20% price drop on POCO M7 Plus 5G"
+  },
+  {
+    "timestamp": "2026-05-09T18:53:15.338Z",
+    "status": "success",
+    "message": "SIMULATION: Forced 20% price drop on POCO M7 Plus 5G"
+  },
+  {
+    "timestamp": "2026-05-09T18:53:34.927Z",
+    "status": "success",
+    "message": "SIMULATION: Forced 20% price drop on POCO M7 Plus 5G"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.068Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on Lava Play Ultra (Saved ₹5600)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.075Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on Edge 60 Fusion (Saved ₹4935)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.080Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on OnePlus Nord CE 4 Lite (Saved ₹3138)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.080Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on iQOO Neo 9 (Saved ₹6818)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.081Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on iQOO 12 5G (Saved ₹35025)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.082Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on OnePlus 12 (Saved ₹32175)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.083Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on iPhone 15 Pro (Saved ₹74201)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.084Z",
+    "status": "success",
+    "message": "🤖 AI CHECK: Detected significant price drop on Galaxy S24 Ultra (Saved ₹34817)!"
+  },
+  {
+    "timestamp": "2026-05-09T20:09:06.085Z",
+    "status": "success",
+    "message": "Completed fetch for 27 phones"
+  }
+]

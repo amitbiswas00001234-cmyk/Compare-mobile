@@ -1,6 +1,122 @@
 // ── Quiz ──
 function openQuiz() { document.getElementById('quiz-section').scrollIntoView({ behavior:'smooth' }); }
 
+function renderQuizSteps() {
+  const container = document.getElementById('quiz-steps-container');
+  if (!container) return;
+  
+  if (platformMode === 'laptops') {
+    container.innerHTML = `
+      <div class="quiz-step active" id="step-1">
+        <h3>💰 What's your budget?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('budget','under30k',this)">Under ₹30,000</button>
+          <button class="quiz-opt" onclick="quizAnswer('budget','under35k',this)">₹30K – ₹35K</button>
+          <button class="quiz-opt" onclick="quizAnswer('budget','under40k',this)">₹35K – ₹40K</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-2">
+        <h3>⭐ What matters most?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('priority','performance',this)">⚡ Raw CPU Power</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','display',this)">🖥️ 100% sRGB Screen</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','battery',this)">🔋 Long Battery Backup</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','premium',this)">💎 Premium Metal Build</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','value',this)">💸 Best Budget Value</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-3">
+        <h3>💻 How will you use it?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('usage','gaming',this)">👨‍💻 Coding & Development</button>
+          <button class="quiz-opt" onclick="quizAnswer('usage','creator',this)">🎨 Digital Design & Art</button>
+          <button class="quiz-opt" onclick="quizAnswer('usage','office',this)">💼 Word, Excel & Office</button>
+          <button class="quiz-opt" onclick="quizAnswer('usage','students',this)">📚 College & Online Classes</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-4">
+        <h3>⚖️ Do you need it to be ultra-lightweight?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('weight','light',this)">Yes (Under 1.5kg, 14")</button>
+          <button class="quiz-opt" onclick="quizAnswer('weight','any',this)">No (15.6" screen is fine)</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-5">
+        <h3>💾 Is 16GB RAM mandatory?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('ram','16gb',this)">Yes, 16GB for heavy multitasking</button>
+          <button class="quiz-opt" onclick="quizAnswer('ram','any',this)">8GB is fine (saves money)</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-6">
+        <h3>🏷️ Any brand preference?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('brand','any',this)">No Preference</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','lenovo',this)">Lenovo</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','hp',this)">HP</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','asus',this)">ASUS</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','xiaomi',this)">Xiaomi</button>
+        </div>
+      </div>
+    `;
+  } else {
+    container.innerHTML = `
+      <div class="quiz-step active" id="step-1">
+        <h3>💰 What's your budget?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('budget','under11k',this)">Under ₹11,000</button>
+          <button class="quiz-opt" onclick="quizAnswer('budget','under15k',this)">₹11K – ₹15K</button>
+          <button class="quiz-opt" onclick="quizAnswer('budget','under20k',this)">₹15K – ₹20K</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-2">
+        <h3>⭐ What matters most?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('priority','battery',this)">🔋 Battery Life</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','camera',this)">📷 Camera Quality</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','display',this)">🖥️ Display Quality</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','performance',this)">⚡ Performance</button>
+          <button class="quiz-opt" onclick="quizAnswer('priority','value',this)">💸 Best Value</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-3">
+        <h3>📱 How will you use it?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('usage','gaming',this)">🎮 Gaming</button>
+          <button class="quiz-opt" onclick="quizAnswer('usage','social',this)">📸 Photos & Social</button>
+          <button class="quiz-opt" onclick="quizAnswer('usage','work',this)">💼 Work & Calls</button>
+          <button class="quiz-opt" onclick="quizAnswer('usage','streaming',this)">🎬 Netflix & YouTube</button>
+          <button class="quiz-opt" onclick="quizAnswer('usage','all',this)">🌟 All-Round Use</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-4">
+        <h3>📶 Is 5G mandatory?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('network','5g',this)">Yes, 5G is a must</button>
+          <button class="quiz-opt" onclick="quizAnswer('network','any',this)">4G is fine (saves money)</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-5">
+        <h3>🖥️ Do you want an AMOLED screen?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('display_type','amoled',this)">Yes (Better colors)</button>
+          <button class="quiz-opt" onclick="quizAnswer('display_type','any',this)">No Preference</button>
+        </div>
+      </div>
+      <div class="quiz-step" id="step-6">
+        <h3>🏷️ Any brand preference?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizAnswer('brand','any',this)">No Preference</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','samsung',this)">Samsung</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','motorola',this)">Motorola</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','poco',this)">POCO</button>
+          <button class="quiz-opt" onclick="quizAnswer('brand','vivo',this)">Vivo</button>
+        </div>
+      </div>
+    `;
+  }
+}
+
 function quizAnswer(key, value, btn) {
   quizAnswers[key] = value;
   btn.closest('.quiz-options').querySelectorAll('.quiz-opt').forEach(b => b.classList.remove('selected'));
@@ -27,12 +143,13 @@ async function runQuiz() {
   document.getElementById('quiz-card').style.display = 'none';
 
   try {
-    const res = await fetch(`${API}/api/quiz?${params}`);
-    const phones = await res.json();
+    const url = platformMode === 'phones' ? `${API}/api/quiz?${params}` : `${API}/api/laptops-quiz?${params}`;
+    const res = await fetch(url);
+    const items = await res.json();
     const wishlist = await getWishlist();
     resultsEl.innerHTML = `
       <div class="quiz-results-header"><h3>🎯 Your Top Matches</h3><button class="btn-outline btn-sm" onclick="resetQuiz()">Retake Quiz</button></div>
-      <div class="phones-grid">${phones.map((p,i) => buildPhoneCard(p, i, wishlist)).join('')}</div>`;
+      <div class="phones-grid">${items.map((p,i) => buildPhoneCard(p, i, wishlist)).join('')}</div>`;
     initRevealAnimations();
   } catch {
     resultsEl.innerHTML = `<p>Error getting recommendations. <button onclick="resetQuiz()">Try again</button></p>`;
@@ -43,8 +160,7 @@ function resetQuiz() {
   quizAnswers = {}; quizCurrentStep = 1;
   document.getElementById('quiz-card').style.display = 'block';
   document.getElementById('quiz-results').style.display = 'none';
-  document.querySelectorAll('.quiz-step').forEach((s,i) => s.classList.toggle('active', i === 0));
-  document.querySelectorAll('.quiz-opt').forEach(b => b.classList.remove('selected'));
+  renderQuizSteps();
   document.getElementById('quiz-progress').style.width = '0';
   document.getElementById('quiz-step-label').textContent = 'Step 1 of 6';
 }
@@ -118,41 +234,131 @@ function renderComparatorTable() {
   const el = document.getElementById('comparator-table');
   if (phones.length < 2) { el.innerHTML = ''; return; }
 
-  const rows = [
-    ['Brand', p => p.brand],
-    ['Price', p => p.price ? '₹'+p.price.toLocaleString('en-IN') : '—'],
-    ['Display', p => p.specs?.display || '—'],
-    ['Processor', p => p.specs?.processor || '—'],
-    ['Camera', p => p.specs?.camera || '—'],
-    ['Battery', p => p.specs?.battery || '—'],
-    ['RAM', p => p.specs?.ram || '—'],
-    ['Storage', p => p.specs?.storage || '—'],
-    ['Charging', p => p.specs?.charging || '—'],
-    ['Gaming Score', p => p.rating?.gaming ? p.rating.gaming + '/5' : '—'],
-    ['Heating Score', p => p.rating?.heating ? p.rating.heating + '/5 (Higher=Cooler)' : '—'],
-    ['Repair Score', p => p.rating?.repair ? p.rating.repair + '/10' : '—'],
-    ['Trust Score', p => p.rating?.trust ? p.rating.trust + '/5' : '—'],
-    ['NFC', p => p.specs?.nfc ? '✅ Yes' : '❌ No'],
-    ['Headphone Jack', p => p.specs?.headphone ? '✅ Yes' : '❌ No'],
-    ['Water Resistance', p => p.specs?.waterproof || '—'],
-    ['Overall Rating', p => p.rating?.overall ? '⭐ '+p.rating.overall : '—'],
+  // 1. Define row rules and specs based on active platform mode
+  const rows = platformMode === 'laptops' ? [
+    ['Brand', p => p.brand, 'text'],
+    ['Price', p => p.price ? '₹'+p.price.toLocaleString('en-IN') : '—', 'price-low'],
+    ['Display size / Res', p => p.specs?.display || '—', 'text'],
+    ['Processor CPU', p => p.specs?.processor || '—', 'text'],
+    ['Webcam', p => p.specs?.camera || '—', 'text'],
+    ['Battery capacity', p => p.specs?.battery || '—', 'num-high'],
+    ['RAM size', p => p.specs?.ram || '—', 'num-high'],
+    ['Storage size', p => p.specs?.storage || '—', 'num-high'],
+    ['Charging rate', p => p.specs?.charging || '—', 'num-high'],
+    ['Weight', p => p.specs?.weight || '—', 'text'],
+    ['Display Quality Rating', p => p.rating?.display ? p.rating.display + '/5' : '—', 'rating-high'],
+    ['Performance Speed Rating', p => p.rating?.performance ? p.rating.performance + '/5' : '—', 'rating-high'],
+    ['Gaming / Graphics Rating', p => p.rating?.gaming ? p.rating.gaming + '/5' : '—', 'rating-high'],
+    ['Battery Life Rating', p => p.rating?.battery ? p.rating.battery + '/5' : '—', 'rating-high'],
+    ['Brand Trust Rating', p => p.rating?.trust ? p.rating.trust + '/5' : '—', 'rating-high'],
+    ['Overall Rating Score', p => p.rating?.overall ? '⭐ '+p.rating.overall : '—', 'rating-high'],
+  ] : [
+    ['Brand', p => p.brand, 'text'],
+    ['Price', p => p.price ? '₹'+p.price.toLocaleString('en-IN') : '—', 'price-low'],
+    ['Display', p => p.specs?.display || '—', 'text'],
+    ['Processor', p => p.specs?.processor || '—', 'text'],
+    ['Camera', p => p.specs?.camera || '—', 'text'],
+    ['Battery', p => p.specs?.battery || '—', 'num-high'],
+    ['RAM', p => p.specs?.ram || '—', 'num-high'],
+    ['Storage', p => p.specs?.storage || '—', 'num-high'],
+    ['Charging', p => p.specs?.charging || '—', 'num-high'],
+    ['Gaming Score', p => p.rating?.gaming ? p.rating.gaming + '/5' : '—', 'rating-high'],
+    ['Heating Score', p => p.rating?.heating ? p.rating.heating + '/5 (Higher=Cooler)' : '—', 'rating-high'],
+    ['Repair Score', p => p.rating?.repair ? p.rating.repair + '/10' : '—', 'rating-high'],
+    ['Trust Score', p => p.rating?.trust ? p.rating.trust + '/5' : '—', 'rating-high'],
+    ['NFC', p => p.specs?.nfc ? '✅ Yes' : '❌ No', 'bool'],
+    ['Headphone Jack', p => p.specs?.headphone ? '✅ Yes' : '❌ No', 'bool'],
+    ['Water Resistance', p => p.specs?.waterproof || '—', 'text'],
+    ['Overall Rating', p => p.rating?.overall ? '⭐ '+p.rating.overall : '—', 'rating-high'],
   ];
 
-  el.innerHTML = `<div class="comparator-table-wrap">
-    <table class="comparison-table">
-      <thead><tr><th>Spec</th>${phones.map(p=>`<th>${p.model}</th>`).join('')}</tr></thead>
-      <tbody>${rows.map(([label, fn]) => {
-        const vals = phones.map(fn);
-        const allNums = vals.map(v => parseFloat(v.replace(/[^0-9.]/g,''))).filter(n => !isNaN(n));
-        const best = allNums.length === phones.length ? Math.max(...allNums) : null;
-        return `<tr><td class="spec-label">${label}</td>${phones.map((p,i) => {
-          const v = vals[i]; const num = parseFloat(v.replace(/[^0-9.]/g,''));
-          const isWinner = best && num === best;
-          return `<td class="${isWinner?'highlight-cell':''}">${v}</td>`;
-        }).join('')}</tr>`;
-      }).join('')}</tbody>
-    </table>
-  </div>`;
+  // Initialize H2H scores
+  const scoreCard = {};
+  phones.forEach(p => { scoreCard[p.id] = 0; });
+
+  const rowsHTML = rows.map(([label, fn, type]) => {
+    const vals = phones.map(fn);
+    
+    // Evaluate winning index dynamically
+    let winnerIndex = -1;
+    if (type === 'price-low') {
+      const prices = phones.map(p => p.price || 99999);
+      const minPrice = Math.min(...prices);
+      if (prices.some(pr => pr !== minPrice)) {
+        winnerIndex = prices.indexOf(minPrice);
+      }
+    } else if (type === 'num-high') {
+      const nums = vals.map(v => {
+        const m = v.match(/\d+/);
+        return m ? parseInt(m[0]) : 0;
+      });
+      const maxNum = Math.max(...nums);
+      if (maxNum > 0 && nums.some(n => n !== maxNum)) {
+        winnerIndex = nums.indexOf(maxNum);
+      }
+    } else if (type === 'rating-high') {
+      const ratings = vals.map(v => parseFloat(v) || 0);
+      const maxRating = Math.max(...ratings);
+      if (maxRating > 0 && ratings.some(r => r !== maxRating)) {
+        winnerIndex = ratings.indexOf(maxRating);
+      }
+    } else if (type === 'bool') {
+      const bools = vals.map(v => v.includes('Yes'));
+      if (bools.includes(true) && bools.includes(false)) {
+        winnerIndex = bools.indexOf(true);
+      }
+    }
+
+    if (winnerIndex !== -1) {
+      scoreCard[phones[winnerIndex].id] += 1;
+    }
+
+    return `<tr>
+      <td class="spec-label">${label}</td>
+      ${phones.map((p, idx) => {
+        const isWinner = idx === winnerIndex;
+        return `<td class="${isWinner ? 'highlight-cell' : ''}" style="${isWinner ? 'background:rgba(0, 206, 201, 0.08) !important; color:#00cec9; font-weight:700;' : ''}">${vals[idx]}</td>`;
+      }).join('')}
+    </tr>`;
+  }).join('');
+
+  // Find the overall H2H Spec Winner
+  let bestScore = -1;
+  let overallWinner = null;
+  phones.forEach(p => {
+    if (scoreCard[p.id] > bestScore) {
+      bestScore = scoreCard[p.id];
+      overallWinner = p;
+    }
+  });
+
+  const h2hHeader = `
+    <div class="h2h-winner-card" style="padding:24px; background:rgba(168, 85, 247, 0.06); border:1px solid rgba(168, 85, 247, 0.25); border-radius:12px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+      <div>
+        <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; color:#a29bfe; font-weight:700;">🏆 Head-to-Head Spec Winner</span>
+        <h3 style="margin:6px 0 0 0; color:#fff; font-size:1.4rem;">${overallWinner ? overallWinner.model : 'Comparison'} Wins!</h3>
+        <p style="margin:4px 0 0 0; font-size:0.85rem; color:var(--text-secondary);">Calculated across ${rows.length} technical hardware dimensions</p>
+      </div>
+      <div style="display:flex; gap:20px;">
+        ${phones.map(p => `
+          <div style="text-align:right; background:rgba(255,255,255,0.02); padding:10px 16px; border-radius:8px; border:1px solid rgba(255,255,255,0.05);">
+            <strong style="color:#fff; font-size:0.95rem;">${p.model}</strong><br/>
+            <span style="color:#00cec9; font-size:0.85rem; font-weight:700;">${scoreCard[p.id]} Spec Wins</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+
+  el.innerHTML = `
+    ${h2hHeader}
+    <div class="comparator-table-wrap">
+      <table class="comparison-table">
+        <thead><tr><th>Spec Dimension</th>${phones.map(p=>`<th>${p.model}</th>`).join('')}</tr></thead>
+        <tbody>${rowsHTML}</tbody>
+      </table>
+    </div>
+  `;
 }
 
 // ── EMI Calculator ──
@@ -180,7 +386,8 @@ function setTenure(months, btn) {
 // ── Load Offers ──
 async function loadOffers() {
   try {
-    const res = await fetch(`${API}/api/offers`);
+    const url = platformMode === 'phones' ? `${API}/api/offers` : `${API}/api/laptop-offers`;
+    const res = await fetch(url);
     const offers = await res.json();
     document.getElementById('offers-grid').innerHTML = offers.map(o => `
       <div class="offer-card reveal">
@@ -195,12 +402,13 @@ async function loadOffers() {
   } catch(e) { console.log('Offers error',e); }
 }
 
-// ── Load Upcoming Phones ──
+// ── Load Upcoming Phones/Laptops ──
 async function loadUpcoming() {
   try {
-    const res = await fetch(`${API}/api/upcoming`);
-    const phones = await res.json();
-    document.getElementById('upcoming-grid').innerHTML = phones.map(p => `
+    const url = platformMode === 'phones' ? `${API}/api/upcoming` : `${API}/api/laptop-upcoming`;
+    const res = await fetch(url);
+    const items = await res.json();
+    document.getElementById('upcoming-grid').innerHTML = items.map(p => `
       <div class="upcoming-card reveal">
         <div class="upcoming-icon">🚀</div>
         <div class="upcoming-body">
@@ -220,7 +428,8 @@ async function loadUpcoming() {
 // ── Load Brands ──
 async function loadBrands() {
   try {
-    const res = await fetch(`${API}/api/brands`);
+    const url = platformMode === 'phones' ? `${API}/api/brands` : `${API}/api/laptop-brands`;
+    const res = await fetch(url);
     const brands = await res.json();
     document.getElementById('brands-grid').innerHTML = brands.map(b => `
       <div class="brand-card reveal">

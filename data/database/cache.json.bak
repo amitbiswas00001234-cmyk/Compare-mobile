@@ -867,79 +867,84 @@
       "category": "under15k",
       "platforms": {
         "Flipkart": {
-          "title": "Redmi Note 14 5G",
-          "price": 15178,
-          "priceFormatted": "₹15,178",
-          "rating": "4.8",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=Redmi%20Note%2014%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:29.722Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:47:09.585Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Redmi Note 14 5G",
-          "price": 15191,
-          "priceFormatted": "₹15,191",
-          "rating": "4.4",
-          "link": "https://www.amazon.in/s?k=Redmi%20Note%2014%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg",
+          "title": "Redmi Note 14 SE 5G, Crimson Art (6GB, 128GB)",
+          "price": 17799,
+          "priceFormatted": "₹17,799",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/Redmi-Note-14-SE-Crimson/dp/B0FR2G7KJT/ref=sr_1_1?dib=eyJ2IjoiMSJ9.FOxw6pZwXn5fjoOqsER0l8YVWuUGNx8xOBC7Uinc3PVN30BMfByzHViT5Da--zt0vvE6AFiFAquAlib4grHSC4Gnx5urfzorcRy5MQtS8xwiG1Jacc4E0Ao3IIviNBlPyIN4qjX4mLu1sZxM2BhG-wJPTwAZ-PfM17Rc3sAjPYcfGXajTdQ-daT_kdk86-YnBpHF5WLz91kMD0Bmj57qlMUY2Prn-KjBw0Ap3aOTc_E.Qs8E22Zc-Lvx-nGuvUSTUzFj0_jaKb4faQudMgptk2s&dib_tag=se&keywords=Redmi+Note+14+5G&qid=1778356022&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/611MDKKwsJL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:29.722Z"
+          "fetchedAt": "2026-05-09T19:47:12.194Z"
         },
         "Croma": {
-          "title": "Redmi Note 14 5G",
-          "price": 14435,
-          "priceFormatted": "₹14,435",
-          "rating": "4.4",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=Redmi%20Note%2014%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:29.722Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:47:35.356Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Redmi Note 14 5G",
-          "price": 14044,
-          "priceFormatted": "₹14,044",
-          "rating": "4.7",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=Redmi%20Note%2014%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:29.722Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:47:51.020Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Redmi Note 14 5G",
-          "price": 15342,
-          "priceFormatted": "₹15,342",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/Redmi%20Note%2014%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:29.722Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:48:07.233Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Redmi Note 14 5G",
-          "price": 14554,
-          "priceFormatted": "₹14,554",
-          "rating": "4.6",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=Redmi%20Note%2014%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:29.722Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:48:21.787Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 14044,
-        "platform": "Reliance Digital",
-        "formatted": "₹14,044",
-        "link": "https://www.reliancedigital.in/search?q=Redmi%20Note%2014%205G"
+        "price": 17799,
+        "platform": "Amazon",
+        "formatted": "₹17,799",
+        "link": "https://www.amazon.in/Redmi-Note-14-SE-Crimson/dp/B0FR2G7KJT/ref=sr_1_1?dib=eyJ2IjoiMSJ9.FOxw6pZwXn5fjoOqsER0l8YVWuUGNx8xOBC7Uinc3PVN30BMfByzHViT5Da--zt0vvE6AFiFAquAlib4grHSC4Gnx5urfzorcRy5MQtS8xwiG1Jacc4E0Ao3IIviNBlPyIN4qjX4mLu1sZxM2BhG-wJPTwAZ-PfM17Rc3sAjPYcfGXajTdQ-daT_kdk86-YnBpHF5WLz91kMD0Bmj57qlMUY2Prn-KjBw0Ap3aOTc_E.Qs8E22Zc-Lvx-nGuvUSTUzFj0_jaKb4faQudMgptk2s&dib_tag=se&keywords=Redmi+Note+14+5G&qid=1778356022&sr=8-1"
       },
-      "lastUpdated": "2026-05-09T14:30:29.722Z"
+      "lastUpdated": "2026-05-09T19:48:22.387Z"
     },
     "realme-13-pro": {
       "id": "realme-13-pro",
@@ -948,79 +953,84 @@
       "category": "under20k",
       "platforms": {
         "Flipkart": {
-          "title": "Realme 13 Pro 5G",
-          "price": 20774,
-          "priceFormatted": "₹20,774",
-          "rating": "4.3",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=Realme%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus-5g.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:33.126Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:48:28.026Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Realme 13 Pro 5G",
-          "price": 19757,
-          "priceFormatted": "₹19,757",
-          "rating": "4.7",
-          "link": "https://www.amazon.in/s?k=Realme%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus-5g.jpg",
+          "title": "realme",
+          "price": 27490,
+          "priceFormatted": "₹27,490",
+          "rating": 3.8,
+          "link": "https://www.amazon.in/realme-Pro-Monet-Purple-128GB/dp/B0DBM1D29K/ref=sr_1_1?dib=eyJ2IjoiMSJ9.vCHrXpu8cKEOJxMkwknv34oXzwXcjsCMAltokFEl36oh-Hj5c8wK9SNu4_xSuq7elEcksFO1q-6h1W5TMINgdfosVd3YuQa1h7IhVqyq4FTTAe0fKxM3GdZX9-QnKvD4rEF8Joz4FBAzrgF3_TVZzEobIESS2g2mayRwnfCrsrA9hysBTbZwAo-wuRRGuqgIXUQqIwFbBhnAFyvxYPxM-CDwUhLViHg3KK5vrWgx86A.S_VuXMOjjY1b6LpLuR_pNDRB8mFuP3DHGG6DDH-eBcw&dib_tag=se&keywords=Realme+13+Pro+5G&qid=1778356101&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/71n3RmxtgZL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:33.126Z"
+          "fetchedAt": "2026-05-09T19:48:30.859Z"
         },
         "Croma": {
-          "title": "Realme 13 Pro 5G",
-          "price": 20801,
-          "priceFormatted": "₹20,801",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=Realme%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus-5g.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:33.126Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:48:46.776Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Realme 13 Pro 5G",
-          "price": 21302,
-          "priceFormatted": "₹21,302",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=Realme%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus-5g.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:33.126Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:49:01.166Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Realme 13 Pro 5G",
-          "price": 20751,
-          "priceFormatted": "₹20,751",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/Realme%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus-5g.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:33.126Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:49:16.527Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Realme 13 Pro 5G",
-          "price": 20271,
-          "priceFormatted": "₹20,271",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=Realme%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus-5g.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": false,
-          "fetchedAt": "2026-05-09T14:30:33.126Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:49:36.645Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 19757,
+        "price": 27490,
         "platform": "Amazon",
-        "formatted": "₹19,757",
-        "link": "https://www.amazon.in/s?k=Realme%2013%20Pro%205G"
+        "formatted": "₹27,490",
+        "link": "https://www.amazon.in/realme-Pro-Monet-Purple-128GB/dp/B0DBM1D29K/ref=sr_1_1?dib=eyJ2IjoiMSJ9.vCHrXpu8cKEOJxMkwknv34oXzwXcjsCMAltokFEl36oh-Hj5c8wK9SNu4_xSuq7elEcksFO1q-6h1W5TMINgdfosVd3YuQa1h7IhVqyq4FTTAe0fKxM3GdZX9-QnKvD4rEF8Joz4FBAzrgF3_TVZzEobIESS2g2mayRwnfCrsrA9hysBTbZwAo-wuRRGuqgIXUQqIwFbBhnAFyvxYPxM-CDwUhLViHg3KK5vrWgx86A.S_VuXMOjjY1b6LpLuR_pNDRB8mFuP3DHGG6DDH-eBcw&dib_tag=se&keywords=Realme+13+Pro+5G&qid=1778356101&sr=8-1"
       },
-      "lastUpdated": "2026-05-09T14:30:33.126Z"
+      "lastUpdated": "2026-05-09T19:49:38.001Z"
     },
     "iqoo-z10": {
       "id": "iqoo-z10",
@@ -1029,79 +1039,84 @@
       "category": "under20k",
       "platforms": {
         "Flipkart": {
-          "title": "iQOO Z10 5G",
-          "price": 18253,
-          "priceFormatted": "₹18,253",
-          "rating": "4.7",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=iQOO%20Z10%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-z9.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:36.144Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:49:48.342Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "iQOO Z10 5G",
-          "price": 17304,
-          "priceFormatted": "₹17,304",
-          "rating": "4.4",
-          "link": "https://www.amazon.in/s?k=iQOO%20Z10%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-z9.jpg",
+          "title": "Samsung Galaxy M56 5G Mobile (Light Green,8GB RAM,128GB Storage)| Segment Slimmest | Gorilla Glass V",
+          "price": 21998,
+          "priceFormatted": "₹21,998",
+          "rating": 4.3,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNDQ5MzkzOTExNzQzNjAxOjE3NzgzNTYxODU6c3BfYXRmOjMwMTA3NzIyNjcwMDYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.eUSnsBo4R_VEN4raKoZMowd2MtD2rnwFbNGae3VPEoSiV9REnOk2aRsWLSCu4KCrezx_qUZlSNfcZQQK6yY-gyBSHuw3Ou1TTJsQrIalvxQi3dVvg_SOWgQsdBjleZKcnCJJvQ06wi3L61JTjr-JHdTkr-rq7NgUTxyEnEVgXWbDS__GlwhwrMAzbnkyIF0LWWtPVYrFAb2Ou5LidtEXmI-FZAMeJpCv1Aa5tt5GEes.Fvf3eN0_IntN30iKpHW0UsWin5a7LTVfWNzl7tIXh-I%26dib_tag%3Dse%26keywords%3DiQOO%2BZ10%2B5G%26qid%3D1778356184%26sr%3D8-1-spons%26aref%3DejcfoNlXjn%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ejcfoNlXjn&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71PQ2tp0jwL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:36.144Z"
+          "fetchedAt": "2026-05-09T19:49:54.248Z"
         },
         "Croma": {
-          "title": "iQOO Z10 5G",
-          "price": 17067,
-          "priceFormatted": "₹17,067",
-          "rating": "4.3",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=iQOO%20Z10%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-z9.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:36.144Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:50:12.346Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "iQOO Z10 5G",
-          "price": 19001,
-          "priceFormatted": "₹19,001",
-          "rating": "4.6",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=iQOO%20Z10%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-z9.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:36.144Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:50:29.341Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "iQOO Z10 5G",
-          "price": 19790,
-          "priceFormatted": "₹19,790",
-          "rating": "4.3",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/iQOO%20Z10%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-z9.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:36.144Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:50:47.537Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "iQOO Z10 5G",
-          "price": 18508,
-          "priceFormatted": "₹18,508",
-          "rating": "4.6",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=iQOO%20Z10%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-z9.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:36.144Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:51:02.556Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 17067,
-        "platform": "Croma",
-        "formatted": "₹17,067",
-        "link": "https://www.croma.com/searchB?q=iQOO%20Z10%205G"
+        "price": 21998,
+        "platform": "Amazon",
+        "formatted": "₹21,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNDQ5MzkzOTExNzQzNjAxOjE3NzgzNTYxODU6c3BfYXRmOjMwMTA3NzIyNjcwMDYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.eUSnsBo4R_VEN4raKoZMowd2MtD2rnwFbNGae3VPEoSiV9REnOk2aRsWLSCu4KCrezx_qUZlSNfcZQQK6yY-gyBSHuw3Ou1TTJsQrIalvxQi3dVvg_SOWgQsdBjleZKcnCJJvQ06wi3L61JTjr-JHdTkr-rq7NgUTxyEnEVgXWbDS__GlwhwrMAzbnkyIF0LWWtPVYrFAb2Ou5LidtEXmI-FZAMeJpCv1Aa5tt5GEes.Fvf3eN0_IntN30iKpHW0UsWin5a7LTVfWNzl7tIXh-I%26dib_tag%3Dse%26keywords%3DiQOO%2BZ10%2B5G%26qid%3D1778356184%26sr%3D8-1-spons%26aref%3DejcfoNlXjn%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ejcfoNlXjn&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:36.144Z"
+      "lastUpdated": "2026-05-09T19:51:03.852Z"
     },
     "nord-ce-4-lite": {
       "id": "nord-ce-4-lite",
@@ -1110,79 +1125,84 @@
       "category": "under20k",
       "platforms": {
         "Flipkart": {
-          "title": "OnePlus Nord CE 4 Lite",
-          "price": 19958,
-          "priceFormatted": "₹19,958",
-          "rating": "4.8",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=OnePlus%20Nord%20CE%204%20Lite",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite-5g.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:39.753Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:51:17.056Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "OnePlus Nord CE 4 Lite",
-          "price": 18136,
-          "priceFormatted": "₹18,136",
-          "rating": "4.2",
-          "link": "https://www.amazon.in/s?k=OnePlus%20Nord%20CE%204%20Lite",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite-5g.jpg",
+          "title": "iQOO",
+          "price": 14998,
+          "priceFormatted": "₹14,998",
+          "rating": 4.2,
+          "link": "https://www.amazon.in/iQOO-Dimensity-Processor-Military-Shock-Resistance/dp/B0FC5XK9WZ/ref=sr_1_1?dib=eyJ2IjoiMSJ9.YRh5uNsrYLDbKAyeRYrag1tBj8uuDWAzk_uGQZlybiEt1LOgKVIoabohfeESB0hxMg0TxsHPSIXvTFn0FV-qw3gvx5199jdiORbo-ZfF7tFW3KhwJZ2Z2tI1aUVxWxhRvJ1J-VqdpZWxXz13AORhAUnr5TBx7g4_asZqZtB28zfCvyc-uEdW6d4HqDR1Y2SG6RwSkYzuqTW221U8OiQPP2pc2CvDnjJVpqY8kcZWLqQ.yclcG1ZTbkQYxXctgXtdnq667b6l_Ka23FZzmjTasZA&dib_tag=se&keywords=OnePlus+Nord+CE+4+Lite&qid=1778356270&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/61Vb6GsQgrL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:39.753Z"
+          "fetchedAt": "2026-05-09T19:51:19.645Z"
         },
         "Croma": {
-          "title": "OnePlus Nord CE 4 Lite",
-          "price": 19445,
-          "priceFormatted": "₹19,445",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=OnePlus%20Nord%20CE%204%20Lite",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite-5g.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": false,
-          "fetchedAt": "2026-05-09T14:30:39.753Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:51:35.120Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "OnePlus Nord CE 4 Lite",
-          "price": 19278,
-          "priceFormatted": "₹19,278",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=OnePlus%20Nord%20CE%204%20Lite",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite-5g.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:39.753Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:51:50.275Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "OnePlus Nord CE 4 Lite",
-          "price": 18919,
-          "priceFormatted": "₹18,919",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/OnePlus%20Nord%20CE%204%20Lite",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite-5g.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:39.753Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:52:06.860Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "OnePlus Nord CE 4 Lite",
-          "price": 17506,
-          "priceFormatted": "₹17,506",
-          "rating": "4.6",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=OnePlus%20Nord%20CE%204%20Lite",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite-5g.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:39.753Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:52:21.172Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 17506,
-        "platform": "91Mobiles",
-        "formatted": "₹17,506",
-        "link": "https://www.91mobiles.com/search?q=OnePlus%20Nord%20CE%204%20Lite"
+        "price": 14998,
+        "platform": "Amazon",
+        "formatted": "₹14,998",
+        "link": "https://www.amazon.in/iQOO-Dimensity-Processor-Military-Shock-Resistance/dp/B0FC5XK9WZ/ref=sr_1_1?dib=eyJ2IjoiMSJ9.YRh5uNsrYLDbKAyeRYrag1tBj8uuDWAzk_uGQZlybiEt1LOgKVIoabohfeESB0hxMg0TxsHPSIXvTFn0FV-qw3gvx5199jdiORbo-ZfF7tFW3KhwJZ2Z2tI1aUVxWxhRvJ1J-VqdpZWxXz13AORhAUnr5TBx7g4_asZqZtB28zfCvyc-uEdW6d4HqDR1Y2SG6RwSkYzuqTW221U8OiQPP2pc2CvDnjJVpqY8kcZWLqQ.yclcG1ZTbkQYxXctgXtdnq667b6l_Ka23FZzmjTasZA&dib_tag=se&keywords=OnePlus+Nord+CE+4+Lite&qid=1778356270&sr=8-1"
       },
-      "lastUpdated": "2026-05-09T14:30:39.753Z"
+      "lastUpdated": "2026-05-09T19:52:22.649Z"
     },
     "nord-4": {
       "id": "nord-4",
@@ -1191,79 +1211,84 @@
       "category": "under30k",
       "platforms": {
         "Flipkart": {
-          "title": "OnePlus Nord 4",
-          "price": 27765,
-          "priceFormatted": "₹27,765",
-          "rating": "4.3",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=OnePlus%20Nord%204",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-4.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:42.276Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:52:28.327Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "OnePlus Nord 4",
-          "price": 26997,
-          "priceFormatted": "₹26,997",
-          "rating": "4.8",
-          "link": "https://www.amazon.in/s?k=OnePlus%20Nord%204",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-4.jpg",
+          "title": "OnePlus",
+          "price": 32998,
+          "priceFormatted": "₹32,998",
+          "rating": null,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozMTYzODQ1MjIzODAyNDAyOjE3NzgzNTYzNDI6c3BfYXRmOjMwMTA4MDkzMTIzNjUzMjo6MDo6&url=%2FOnePlus-Snapdragon-Segments-Fastest-Response%2Fdp%2FB0GWLDWKF3%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.yOe8gLYy1Y_21bb2_1HCrHWx6Z8Lp3_J1b9CE9FyaQVTwpJq_dBOkO9FtL0IO2DJeBFKP8LUT_Ejlk5Sh8oqbWn4WdmjaiXE_5BM85e-WhePNAjssRkLz1eQCdY62eQqhyo0WAfoxfrY_ciiEam55nDDMrNWy7b8FbD4GCpDAGP3SveB4vH-SH6MWBtcsfCjHA31RwXzC0URKDo5QmsacwxXFx1DbnTjpq2Jz-PgqQ4.czi2v872vWSKXEeSxD2QMaXGY3VoLNNA695zH4PP3NM%26dib_tag%3Dse%26keywords%3DOnePlus%2BNord%2B4%26qid%3D1778356341%26sr%3D8-1-spons%26aref%3D35PFsLMvJh%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=35PFsLMvJh&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/61EC3mmirsL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:42.276Z"
+          "fetchedAt": "2026-05-09T19:52:31.214Z"
         },
         "Croma": {
-          "title": "OnePlus Nord 4",
-          "price": 26858,
-          "priceFormatted": "₹26,858",
-          "rating": "5.0",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=OnePlus%20Nord%204",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-4.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:42.276Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:52:46.495Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "OnePlus Nord 4",
-          "price": 27300,
-          "priceFormatted": "₹27,300",
-          "rating": "4.4",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=OnePlus%20Nord%204",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-4.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:42.276Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:53:04.860Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "OnePlus Nord 4",
-          "price": 27593,
-          "priceFormatted": "₹27,593",
-          "rating": "4.3",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/OnePlus%20Nord%204",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-4.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:42.276Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:53:27.867Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "OnePlus Nord 4",
-          "price": 26483,
-          "priceFormatted": "₹26,483",
-          "rating": "4.3",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=OnePlus%20Nord%204",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-4.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:42.276Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:53:42.344Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 26483,
-        "platform": "91Mobiles",
-        "formatted": "₹26,483",
-        "link": "https://www.91mobiles.com/search?q=OnePlus%20Nord%204"
+        "price": 32998,
+        "platform": "Amazon",
+        "formatted": "₹32,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozMTYzODQ1MjIzODAyNDAyOjE3NzgzNTYzNDI6c3BfYXRmOjMwMTA4MDkzMTIzNjUzMjo6MDo6&url=%2FOnePlus-Snapdragon-Segments-Fastest-Response%2Fdp%2FB0GWLDWKF3%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.yOe8gLYy1Y_21bb2_1HCrHWx6Z8Lp3_J1b9CE9FyaQVTwpJq_dBOkO9FtL0IO2DJeBFKP8LUT_Ejlk5Sh8oqbWn4WdmjaiXE_5BM85e-WhePNAjssRkLz1eQCdY62eQqhyo0WAfoxfrY_ciiEam55nDDMrNWy7b8FbD4GCpDAGP3SveB4vH-SH6MWBtcsfCjHA31RwXzC0URKDo5QmsacwxXFx1DbnTjpq2Jz-PgqQ4.czi2v872vWSKXEeSxD2QMaXGY3VoLNNA695zH4PP3NM%26dib_tag%3Dse%26keywords%3DOnePlus%2BNord%2B4%26qid%3D1778356341%26sr%3D8-1-spons%26aref%3D35PFsLMvJh%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=35PFsLMvJh&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:42.276Z"
+      "lastUpdated": "2026-05-09T19:53:43.841Z"
     },
     "iqoo-neo-9": {
       "id": "iqoo-neo-9",
@@ -1272,79 +1297,84 @@
       "category": "under30k",
       "platforms": {
         "Flipkart": {
-          "title": "iQOO Neo 9",
-          "price": 30601,
-          "priceFormatted": "₹30,601",
-          "rating": "4.0",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=iQOO%20Neo%209",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-9.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:45.771Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:53:50.664Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "iQOO Neo 9",
-          "price": 28816,
-          "priceFormatted": "₹28,816",
-          "rating": "4.5",
-          "link": "https://www.amazon.in/s?k=iQOO%20Neo%209",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-9.jpg",
+          "title": "Samsung",
+          "price": 21998,
+          "priceFormatted": "₹21,998",
+          "rating": 4.3,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyMTIyNDYyODI4NzM3NTgzOjE3NzgzNTY0MjQ6c3BfYXRmOjMwMDU0MjE3MDMxODYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.B5s-o3enz8QhRSdJXuFE34givuYnNpB88LNiCovm_ikpFRxMnkcbmwev6np-z8toSyh2RJeW6BL094o8G2fY-Ulr-5NckLFDAs_daJVpXyxVxuRe3UOgYMEyNcyUhkKWdk6dEPsqBiwx2RE1g6ZNgNcIsBmQlnRmJQDuCadGKV4ILr-4Zo0RVxoYzGIHSIp7Iu4drRT5hcFoIV-p5u5Nc9cn-ZKxJxa5jwXxWdCIKjo.gYYAg6X66U2wJxUNTgd6dCCQHT4pFaMl621xf1-mIKI%26dib_tag%3Dse%26keywords%3DiQOO%2BNeo%2B9%26qid%3D1778356424%26sr%3D8-1-spons%26aref%3DATJL7AJrEH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ATJL7AJrEH&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71PQ2tp0jwL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:45.771Z"
+          "fetchedAt": "2026-05-09T19:53:53.563Z"
         },
         "Croma": {
-          "title": "iQOO Neo 9",
-          "price": 28664,
-          "priceFormatted": "₹28,664",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=iQOO%20Neo%209",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-9.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:45.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:54:08.402Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "iQOO Neo 9",
-          "price": 28479,
-          "priceFormatted": "₹28,479",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=iQOO%20Neo%209",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-9.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:45.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:54:22.827Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "iQOO Neo 9",
-          "price": 31217,
-          "priceFormatted": "₹31,217",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/iQOO%20Neo%209",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-9.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:45.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:54:40.442Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "iQOO Neo 9",
-          "price": 28145,
-          "priceFormatted": "₹28,145",
-          "rating": "4.4",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=iQOO%20Neo%209",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-9.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:45.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:54:55.160Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 28145,
-        "platform": "91Mobiles",
-        "formatted": "₹28,145",
-        "link": "https://www.91mobiles.com/search?q=iQOO%20Neo%209"
+        "price": 21998,
+        "platform": "Amazon",
+        "formatted": "₹21,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyMTIyNDYyODI4NzM3NTgzOjE3NzgzNTY0MjQ6c3BfYXRmOjMwMDU0MjE3MDMxODYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.B5s-o3enz8QhRSdJXuFE34givuYnNpB88LNiCovm_ikpFRxMnkcbmwev6np-z8toSyh2RJeW6BL094o8G2fY-Ulr-5NckLFDAs_daJVpXyxVxuRe3UOgYMEyNcyUhkKWdk6dEPsqBiwx2RE1g6ZNgNcIsBmQlnRmJQDuCadGKV4ILr-4Zo0RVxoYzGIHSIp7Iu4drRT5hcFoIV-p5u5Nc9cn-ZKxJxa5jwXxWdCIKjo.gYYAg6X66U2wJxUNTgd6dCCQHT4pFaMl621xf1-mIKI%26dib_tag%3Dse%26keywords%3DiQOO%2BNeo%2B9%26qid%3D1778356424%26sr%3D8-1-spons%26aref%3DATJL7AJrEH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ATJL7AJrEH&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:45.772Z"
+      "lastUpdated": "2026-05-09T19:54:56.110Z"
     },
     "iqoo-12": {
       "id": "iqoo-12",
@@ -1353,79 +1383,84 @@
       "category": "under50k",
       "platforms": {
         "Flipkart": {
-          "title": "iQOO 12 5G",
-          "price": 52781,
-          "priceFormatted": "₹52,781",
-          "rating": "4.5",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=iQOO%2012%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-12.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:48.055Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:55:04.102Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "iQOO 12 5G",
-          "price": 52024,
-          "priceFormatted": "₹52,024",
-          "rating": "4.4",
-          "link": "https://www.amazon.in/s?k=iQOO%2012%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-12.jpg",
+          "title": "Samsung Galaxy M36 5G Mobile (Serene Green, 6GB RAM, 128GB Storage) | Google Gemini| Gorilla Glass V",
+          "price": 16999,
+          "priceFormatted": "₹16,999",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1MTA5MTA3NTEyMjIyODkxOjE3NzgzNTY0OTg6c3BfYXRmOjMwMDYyMjQ5Mjk0MTEzMjo6MDo6&url=%2FSamsung-Storage-Enhanced-Unmatched-Nightography%2Fdp%2FB0FDB9H277%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.NEKhYleDMITKDBVm1jkS4qcHwAVG20_tuEq8GZN4bX5Hf-Kz6erEQ6BziswH5Szj0GwP-k5XDJ10qrrOqb0CcwCv7jJ9fwSZNyAasjQMsaNjn6pAQ5B9PJfQSDSsU2S4QhI5pcXGnBqyA68jAvN8il0K2CHv8zIy5wlQR1CjfSh3wnqujgw3C56MWDq5yoOANNQC4-59ZLgdt7pz-Q6EjUbyPxot9a3qTNLLvXlhHAQ.fac_yZjeuRuUdjyxFIRADvdvaz3HryFvXt_BRl7w5-A%26dib_tag%3Dse%26keywords%3DiQOO%2B12%2B5G%26qid%3D1778356498%26sr%3D8-1-spons%26aref%3DgiT5xHK6NQ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=giT5xHK6NQ&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71UzHCLBm1L._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:48.055Z"
+          "fetchedAt": "2026-05-09T19:55:08.028Z"
         },
         "Croma": {
-          "title": "iQOO 12 5G",
-          "price": 49478,
-          "priceFormatted": "₹49,478",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=iQOO%2012%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-12.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:48.055Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:55:22.865Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "iQOO 12 5G",
-          "price": 56256,
-          "priceFormatted": "₹56,256",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=iQOO%2012%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-12.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:48.056Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:55:37.366Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "iQOO 12 5G",
-          "price": 53169,
-          "priceFormatted": "₹53,169",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/iQOO%2012%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-12.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:48.056Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:55:55.325Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "iQOO 12 5G",
-          "price": 55219,
-          "priceFormatted": "₹55,219",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=iQOO%2012%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-12.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:48.056Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:56:09.798Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 49478,
-        "platform": "Croma",
-        "formatted": "₹49,478",
-        "link": "https://www.croma.com/searchB?q=iQOO%2012%205G"
+        "price": 16999,
+        "platform": "Amazon",
+        "formatted": "₹16,999",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1MTA5MTA3NTEyMjIyODkxOjE3NzgzNTY0OTg6c3BfYXRmOjMwMDYyMjQ5Mjk0MTEzMjo6MDo6&url=%2FSamsung-Storage-Enhanced-Unmatched-Nightography%2Fdp%2FB0FDB9H277%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.NEKhYleDMITKDBVm1jkS4qcHwAVG20_tuEq8GZN4bX5Hf-Kz6erEQ6BziswH5Szj0GwP-k5XDJ10qrrOqb0CcwCv7jJ9fwSZNyAasjQMsaNjn6pAQ5B9PJfQSDSsU2S4QhI5pcXGnBqyA68jAvN8il0K2CHv8zIy5wlQR1CjfSh3wnqujgw3C56MWDq5yoOANNQC4-59ZLgdt7pz-Q6EjUbyPxot9a3qTNLLvXlhHAQ.fac_yZjeuRuUdjyxFIRADvdvaz3HryFvXt_BRl7w5-A%26dib_tag%3Dse%26keywords%3DiQOO%2B12%2B5G%26qid%3D1778356498%26sr%3D8-1-spons%26aref%3DgiT5xHK6NQ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=giT5xHK6NQ&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:48.056Z"
+      "lastUpdated": "2026-05-09T19:56:10.610Z"
     },
     "oneplus-12": {
       "id": "oneplus-12",
@@ -1434,79 +1469,84 @@
       "category": "under70k",
       "platforms": {
         "Flipkart": {
-          "title": "OnePlus 12",
-          "price": 60044,
-          "priceFormatted": "₹60,044",
-          "rating": "4.6",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=OnePlus%2012",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": false,
-          "fetchedAt": "2026-05-09T14:30:51.642Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:56:17.524Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "OnePlus 12",
-          "price": 62173,
-          "priceFormatted": "₹62,173",
-          "rating": "4.2",
-          "link": "https://www.amazon.in/s?k=OnePlus%2012",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+          "title": "OnePlus",
+          "price": 29998,
+          "priceFormatted": "₹29,998",
+          "rating": null,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozODQ3MDEwMzE3MDY2OTg0OjE3NzgzNTY1NzE6c3BfYXRmOjMwMTA4MDg1ODg0NjMzMjo6MDo6&url=%2FOnePlus-Snapdragon-Segments-Fastest-Response%2Fdp%2FB0GWLHVJRH%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.gXEjGueKIhySmwdmmBMNmCapu9rCL7qBi3tAI7xtWI2JFxlaDOyGKwMWfFHIfnC9ymeTam0ZSn7NGgjK_JzTELLKgsnmCZS3Onlq8XQNWzI_66Qe0ZdLRy9JzpadHBVu-VUuDwRH5pH6_ezHItJs_Lw5ezcNNRP0YLP3GPzX18aaETk6VoYcEI6TF-9UI-fuNnrHrF--oC1LxNwjnFG5Rxs7nRmS2NgW76aY4tBSa7A.xxGD5NW5x457oCwnyW1Ulmg-Nemp4YyDDYaxDEcIP84%26dib_tag%3Dse%26keywords%3DOnePlus%2B12%26qid%3D1778356571%26sr%3D8-1-spons%26aref%3DxyZ2SqVFzh%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=xyZ2SqVFzh&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/61Di24QT6GL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:51.642Z"
+          "fetchedAt": "2026-05-09T19:56:21.108Z"
         },
         "Croma": {
-          "title": "OnePlus 12",
-          "price": 63411,
-          "priceFormatted": "₹63,411",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=OnePlus%2012",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:51.642Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:56:35.689Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "OnePlus 12",
-          "price": 61086,
-          "priceFormatted": "₹61,086",
-          "rating": "4.8",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=OnePlus%2012",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:51.642Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:56:49.770Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "OnePlus 12",
-          "price": 69234,
-          "priceFormatted": "₹69,234",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/OnePlus%2012",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:51.642Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:57:07.883Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "OnePlus 12",
-          "price": 66365,
-          "priceFormatted": "₹66,365",
-          "rating": "4.8",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=OnePlus%2012",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:51.642Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:57:22.826Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 60044,
-        "platform": "Flipkart",
-        "formatted": "₹60,044",
-        "link": "https://www.flipkart.com/search?q=OnePlus%2012"
+        "price": 29998,
+        "platform": "Amazon",
+        "formatted": "₹29,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozODQ3MDEwMzE3MDY2OTg0OjE3NzgzNTY1NzE6c3BfYXRmOjMwMTA4MDg1ODg0NjMzMjo6MDo6&url=%2FOnePlus-Snapdragon-Segments-Fastest-Response%2Fdp%2FB0GWLHVJRH%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.gXEjGueKIhySmwdmmBMNmCapu9rCL7qBi3tAI7xtWI2JFxlaDOyGKwMWfFHIfnC9ymeTam0ZSn7NGgjK_JzTELLKgsnmCZS3Onlq8XQNWzI_66Qe0ZdLRy9JzpadHBVu-VUuDwRH5pH6_ezHItJs_Lw5ezcNNRP0YLP3GPzX18aaETk6VoYcEI6TF-9UI-fuNnrHrF--oC1LxNwjnFG5Rxs7nRmS2NgW76aY4tBSa7A.xxGD5NW5x457oCwnyW1Ulmg-Nemp4YyDDYaxDEcIP84%26dib_tag%3Dse%26keywords%3DOnePlus%2B12%26qid%3D1778356571%26sr%3D8-1-spons%26aref%3DxyZ2SqVFzh%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=xyZ2SqVFzh&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:51.642Z"
+      "lastUpdated": "2026-05-09T19:57:23.945Z"
     },
     "iphone-15-pro": {
       "id": "iphone-15-pro",
@@ -1515,79 +1555,84 @@
       "category": "under1.25l",
       "platforms": {
         "Flipkart": {
-          "title": "iPhone 15 Pro",
-          "price": 137604,
-          "priceFormatted": "₹1,37,604",
-          "rating": "4.7",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=iPhone%2015%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:53.837Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:57:29.891Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "iPhone 15 Pro",
-          "price": 134101,
-          "priceFormatted": "₹1,34,101",
-          "rating": "4.7",
-          "link": "https://www.amazon.in/s?k=iPhone%2015%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+          "title": "Apple",
+          "price": 59900,
+          "priceFormatted": "₹59,900",
+          "rating": 4.5,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNzYzNDY4OTcxMzQ0NTU4OjE3NzgzNTY2NDM6c3BfYXRmOjMwMDQ4ODExNzY2NTUzMjo6MDo6&url=%2FiPhone-16e-128-Intelligence-Supersized%2Fdp%2FB0DXQH1DBS%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.6hcSJlO9CFSTGKJg1RJPejv-se0vHkgHdV7DBj4_lfo5dnSeGehQ7ZNB61MCfyy1-TEtaKK8UMgvDZL-kAVDp-2RPn9d1g6tTjegcxDjUn8RiXAHFK5nGkpKB7EwC297sNRPYrJMus4W9GfJVuD995HE484Uk3MFZxGyF3HAuAQOpuX8aQOMv1Yojmo50lJS3-CKmahx_XxkBO6o8C5jWlh7USprLD5n7Y9hx58rRZY.VQ1lvDxH_-a5JPDV94Gw5fOVm8rnXpbXafCuc821ciM%26dib_tag%3Dse%26keywords%3DiPhone%2B15%2BPro%26qid%3D1778356643%26sr%3D8-1-spons%26aref%3DcemexVnpkH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=cemexVnpkH&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/61FMZ9rSZUL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:53.837Z"
+          "fetchedAt": "2026-05-09T19:57:33.183Z"
         },
         "Croma": {
-          "title": "iPhone 15 Pro",
-          "price": 129765,
-          "priceFormatted": "₹1,29,765",
-          "rating": "4.5",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=iPhone%2015%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:53.837Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:57:48.385Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "iPhone 15 Pro",
-          "price": 127598,
-          "priceFormatted": "₹1,27,598",
-          "rating": "4.7",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=iPhone%2015%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:53.837Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:58:03.219Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "iPhone 15 Pro",
-          "price": 121348,
-          "priceFormatted": "₹1,21,348",
-          "rating": "4.2",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/iPhone%2015%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:53.837Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:58:20.777Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "iPhone 15 Pro",
-          "price": 120191,
-          "priceFormatted": "₹1,20,191",
-          "rating": "4.0",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=iPhone%2015%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:53.837Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:58:35.317Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 120191,
-        "platform": "91Mobiles",
-        "formatted": "₹1,20,191",
-        "link": "https://www.91mobiles.com/search?q=iPhone%2015%20Pro"
+        "price": 59900,
+        "platform": "Amazon",
+        "formatted": "₹59,900",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNzYzNDY4OTcxMzQ0NTU4OjE3NzgzNTY2NDM6c3BfYXRmOjMwMDQ4ODExNzY2NTUzMjo6MDo6&url=%2FiPhone-16e-128-Intelligence-Supersized%2Fdp%2FB0DXQH1DBS%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.6hcSJlO9CFSTGKJg1RJPejv-se0vHkgHdV7DBj4_lfo5dnSeGehQ7ZNB61MCfyy1-TEtaKK8UMgvDZL-kAVDp-2RPn9d1g6tTjegcxDjUn8RiXAHFK5nGkpKB7EwC297sNRPYrJMus4W9GfJVuD995HE484Uk3MFZxGyF3HAuAQOpuX8aQOMv1Yojmo50lJS3-CKmahx_XxkBO6o8C5jWlh7USprLD5n7Y9hx58rRZY.VQ1lvDxH_-a5JPDV94Gw5fOVm8rnXpbXafCuc821ciM%26dib_tag%3Dse%26keywords%3DiPhone%2B15%2BPro%26qid%3D1778356643%26sr%3D8-1-spons%26aref%3DcemexVnpkH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=cemexVnpkH&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:53.838Z"
+      "lastUpdated": "2026-05-09T19:58:35.998Z"
     },
     "s24-ultra": {
       "id": "s24-ultra",
@@ -1596,79 +1641,84 @@
       "category": "under1.25l",
       "platforms": {
         "Flipkart": {
-          "title": "Galaxy S24 Ultra",
-          "price": 124989,
-          "priceFormatted": "₹1,24,989",
-          "rating": "4.0",
-          "link": "https://www.flipkart.com/search?q=Galaxy%20S24%20Ultra",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Samsung%20Galaxy%20S24%20Ultra",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:56.156Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:58:43.091Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Galaxy S24 Ultra",
-          "price": 134816,
-          "priceFormatted": "₹1,34,816",
-          "rating": "4.4",
-          "link": "https://www.amazon.in/s?k=Galaxy%20S24%20Ultra",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra.jpg",
+          "title": "Samsung",
+          "price": 99999,
+          "priceFormatted": "₹99,999",
+          "rating": 4.4,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1NTM1MzcwMTQ4MTIzODUxOjE3NzgzNTY3MTY6c3BfYXRmOjMwMTA3NTU3MTQxMDMzMjo6MDo6&url=%2FSamsung-Smartphone-Silverblue-Snapdragon-ProVisual%2Fdp%2FB0DSKNKCYX%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.eqX3k-0fRnyEF5LQUaqLwhRsbyBvj6mPWs3W1BBmwU98IdmeSzvAwO7qiXOCCh7V5AL5glUNSS0l3h74D_FnPBlHOF-XSUlunH8-IQFgcs71zsisgkVvtyZLlJ6QyABu5O2iQvJ23kBhqwFIxmNCPEfqqGdSJ4_q4oevm8Uhon4wDMhd1mwJuevAATcJCZyDNxuaChM8cW1StSVhq9zsFqJKkjxAEg-RMEGuOIzADxo.1Fx8CyT2yhjZxVMeaYfF_4GWQVQ6AyGlgAAc0ZZ4HxQ%26dib_tag%3Dse%26keywords%3DSamsung%2BGalaxy%2BS24%2BUltra%26qid%3D1778356716%26sr%3D8-1-spons%26aref%3Dk6bXaBpTAU%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=k6bXaBpTAU&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71tl8pu4fKL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:56.156Z"
+          "fetchedAt": "2026-05-09T19:58:46.209Z"
         },
         "Croma": {
-          "title": "Galaxy S24 Ultra",
-          "price": 135596,
-          "priceFormatted": "₹1,35,596",
-          "rating": "4.8",
-          "link": "https://www.croma.com/searchB?q=Galaxy%20S24%20Ultra",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Samsung%20Galaxy%20S24%20Ultra",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:56.156Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:59:01.699Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Galaxy S24 Ultra",
-          "price": 128561,
-          "priceFormatted": "₹1,28,561",
-          "rating": "4.1",
-          "link": "https://www.reliancedigital.in/search?q=Galaxy%20S24%20Ultra",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Samsung%20Galaxy%20S24%20Ultra",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:56.156Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:59:16.676Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Galaxy S24 Ultra",
-          "price": 134911,
-          "priceFormatted": "₹1,34,911",
-          "rating": "4.2",
-          "link": "https://www.vijaysales.com/search/Galaxy%20S24%20Ultra",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Samsung%20Galaxy%20S24%20Ultra",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:56.156Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:59:32.304Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Galaxy S24 Ultra",
-          "price": 120467,
-          "priceFormatted": "₹1,20,467",
-          "rating": "4.3",
-          "link": "https://www.91mobiles.com/search?q=Galaxy%20S24%20Ultra",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Samsung%20Galaxy%20S24%20Ultra",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:56.156Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:59:46.994Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 120467,
-        "platform": "91Mobiles",
-        "formatted": "₹1,20,467",
-        "link": "https://www.91mobiles.com/search?q=Galaxy%20S24%20Ultra"
+        "price": 99999,
+        "platform": "Amazon",
+        "formatted": "₹99,999",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1NTM1MzcwMTQ4MTIzODUxOjE3NzgzNTY3MTY6c3BfYXRmOjMwMTA3NTU3MTQxMDMzMjo6MDo6&url=%2FSamsung-Smartphone-Silverblue-Snapdragon-ProVisual%2Fdp%2FB0DSKNKCYX%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.eqX3k-0fRnyEF5LQUaqLwhRsbyBvj6mPWs3W1BBmwU98IdmeSzvAwO7qiXOCCh7V5AL5glUNSS0l3h74D_FnPBlHOF-XSUlunH8-IQFgcs71zsisgkVvtyZLlJ6QyABu5O2iQvJ23kBhqwFIxmNCPEfqqGdSJ4_q4oevm8Uhon4wDMhd1mwJuevAATcJCZyDNxuaChM8cW1StSVhq9zsFqJKkjxAEg-RMEGuOIzADxo.1Fx8CyT2yhjZxVMeaYfF_4GWQVQ6AyGlgAAc0ZZ4HxQ%26dib_tag%3Dse%26keywords%3DSamsung%2BGalaxy%2BS24%2BUltra%26qid%3D1778356716%26sr%3D8-1-spons%26aref%3Dk6bXaBpTAU%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=k6bXaBpTAU&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:30:56.156Z"
+      "lastUpdated": "2026-05-09T19:59:47.795Z"
     },
     "redmi-note-13-pro": {
       "id": "redmi-note-13-pro",
@@ -1677,79 +1727,84 @@
       "category": "under30k",
       "platforms": {
         "Flipkart": {
-          "title": "Redmi Note 13 Pro 5G",
-          "price": 26178,
-          "priceFormatted": "₹26,178",
-          "rating": "4.6",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=Redmi%20Note%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:58.310Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T19:59:53.597Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Redmi Note 13 Pro 5G",
-          "price": 24586,
-          "priceFormatted": "₹24,586",
-          "rating": "4.1",
-          "link": "https://www.amazon.in/s?k=Redmi%20Note%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg",
+          "title": "REDMI 15 5G Frosted White 8GB + 256GB | Segment's Largest 7000mAhA Battery | Segment's Largest Displ",
+          "price": 22499,
+          "priceFormatted": "₹22,499",
+          "rating": 4.1,
+          "link": "https://www.amazon.in/Redmi-Segments-7000mAhA-Snapdragon-Charging/dp/B0FJFVBSF4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.yKrZ-Br4G-EDX-0udpuvTFcXPA7znOzqC5zMfU73hzxzbBmC0kYOXleFEqaE4raQyZxCyMDDSpyYx7ZLTjEvuLt5e7JH2JYR1SVY-441ATCOAtepcOCdifPXouRcIVGtXSt2SKS8rGpYMfeJ7GEQbJgqkZddE7-i5BVaaqUUNJv4zkK8fqE5QPgz4JzlL2bvj0kn48XUKgpQNiauaaNrgRtYgDt2PlgkHwql5PNnjZc.aHLyyaY0svFqo-W0R4ix6JE8N8usjJP6yvC-_ekOHcY&dib_tag=se&keywords=Redmi+Note+13+Pro+5G&qid=1778356787&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/71v4+LA3M6L._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:58.310Z"
+          "fetchedAt": "2026-05-09T19:59:56.744Z"
         },
         "Croma": {
-          "title": "Redmi Note 13 Pro 5G",
-          "price": 23578,
-          "priceFormatted": "₹23,578",
-          "rating": "5.0",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=Redmi%20Note%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:58.310Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:00:11.788Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Redmi Note 13 Pro 5G",
-          "price": 26369,
-          "priceFormatted": "₹26,369",
-          "rating": "4.6",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=Redmi%20Note%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:58.310Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:00:26.130Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Redmi Note 13 Pro 5G",
-          "price": 24526,
-          "priceFormatted": "₹24,526",
-          "rating": "4.4",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/Redmi%20Note%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:58.310Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:00:42.105Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Redmi Note 13 Pro 5G",
-          "price": 26050,
-          "priceFormatted": "₹26,050",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=Redmi%20Note%2013%20Pro%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:30:58.310Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:00:57.537Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 23578,
-        "platform": "Croma",
-        "formatted": "₹23,578",
-        "link": "https://www.croma.com/searchB?q=Redmi%20Note%2013%20Pro%205G"
+        "price": 22499,
+        "platform": "Amazon",
+        "formatted": "₹22,499",
+        "link": "https://www.amazon.in/Redmi-Segments-7000mAhA-Snapdragon-Charging/dp/B0FJFVBSF4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.yKrZ-Br4G-EDX-0udpuvTFcXPA7znOzqC5zMfU73hzxzbBmC0kYOXleFEqaE4raQyZxCyMDDSpyYx7ZLTjEvuLt5e7JH2JYR1SVY-441ATCOAtepcOCdifPXouRcIVGtXSt2SKS8rGpYMfeJ7GEQbJgqkZddE7-i5BVaaqUUNJv4zkK8fqE5QPgz4JzlL2bvj0kn48XUKgpQNiauaaNrgRtYgDt2PlgkHwql5PNnjZc.aHLyyaY0svFqo-W0R4ix6JE8N8usjJP6yvC-_ekOHcY&dib_tag=se&keywords=Redmi+Note+13+Pro+5G&qid=1778356787&sr=8-1"
       },
-      "lastUpdated": "2026-05-09T14:30:58.310Z"
+      "lastUpdated": "2026-05-09T20:00:58.930Z"
     },
     "realme-gt-6t": {
       "id": "realme-gt-6t",
@@ -1758,79 +1813,84 @@
       "category": "under30k",
       "platforms": {
         "Flipkart": {
-          "title": "Realme GT 6T",
-          "price": 30628,
-          "priceFormatted": "₹30,628",
-          "rating": "4.8",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=Realme%20GT%206T",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-6t.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:01.208Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:01:04.975Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Realme GT 6T",
-          "price": 30658,
-          "priceFormatted": "₹30,658",
-          "rating": "4.2",
-          "link": "https://www.amazon.in/s?k=Realme%20GT%206T",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-6t.jpg",
+          "title": "realme",
+          "price": 30499,
+          "priceFormatted": "₹30,499",
+          "rating": 4.3,
+          "link": "https://www.amazon.in/realme-IceSense-MediaTek-Strongest-Graphene/dp/B0F6YQBZF5/ref=sr_1_1?dib=eyJ2IjoiMSJ9.G9k691NTXCFapSilxFh19SyVIskzyhZjRBZkJWSElgRuLMiN0RFqAXxnl3GP3vrum0ZdF4Y_mGcTSTXBzaY4Fu-gR5KJU_G1W-pVqMPmPz-v58wDt-Qjo1dJBpAnKtXiJufQs2Bt1q2fOlsGXanivlgaNNCqTgF9kxwNzM0HJRYQkPP3SLZ4rIRffclNI9lYaXAvGLBJMCyR9zjXj5akb1bnypL-M58EQBV5kb6J_S4.29qF5TM1M36NzejNRtgtR7wSkz3avhRcPNhVl7c0SgE&dib_tag=se&keywords=Realme+GT+6T&qid=1778356858&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/81IytpoiMjL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:01.208Z"
+          "fetchedAt": "2026-05-09T20:01:07.658Z"
         },
         "Croma": {
-          "title": "Realme GT 6T",
-          "price": 29512,
-          "priceFormatted": "₹29,512",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=Realme%20GT%206T",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-6t.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:01.208Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:01:22.616Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Realme GT 6T",
-          "price": 31641,
-          "priceFormatted": "₹31,641",
-          "rating": "5.0",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=Realme%20GT%206T",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-6t.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:01.208Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:01:37.617Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Realme GT 6T",
-          "price": 29153,
-          "priceFormatted": "₹29,153",
-          "rating": "4.0",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/Realme%20GT%206T",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-6t.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:01.208Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:01:55.391Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Realme GT 6T",
-          "price": 31649,
-          "priceFormatted": "₹31,649",
-          "rating": "4.9",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=Realme%20GT%206T",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-6t.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:01.208Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:02:10.167Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 29153,
-        "platform": "Vijay Sales",
-        "formatted": "₹29,153",
-        "link": "https://www.vijaysales.com/search/Realme%20GT%206T"
+        "price": 30499,
+        "platform": "Amazon",
+        "formatted": "₹30,499",
+        "link": "https://www.amazon.in/realme-IceSense-MediaTek-Strongest-Graphene/dp/B0F6YQBZF5/ref=sr_1_1?dib=eyJ2IjoiMSJ9.G9k691NTXCFapSilxFh19SyVIskzyhZjRBZkJWSElgRuLMiN0RFqAXxnl3GP3vrum0ZdF4Y_mGcTSTXBzaY4Fu-gR5KJU_G1W-pVqMPmPz-v58wDt-Qjo1dJBpAnKtXiJufQs2Bt1q2fOlsGXanivlgaNNCqTgF9kxwNzM0HJRYQkPP3SLZ4rIRffclNI9lYaXAvGLBJMCyR9zjXj5akb1bnypL-M58EQBV5kb6J_S4.29qF5TM1M36NzejNRtgtR7wSkz3avhRcPNhVl7c0SgE&dib_tag=se&keywords=Realme+GT+6T&qid=1778356858&sr=8-1"
       },
-      "lastUpdated": "2026-05-09T14:31:01.208Z"
+      "lastUpdated": "2026-05-09T20:02:11.008Z"
     },
     "galaxy-a55": {
       "id": "galaxy-a55",
@@ -1839,79 +1899,84 @@
       "category": "under50k",
       "platforms": {
         "Flipkart": {
-          "title": "Galaxy A55 5G",
-          "price": 37586,
-          "priceFormatted": "₹37,586",
-          "rating": "4.2",
-          "link": "https://www.flipkart.com/search?q=Galaxy%20A55%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a55.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Samsung%20Galaxy%20A55%205G",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:04.872Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:02:17.961Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Galaxy A55 5G",
-          "price": 38218,
-          "priceFormatted": "₹38,218",
-          "rating": "4.9",
-          "link": "https://www.amazon.in/s?k=Galaxy%20A55%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a55.jpg",
+          "title": "Samsung",
+          "price": 21998,
+          "priceFormatted": "₹21,998",
+          "rating": 4.3,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNTM2ODc3Mjc2MTc1MzE2OjE3NzgzNTY5MzE6c3BfYXRmOjMwMTA2ODQxOTQxNjYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.VX4cxGhWurW-XzBZia7-pYCvrb-JlG_ejNCmVPJxfjiSLE2w2jSU4kuv00YrRewJ5vRbQDP1jXT4Du40QMHfz4RaW9BT9Z1DRaWzGCzWqUNXQU2xo2K3s_DDRI25Zo-z4Thhejuthw9SqaInq51e5OHE67wATXTt-o-fTx2owNMucoII4tjhwTLR6v6RP4E7NVpKz2gJMv0dZUlH5M7lEgS13Ykwp0-Vry_pop_GXGk.qELTsz9imM7QWqTX9O7eQ3hdcOSV35EOkLuT20FTSxQ%26dib_tag%3Dse%26keywords%3DSamsung%2BGalaxy%2BA55%2B5G%26qid%3D1778356931%26sr%3D8-1-spons%26aref%3DXK3jNmaIW7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=XK3jNmaIW7&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71PQ2tp0jwL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:04.872Z"
+          "fetchedAt": "2026-05-09T20:02:21.282Z"
         },
         "Croma": {
-          "title": "Galaxy A55 5G",
-          "price": 39393,
-          "priceFormatted": "₹39,393",
-          "rating": "4.5",
-          "link": "https://www.croma.com/searchB?q=Galaxy%20A55%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a55.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Samsung%20Galaxy%20A55%205G",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:04.872Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:02:36.220Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Galaxy A55 5G",
-          "price": 39222,
-          "priceFormatted": "₹39,222",
-          "rating": "4.4",
-          "link": "https://www.reliancedigital.in/search?q=Galaxy%20A55%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a55.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Samsung%20Galaxy%20A55%205G",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:04.872Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:02:50.286Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Galaxy A55 5G",
-          "price": 41582,
-          "priceFormatted": "₹41,582",
-          "rating": "4.5",
-          "link": "https://www.vijaysales.com/search/Galaxy%20A55%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a55.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Samsung%20Galaxy%20A55%205G",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:04.872Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:03:08.000Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Galaxy A55 5G",
-          "price": 39330,
-          "priceFormatted": "₹39,330",
-          "rating": "4.2",
-          "link": "https://www.91mobiles.com/search?q=Galaxy%20A55%205G",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a55.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Samsung%20Galaxy%20A55%205G",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:04.872Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:03:22.753Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 37586,
-        "platform": "Flipkart",
-        "formatted": "₹37,586",
-        "link": "https://www.flipkart.com/search?q=Galaxy%20A55%205G"
+        "price": 21998,
+        "platform": "Amazon",
+        "formatted": "₹21,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNTM2ODc3Mjc2MTc1MzE2OjE3NzgzNTY5MzE6c3BfYXRmOjMwMTA2ODQxOTQxNjYzMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.VX4cxGhWurW-XzBZia7-pYCvrb-JlG_ejNCmVPJxfjiSLE2w2jSU4kuv00YrRewJ5vRbQDP1jXT4Du40QMHfz4RaW9BT9Z1DRaWzGCzWqUNXQU2xo2K3s_DDRI25Zo-z4Thhejuthw9SqaInq51e5OHE67wATXTt-o-fTx2owNMucoII4tjhwTLR6v6RP4E7NVpKz2gJMv0dZUlH5M7lEgS13Ykwp0-Vry_pop_GXGk.qELTsz9imM7QWqTX9O7eQ3hdcOSV35EOkLuT20FTSxQ%26dib_tag%3Dse%26keywords%3DSamsung%2BGalaxy%2BA55%2B5G%26qid%3D1778356931%26sr%3D8-1-spons%26aref%3DXK3jNmaIW7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=XK3jNmaIW7&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:31:04.872Z"
+      "lastUpdated": "2026-05-09T20:03:23.860Z"
     },
     "moto-edge-50-pro": {
       "id": "moto-edge-50-pro",
@@ -1920,79 +1985,84 @@
       "category": "under50k",
       "platforms": {
         "Flipkart": {
-          "title": "Edge 50 Pro",
-          "price": 32902,
-          "priceFormatted": "₹32,902",
-          "rating": "4.7",
-          "link": "https://www.flipkart.com/search?q=Edge%2050%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-50-pro.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Motorola%20Edge%2050%20Pro",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:08.771Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:03:30.295Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Edge 50 Pro",
-          "price": 30618,
-          "priceFormatted": "₹30,618",
-          "rating": "4.8",
-          "link": "https://www.amazon.in/s?k=Edge%2050%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-50-pro.jpg",
+          "title": "Motorola",
+          "price": 29999,
+          "priceFormatted": "₹29,999",
+          "rating": 3.8,
+          "link": "https://www.amazon.in/Motorola-Edge-50-Pro-5G/dp/B0DJ7Y5T9G/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1HaoNsEKHLJCTNHxF2EK5WrDqkNsNA6WGtNYLus7pAOtf6NbDvh2GrvSxaZmPdajzXYWiMgTDXn6iFBsxGz6HtJ2yyaJpbHqWVrHgA5l8S4Bw1q--M6kRpZAs0c2W8DoKQDPCuySG96RWE_9du4I6lbwjkFwlSVU7JAZHahB-AQAujnu5nfbw_vbhnzB7_UtrdZJ2Xk1q2dtEWkZ9u5CbHuBCGKYP17chXitWzN0-ZY.rxRL1sh0vgj98dOXziT8tuU0-omdKchC4PVRsxUqhtE&dib_tag=se&keywords=Motorola+Edge+50+Pro&qid=1778357004&sr=8-1",
+          "image": "https://m.media-amazon.com/images/I/51-PQwd2W-L._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:08.771Z"
+          "fetchedAt": "2026-05-09T20:03:33.930Z"
         },
         "Croma": {
-          "title": "Edge 50 Pro",
-          "price": 33314,
-          "priceFormatted": "₹33,314",
-          "rating": "4.5",
-          "link": "https://www.croma.com/searchB?q=Edge%2050%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-50-pro.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Motorola%20Edge%2050%20Pro",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:08.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:03:49.649Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Edge 50 Pro",
-          "price": 29946,
-          "priceFormatted": "₹29,946",
-          "rating": "4.3",
-          "link": "https://www.reliancedigital.in/search?q=Edge%2050%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-50-pro.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Motorola%20Edge%2050%20Pro",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:08.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:04:05.178Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Edge 50 Pro",
-          "price": 32218,
-          "priceFormatted": "₹32,218",
-          "rating": "4.2",
-          "link": "https://www.vijaysales.com/search/Edge%2050%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-50-pro.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Motorola%20Edge%2050%20Pro",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:08.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:04:22.459Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Edge 50 Pro",
-          "price": 33064,
-          "priceFormatted": "₹33,064",
-          "rating": "4.0",
-          "link": "https://www.91mobiles.com/search?q=Edge%2050%20Pro",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-50-pro.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Motorola%20Edge%2050%20Pro",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:08.772Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:04:39.208Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 29946,
-        "platform": "Reliance Digital",
-        "formatted": "₹29,946",
-        "link": "https://www.reliancedigital.in/search?q=Edge%2050%20Pro"
+        "price": 29999,
+        "platform": "Amazon",
+        "formatted": "₹29,999",
+        "link": "https://www.amazon.in/Motorola-Edge-50-Pro-5G/dp/B0DJ7Y5T9G/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1HaoNsEKHLJCTNHxF2EK5WrDqkNsNA6WGtNYLus7pAOtf6NbDvh2GrvSxaZmPdajzXYWiMgTDXn6iFBsxGz6HtJ2yyaJpbHqWVrHgA5l8S4Bw1q--M6kRpZAs0c2W8DoKQDPCuySG96RWE_9du4I6lbwjkFwlSVU7JAZHahB-AQAujnu5nfbw_vbhnzB7_UtrdZJ2Xk1q2dtEWkZ9u5CbHuBCGKYP17chXitWzN0-ZY.rxRL1sh0vgj98dOXziT8tuU0-omdKchC4PVRsxUqhtE&dib_tag=se&keywords=Motorola+Edge+50+Pro&qid=1778357004&sr=8-1"
       },
-      "lastUpdated": "2026-05-09T14:31:08.772Z"
+      "lastUpdated": "2026-05-09T20:04:40.108Z"
     },
     "poco-f6": {
       "id": "poco-f6",
@@ -2001,79 +2071,84 @@
       "category": "under30k",
       "platforms": {
         "Flipkart": {
-          "title": "POCO F6",
-          "price": 31882,
-          "priceFormatted": "₹31,882",
-          "rating": "4.8",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.flipkart.com/search?q=POCO%20F6",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f6.jpg",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:11.734Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:04:45.881Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "POCO F6",
-          "price": 29783,
-          "priceFormatted": "₹29,783",
-          "rating": "4.4",
-          "link": "https://www.amazon.in/s?k=POCO%20F6",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f6.jpg",
+          "title": "Samsung Galaxy M56 5G Mobile (Light Green,8GB RAM,128GB Storage)| Segment Slimmest | Gorilla Glass V",
+          "price": 21998,
+          "priceFormatted": "₹21,998",
+          "rating": 4.3,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyNjEzNjc5NTU0MzUzNjE5OjE3NzgzNTcwNzk6c3BfYXRmOjMwMDU0MjE5OTI0NTczMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.j27kqpX4_9Mf4LdGl74FZtviDJ1FcgEMBjYFJhhpU4LXbGLCc4nObwaVkfcUAhUyGAWLxBLV8i0HcuLC6sg63UUYH-Sz9MwVCdEihn5a8iSdYMv3mGCzujE-64aXxMADlPr2Fxky27fJPJDBg3FNiaMPkztS2gT8zDReOcccWxcakN18-409HO707VyxDei7UETLyPVds5c26biwrOpJZ3S4VyHnZYtF5reCEkTIvRA.MBOCE3rieJyXs3CQX0aF9X4DynQDS1fIaR6etO6bC2c%26dib_tag%3Dse%26keywords%3DPOCO%2BF6%26qid%3D1778357079%26sr%3D8-1-spons%26aref%3DgtZeLMu0S6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=gtZeLMu0S6&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/71PQ2tp0jwL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:11.734Z"
+          "fetchedAt": "2026-05-09T20:04:48.443Z"
         },
         "Croma": {
-          "title": "POCO F6",
-          "price": 31598,
-          "priceFormatted": "₹31,598",
-          "rating": "4.4",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.croma.com/searchB?q=POCO%20F6",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f6.jpg",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:11.734Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:05:03.666Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "POCO F6",
-          "price": 31570,
-          "priceFormatted": "₹31,570",
-          "rating": "4.4",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.reliancedigital.in/search?q=POCO%20F6",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f6.jpg",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:11.734Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:05:24.600Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "POCO F6",
-          "price": 31828,
-          "priceFormatted": "₹31,828",
-          "rating": "4.1",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.vijaysales.com/search/POCO%20F6",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f6.jpg",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:11.734Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:05:46.728Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "POCO F6",
-          "price": 27842,
-          "priceFormatted": "₹27,842",
-          "rating": "4.5",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
           "link": "https://www.91mobiles.com/search?q=POCO%20F6",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f6.jpg",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:11.734Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:06:05.456Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 27842,
-        "platform": "91Mobiles",
-        "formatted": "₹27,842",
-        "link": "https://www.91mobiles.com/search?q=POCO%20F6"
+        "price": 21998,
+        "platform": "Amazon",
+        "formatted": "₹21,998",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyNjEzNjc5NTU0MzUzNjE5OjE3NzgzNTcwNzk6c3BfYXRmOjMwMDU0MjE5OTI0NTczMjo6MDo6&url=%2FSamsung-Slimmest-Enhanced-Nightography-Processor%2Fdp%2FB0F43VZ4H1%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.j27kqpX4_9Mf4LdGl74FZtviDJ1FcgEMBjYFJhhpU4LXbGLCc4nObwaVkfcUAhUyGAWLxBLV8i0HcuLC6sg63UUYH-Sz9MwVCdEihn5a8iSdYMv3mGCzujE-64aXxMADlPr2Fxky27fJPJDBg3FNiaMPkztS2gT8zDReOcccWxcakN18-409HO707VyxDei7UETLyPVds5c26biwrOpJZ3S4VyHnZYtF5reCEkTIvRA.MBOCE3rieJyXs3CQX0aF9X4DynQDS1fIaR6etO6bC2c%26dib_tag%3Dse%26keywords%3DPOCO%2BF6%26qid%3D1778357079%26sr%3D8-1-spons%26aref%3DgtZeLMu0S6%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=gtZeLMu0S6&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:31:11.734Z"
+      "lastUpdated": "2026-05-09T20:06:06.730Z"
     },
     "iphone-15": {
       "id": "iphone-15",
@@ -2082,79 +2157,84 @@
       "category": "under70k",
       "platforms": {
         "Flipkart": {
-          "title": "iPhone 15",
-          "price": 74393,
-          "priceFormatted": "₹74,393",
-          "rating": "4.5",
-          "link": "https://www.flipkart.com/search?q=iPhone%2015",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Apple%20iPhone%2015",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:14.504Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:06:18.761Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "iPhone 15",
-          "price": 68727,
-          "priceFormatted": "₹68,727",
-          "rating": "4.5",
-          "link": "https://www.amazon.in/s?k=iPhone%2015",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+          "title": "Apple",
+          "price": 59900,
+          "priceFormatted": "₹59,900",
+          "rating": 4.5,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo4MTg5OTQzNTMxOTYyMzA6MTc3ODM1NzE3MjpzcF9hdGY6MzAwNDg4MTE3NjY1NTMyOjowOjo&url=%2FiPhone-16e-128-Intelligence-Supersized%2Fdp%2FB0DXQH1DBS%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.-vi9aOJKCCUvTOlvPybEvUSxofUo4UNfReodXSt10QpaInfFH-9LMVFkZRbafQWKewcF_iqsaw8eGbzU1lC75ybr2xosLUrcNKMK6Gba20G4MMdi_bIXOUFVz5AGMSUJVuH9-TsoLbEjbD969VRJUtqAh9MCxlRgFWZhQO-J3SMOzsBSn1p-Dx5Ah4AXBV_JO9624z7HP44u7D7FEgDTUEQ0XhHEq0qfUjwlAZCIPL4.3x4xrbmARwHDYLNCiCZqrQHqi8rdtpuBDJNDN1aA5TU%26dib_tag%3Dse%26keywords%3DApple%2BiPhone%2B15%26qid%3D1778357172%26sr%3D8-1-spons%26aref%3DcemexVnpkH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=cemexVnpkH&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/61FMZ9rSZUL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:14.504Z"
+          "fetchedAt": "2026-05-09T20:06:22.555Z"
         },
         "Croma": {
-          "title": "iPhone 15",
-          "price": 66129,
-          "priceFormatted": "₹66,129",
-          "rating": "4.4",
-          "link": "https://www.croma.com/searchB?q=iPhone%2015",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Apple%20iPhone%2015",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:14.504Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:06:39.333Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "iPhone 15",
-          "price": 65340,
-          "priceFormatted": "₹65,340",
-          "rating": "4.4",
-          "link": "https://www.reliancedigital.in/search?q=iPhone%2015",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Apple%20iPhone%2015",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:14.504Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:06:56.066Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "iPhone 15",
-          "price": 71712,
-          "priceFormatted": "₹71,712",
-          "rating": "4.1",
-          "link": "https://www.vijaysales.com/search/iPhone%2015",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Apple%20iPhone%2015",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:14.504Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:07:17.096Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "iPhone 15",
-          "price": 73578,
-          "priceFormatted": "₹73,578",
-          "rating": "4.4",
-          "link": "https://www.91mobiles.com/search?q=iPhone%2015",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Apple%20iPhone%2015",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:14.504Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:07:35.920Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 65340,
-        "platform": "Reliance Digital",
-        "formatted": "₹65,340",
-        "link": "https://www.reliancedigital.in/search?q=iPhone%2015"
+        "price": 59900,
+        "platform": "Amazon",
+        "formatted": "₹59,900",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo4MTg5OTQzNTMxOTYyMzA6MTc3ODM1NzE3MjpzcF9hdGY6MzAwNDg4MTE3NjY1NTMyOjowOjo&url=%2FiPhone-16e-128-Intelligence-Supersized%2Fdp%2FB0DXQH1DBS%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.-vi9aOJKCCUvTOlvPybEvUSxofUo4UNfReodXSt10QpaInfFH-9LMVFkZRbafQWKewcF_iqsaw8eGbzU1lC75ybr2xosLUrcNKMK6Gba20G4MMdi_bIXOUFVz5AGMSUJVuH9-TsoLbEjbD969VRJUtqAh9MCxlRgFWZhQO-J3SMOzsBSn1p-Dx5Ah4AXBV_JO9624z7HP44u7D7FEgDTUEQ0XhHEq0qfUjwlAZCIPL4.3x4xrbmARwHDYLNCiCZqrQHqi8rdtpuBDJNDN1aA5TU%26dib_tag%3Dse%26keywords%3DApple%2BiPhone%2B15%26qid%3D1778357172%26sr%3D8-1-spons%26aref%3DcemexVnpkH%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=cemexVnpkH&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:31:14.504Z"
+      "lastUpdated": "2026-05-09T20:07:37.083Z"
     },
     "pixel-8a": {
       "id": "pixel-8a",
@@ -2163,80 +2243,85 @@
       "category": "under50k",
       "platforms": {
         "Flipkart": {
-          "title": "Pixel 8a",
-          "price": 55386,
-          "priceFormatted": "₹55,386",
-          "rating": "4.6",
-          "link": "https://www.flipkart.com/search?q=Pixel%208a",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8a.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.flipkart.com/search?q=Google%20Pixel%208a",
+          "image": null,
           "platform": "Flipkart",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:18.450Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:07:45.536Z",
+          "isFallback": true
         },
         "Amazon": {
-          "title": "Pixel 8a",
-          "price": 53634,
-          "priceFormatted": "₹53,634",
-          "rating": "4.5",
-          "link": "https://www.amazon.in/s?k=Pixel%208a",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8a.jpg",
+          "title": "Redmi",
+          "price": 27999,
+          "priceFormatted": "₹27,999",
+          "rating": 4.2,
+          "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToxMjMxNDU4MDA2MjY5OTk3OjE3NzgzNTcyNTk6c3BfYXRmOjMwMDg5NDA0MjgyNTAzMjo6MDo6&url=%2FGlacier-Storage-Snapdragon-5520mAh-Charging%2Fdp%2FB0G5G7LNCV%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.jZu7yOoYqRuCm3RqXMy_nmojdMXhf_1VcqJ4c8z-bi3Hc5YEeMw2We3ZfPL268uUD1ywmsR6fE23Hcyztzh_ELJ_FGaEslxkJ17m8xLk69Onv8qnv-v4bREqMYnNuVhffCOJNzlfsF2a8SlfLD58omM1GUx3TyJ_glwXG0EOOLR-yVxEbjL2HXMGQejmRh1N8djS116bHZYqOmSYR_oHIrUiZgxZ1Hg8_4pV_UfGiFw.oLTY0Q9mC0kvYvXxlVXVeKrYoFAb65dQdl3lIXCnDeo%26dib_tag%3Dse%26keywords%3DGoogle%2BPixel%2B8a%26qid%3D1778357259%26sr%3D8-1-spons%26aref%3DCmVExTPJT1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=CmVExTPJT1&sp_cr=ZAZ",
+          "image": "https://m.media-amazon.com/images/I/81SxS-bDvVL._AC_UY218_.jpg",
           "platform": "Amazon",
           "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:18.450Z"
+          "fetchedAt": "2026-05-09T20:07:49.478Z"
         },
         "Croma": {
-          "title": "Pixel 8a",
-          "price": 51170,
-          "priceFormatted": "₹51,170",
-          "rating": "4.8",
-          "link": "https://www.croma.com/searchB?q=Pixel%208a",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8a.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.croma.com/searchB?q=Google%20Pixel%208a",
+          "image": null,
           "platform": "Croma",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:18.450Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:08:05.789Z",
+          "isFallback": true
         },
         "Reliance Digital": {
-          "title": "Pixel 8a",
-          "price": 50895,
-          "priceFormatted": "₹50,895",
-          "rating": "4.0",
-          "link": "https://www.reliancedigital.in/search?q=Pixel%208a",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8a.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.reliancedigital.in/search?q=Google%20Pixel%208a",
+          "image": null,
           "platform": "Reliance Digital",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:18.450Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:08:22.423Z",
+          "isFallback": true
         },
         "Vijay Sales": {
-          "title": "Pixel 8a",
-          "price": 55371,
-          "priceFormatted": "₹55,371",
-          "rating": "4.1",
-          "link": "https://www.vijaysales.com/search/Pixel%208a",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8a.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.vijaysales.com/search/Google%20Pixel%208a",
+          "image": null,
           "platform": "Vijay Sales",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:18.450Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:08:43.995Z",
+          "isFallback": true
         },
         "91Mobiles": {
-          "title": "Pixel 8a",
-          "price": 53061,
-          "priceFormatted": "₹53,061",
-          "rating": "4.9",
-          "link": "https://www.91mobiles.com/search?q=Pixel%208a",
-          "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8a.jpg",
+          "title": null,
+          "price": null,
+          "priceFormatted": "Check Price",
+          "rating": null,
+          "link": "https://www.91mobiles.com/search?q=Google%20Pixel%208a",
+          "image": null,
           "platform": "91Mobiles",
-          "inStock": true,
-          "fetchedAt": "2026-05-09T14:31:18.450Z"
+          "inStock": null,
+          "fetchedAt": "2026-05-09T20:09:01.325Z",
+          "isFallback": true
         }
       },
       "bestPrice": {
-        "price": 50895,
-        "platform": "Reliance Digital",
-        "formatted": "₹50,895",
-        "link": "https://www.reliancedigital.in/search?q=Pixel%208a"
+        "price": 27999,
+        "platform": "Amazon",
+        "formatted": "₹27,999",
+        "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MToxMjMxNDU4MDA2MjY5OTk3OjE3NzgzNTcyNTk6c3BfYXRmOjMwMDg5NDA0MjgyNTAzMjo6MDo6&url=%2FGlacier-Storage-Snapdragon-5520mAh-Charging%2Fdp%2FB0G5G7LNCV%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.jZu7yOoYqRuCm3RqXMy_nmojdMXhf_1VcqJ4c8z-bi3Hc5YEeMw2We3ZfPL268uUD1ywmsR6fE23Hcyztzh_ELJ_FGaEslxkJ17m8xLk69Onv8qnv-v4bREqMYnNuVhffCOJNzlfsF2a8SlfLD58omM1GUx3TyJ_glwXG0EOOLR-yVxEbjL2HXMGQejmRh1N8djS116bHZYqOmSYR_oHIrUiZgxZ1Hg8_4pV_UfGiFw.oLTY0Q9mC0kvYvXxlVXVeKrYoFAb65dQdl3lIXCnDeo%26dib_tag%3Dse%26keywords%3DGoogle%2BPixel%2B8a%26qid%3D1778357259%26sr%3D8-1-spons%26aref%3DCmVExTPJT1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=CmVExTPJT1&sp_cr=ZAZ"
       },
-      "lastUpdated": "2026-05-09T14:31:18.450Z"
+      "lastUpdated": "2026-05-09T20:09:02.745Z"
     }
   },
-  "lastFullFetch": "2026-05-09T19:47:01.752Z"
+  "lastFullFetch": "2026-05-09T20:09:02.750Z"
 }

@@ -1,5 +1,6 @@
 // ── State ──
 const API = '';
+let platformMode = 'phones'; // 'phones' or 'laptops'
 let allPhones = [];
 let currentCategory = 'all';
 let currentBrand = 'all';
@@ -19,18 +20,135 @@ const PLATFORM_META = {
   '91Mobiles':       { color: '#e91e63', icon: '📊' },
 };
 
-// ── Load phones from API ──
+// ── Load Phones / Laptops from API ──
 async function loadPhones() {
   showLoading(true);
   try {
-    const res = await fetch(`${API}/api/phones`);
+    const url = platformMode === 'phones' ? `${API}/api/phones` : `${API}/api/laptops`;
+    const res = await fetch(url);
     const data = await res.json();
-    allPhones = data.phones || [];
+    allPhones = platformMode === 'phones' ? (data.phones || []) : (data.laptops || []);
     updateLastUpdated(data.lastUpdated);
     renderPhones();
     renderComparisonTable();
   } catch(e) { showEmptyState(); }
   showLoading(false);
+}
+
+// ── Set Platform Mode (Phones vs Laptops) ──
+async function setPlatformMode(mode) {
+  if (platformMode === mode) return;
+  platformMode = mode;
+  
+  const btnPhones = document.getElementById('mode-phones-btn');
+  const btnLaptops = document.getElementById('mode-laptops-btn');
+  
+  if (mode === 'phones') {
+    btnPhones.className = 'platform-btn active';
+    btnLaptops.className = 'platform-btn inactive';
+    
+    // Category tabs
+    document.querySelector('.category-tabs').innerHTML = `
+      <button class="tab-btn active" data-category="all" onclick="setCategory('all',this)">All</button>
+      <button class="tab-btn" data-category="under15k" onclick="setCategory('under15k',this)">Under ₹15K</button>
+      <button class="tab-btn" data-category="under20k" onclick="setCategory('under20k',this)">Under ₹20K</button>
+      <button class="tab-btn" data-category="under30k" onclick="setCategory('under30k',this)">Under ₹30K</button>
+      <button class="tab-btn" data-category="under50k" onclick="setCategory('under50k',this)">Under ₹50K</button>
+      <button class="tab-btn" data-category="under70k" onclick="setCategory('under70k',this)">Under ₹70K</button>
+      <button class="tab-btn" data-category="under1.25l" onclick="setCategory('under1.25l',this)">Flagship</button>
+    `;
+    
+    // Brand dropdown
+    document.getElementById('brand-select').innerHTML = `
+      <option value="all">All Brands</option>
+      <option value="poco">POCO</option>
+      <option value="samsung">Samsung</option>
+      <option value="motorola">Motorola</option>
+      <option value="oneplus">OnePlus</option>
+      <option value="redmi">Redmi</option>
+      <option value="realme">Realme</option>
+      <option value="iqoo">iQOO</option>
+      <option value="vivo">Vivo</option>
+      <option value="lava">Lava</option>
+      <option value="tecno">Tecno</option>
+    `;
+    
+    // Headings
+    document.getElementById('phones-title').textContent = 'Best Budget Smartphones';
+    document.getElementById('phones-label').textContent = '📡 Live Prices';
+    document.getElementById('quiz-title').textContent = 'Which Phone is Right for You?';
+    
+    const compareTitle = document.getElementById('compare-title');
+    if (compareTitle) compareTitle.textContent = 'Compare Phones';
+    const compareDesc = document.getElementById('compare-desc');
+    if (compareDesc) compareDesc.textContent = 'Select up to 3 phones and compare every spec.';
+    
+    const upcomingTitle = document.getElementById('upcoming-title');
+    if (upcomingTitle) upcomingTitle.textContent = 'Upcoming Budget Phones';
+    const upcomingDesc = document.getElementById('upcoming-desc');
+    if (upcomingDesc) upcomingDesc.textContent = 'Phones launching in the next few months in India.';
+    
+    const brandsTitle = document.getElementById('brands-title');
+    if (brandsTitle) brandsTitle.textContent = 'Which Brand to Trust?';
+    const brandsDesc = document.getElementById('brands-desc');
+    if (brandsDesc) brandsDesc.textContent = 'Scored on updates, service centers, and value.';
+    
+  } else {
+    btnLaptops.className = 'platform-btn active';
+    btnPhones.className = 'platform-btn inactive';
+    
+    // Category tabs
+    document.querySelector('.category-tabs').innerHTML = `
+      <button class="tab-btn active" data-category="all" onclick="setCategory('all',this)">All</button>
+      <button class="tab-btn" data-category="under30k" onclick="setCategory('under30k',this)">Under ₹30K</button>
+      <button class="tab-btn" data-category="under35k" onclick="setCategory('under35k',this)">Under ₹35K</button>
+      <button class="tab-btn" data-category="under40k" onclick="setCategory('under40k',this)">Under ₹40K</button>
+    `;
+    
+    // Brand dropdown
+    document.getElementById('brand-select').innerHTML = `
+      <option value="all">All Brands</option>
+      <option value="lenovo">Lenovo</option>
+      <option value="hp">HP</option>
+      <option value="asus">ASUS</option>
+      <option value="acer">Acer</option>
+      <option value="xiaomi">Xiaomi</option>
+      <option value="msi">MSI</option>
+    `;
+    
+    // Headings
+    document.getElementById('phones-title').textContent = 'Best Budget Laptops';
+    document.getElementById('phones-label').textContent = '📡 Live Prices';
+    document.getElementById('quiz-title').textContent = 'Which Laptop is Right for You?';
+    
+    const compareTitle = document.getElementById('compare-title');
+    if (compareTitle) compareTitle.textContent = 'Compare Laptops';
+    const compareDesc = document.getElementById('compare-desc');
+    if (compareDesc) compareDesc.textContent = 'Select up to 3 laptops and compare every spec.';
+    
+    const upcomingTitle = document.getElementById('upcoming-title');
+    if (upcomingTitle) upcomingTitle.textContent = 'Upcoming Budget Laptops';
+    const upcomingDesc = document.getElementById('upcoming-desc');
+    if (upcomingDesc) upcomingDesc.textContent = 'Laptops launching in the next few months in India.';
+    
+    const brandsTitle = document.getElementById('brands-title');
+    if (brandsTitle) brandsTitle.textContent = 'Which Laptop Brand to Trust?';
+    const brandsDesc = document.getElementById('brands-desc');
+    if (brandsDesc) brandsDesc.textContent = 'Scored on driver support, build quality, and value.';
+  }
+  
+  currentCategory = 'all';
+  currentBrand = 'all';
+  currentTag = null;
+  compareSlots = [null, null, null];
+  renderComparatorSlots();
+  document.getElementById('comparator-table').innerHTML = '';
+  
+  await loadPhones();
+  loadOffers();
+  loadUpcoming();
+  loadBrands();
+  renderQuizSteps();
 }
 
 function updateLastUpdated(ts) {
@@ -82,6 +200,15 @@ function buildPhoneCard(phone, idx, wishlist = []) {
     ? `/api/image-proxy?url=${encodeURIComponent(phone.image)}` 
     : phone.image;
 
+  let vfmScore = 50;
+  const priceToUse = best?.price || phone.price;
+  if (priceToUse && phone.rating) {
+    const specsSum = platformMode === 'phones'
+      ? ((phone.rating.display || 4) + (phone.rating.battery || 4) + (phone.rating.camera || 4) + (phone.rating.gaming || 4))
+      : ((phone.rating.display || 4) + (phone.rating.battery || 4) + (phone.rating.performance || 4) + (phone.rating.gaming || 4));
+    vfmScore = Math.min(99, Math.max(45, Math.round((specsSum / priceToUse) * 45000)));
+  }
+
   const platformCards = live ? Object.entries(live.platforms || {}).map(([name, d]) => {
     const meta = PLATFORM_META[name] || { color:'#888', icon:'🔗' };
     const isBest = best?.platform === name;
@@ -95,11 +222,32 @@ function buildPhoneCard(phone, idx, wishlist = []) {
     </a>`;
   }).join('') : `<div class="no-live-data">Click 🔄 Fetch Prices to see live deals</div>`;
 
+  const swLabel = platformMode === 'phones' ? 'OS Cleanliness:' : 'Build Quality:';
+  const swFillWidth = platformMode === 'phones'
+    ? ((phone.rating?.updates || 3) * 20)
+    : ((phone.rating?.trust || 4) * 20);
+  const swFillColor = platformMode === 'phones' ? getSWColor(phone.brand) : '#a855f7';
+
+  const metricsHTML = platformMode === 'phones' ? `
+    <div class="metric-item" title="Gaming Performance">🎮 ${phone.rating?.gaming||'—'}</div>
+    <div class="metric-item" title="Heating Score">🌡️ ${phone.rating?.heating||'—'}</div>
+    <div class="metric-item" title="Repairability Score">🛠️ ${phone.rating?.repair||'—'}</div>
+    <div class="metric-item" title="Seller Trust">🛡️ ${phone.rating?.trust||'—'}</div>
+  ` : `
+    <div class="metric-item" title="Performance Speed">⚡ ${phone.rating?.performance||'—'}</div>
+    <div class="metric-item" title="Display Quality">🖥️ ${phone.rating?.display||'—'}</div>
+    <div class="metric-item" title="Battery Life">🔋 ${phone.rating?.battery||'—'}</div>
+    <div class="metric-item" title="Brand Trust">🛡️ ${phone.rating?.trust||'—'}</div>
+  `;
+
   return `<div class="phone-card reveal" id="card-${phone.id}">
     <div class="card-glow"></div>
     <div class="card-header">
       <div class="card-rank" style="background:linear-gradient(135deg,${phone.badgeColor||'#6c5ce7'},${phone.badgeColor||'#a855f7'})">#${idx+1}</div>
-      <span class="card-badge" style="background:${phone.badgeColor||'#6c5ce7'}22;color:${phone.badgeColor||'#a855f7'};border:1px solid ${phone.badgeColor||'#a855f7'}44">${phone.badge||'Pick'}</span>
+      <div style="display:flex; flex-direction:column; gap:6px; align-items:flex-end;">
+        <span class="card-badge" style="background:${phone.badgeColor||'#6c5ce7'}22;color:${phone.badgeColor||'#a855f7'};border:1px solid ${phone.badgeColor||'#a855f7'}44">${phone.badge||'Pick'}</span>
+        <span class="vfm-badge" style="background:${vfmScore >= 80 ? 'linear-gradient(135deg,#ff7675,#d63031)' : 'linear-gradient(135deg,#a855f7,#6c5ce7)'}">🔥 VFM: ${vfmScore}/100</span>
+      </div>
     </div>
     <div class="card-body">
       <div style="display:flex; justify-content:space-between; align-items:center;">
@@ -131,10 +279,10 @@ function buildPhoneCard(phone, idx, wishlist = []) {
         <span class="stars">${stars}</span>
         <span class="rating-text">${rating} (${(phone.reviews||0).toLocaleString()} reviews)</span>
       </div>
-      <div class="software-score" title="Software Cleanliness (Bloatware Score)">
-        <span class="sw-label">OS Cleanliness:</span>
+      <div class="software-score" title="${swLabel}">
+        <span class="sw-label">${swLabel}</span>
         <div class="sw-meter">
-          <div class="sw-fill" style="width:${(phone.rating.updates||3)*20}%; background:${getSWColor(phone.brand)}"></div>
+          <div class="sw-fill" style="width:${swFillWidth}%; background:${swFillColor}"></div>
         </div>
       </div>
       <div class="pros-cons">
@@ -143,10 +291,7 @@ function buildPhoneCard(phone, idx, wishlist = []) {
       </div>
       ${phone.verdict ? `<div class="verdict">💬 ${phone.verdict}</div>` : ''}
       <div class="card-metrics">
-        <div class="metric-item" title="Gaming Performance">🎮 ${phone.rating?.gaming||'—'}</div>
-        <div class="metric-item" title="Heating/Cooling Score">🌡️ ${phone.rating?.heating||'—'}</div>
-        <div class="metric-item" title="Repairability Score">🛠️ ${phone.rating?.repair||'—'}</div>
-        <div class="metric-item" title="Scam/Seller Trust">🛡️ ${phone.rating?.trust||'—'}</div>
+        ${metricsHTML}
       </div>
       <div class="card-actions">
         <button class="action-btn" onclick="showSpecs('${phone.id}')" title="Full Specs">📋 Specs</button>
@@ -233,7 +378,7 @@ function setCategory(cat, btn) {
   currentCategory = cat; currentTag = null;
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('phones-title').textContent = 'Best Budget Smartphones';
+  document.getElementById('phones-title').textContent = platformMode === 'phones' ? 'Best Budget Smartphones' : 'Best Budget Laptops';
   document.getElementById('phones-label').textContent = '📡 Live Prices';
   renderPhones();
 }
@@ -241,7 +386,7 @@ function setCategory(cat, btn) {
 function filterByTag(tag) {
   currentTag = tag; currentCategory = 'all';
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  const labels = {
+  const labels = platformMode === 'phones' ? {
     battery:'🔋 Best Battery Phones',
     camera:'📷 Best Camera Phones',
     gaming:'🎮 Best Gaming Phones',
@@ -261,8 +406,15 @@ function filterByTag(tag) {
     compact: '🤏 Best Compact & Slim Phones',
     geek: '👨‍💻 Best for Custom ROMs & Modding',
     kids: '👶 Best as a Child\'s First Phone'
+  } : {
+    performance: '⚡ Best Performance Laptops',
+    display: '🖥️ High sRGB Display Laptops',
+    battery: '🔋 Long Battery Laptops',
+    students: '🎓 Best for College Students',
+    office: '💼 Best for WFH/Office Work',
+    gaming: '🎮 Best Gaming & Graphics Laptops'
   };
-  document.getElementById('phones-title').textContent = labels[tag] || 'Filtered Phones';
+  document.getElementById('phones-title').textContent = labels[tag] || (platformMode === 'phones' ? 'Filtered Phones' : 'Filtered Laptops');
   document.getElementById('phones-label').textContent = '🏷️ Filtered by Use Case';
   renderPhones();
   document.getElementById('phones').scrollIntoView({ behavior:'smooth' });
@@ -390,7 +542,29 @@ async function sendChatMessage() {
     messages.removeChild(typingMsg);
     const botMsg = document.createElement('div');
     botMsg.className = 'msg-bot';
-    botMsg.innerHTML = data.response || "Sorry, I couldn't understand that.";
+    
+    let htmlContent = `<div class="msg-text">${data.response || "Sorry, I couldn't understand that."}</div>`;
+    
+    if (data.matchedPhones && data.matchedPhones.length > 0) {
+      htmlContent += `
+        <div class="chat-carousel" style="display:flex; gap:10px; overflow-x:auto; padding:10px 0 5px 0; margin-top:8px; scrollbar-width:thin;">
+          ${data.matchedPhones.map(phone => {
+            const best = phone.liveData?.bestPrice;
+            const priceFormatted = best ? best.formatted : (phone.price ? `₹${phone.price.toLocaleString('en-IN')}` : 'Check Price');
+            return `
+              <div class="chat-phone-card" style="background:rgba(255,255,255,0.03); border:1px solid var(--border-color); border-radius:8px; padding:10px; min-width:160px; max-width:160px; flex-shrink:0; text-align:left; transition:var(--transition); box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+                <div style="font-size:0.75rem; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${phone.model}</div>
+                <div style="font-size:0.8rem; font-weight:700; color:#00cec9; margin:4px 0;">${priceFormatted}</div>
+                <div style="font-size:0.68rem; color:var(--text-secondary); line-height:1.2; height:34px; overflow:hidden; margin-bottom:8px;">🔋 ${phone.specs?.battery || 'Big Battery'}<br/>📸 ${phone.specs?.camera || 'Multi Camera'}</div>
+                <button class="btn-primary" onclick="showSpecs('${phone.id}'); toggleChat();" style="width:100%; padding:4px 0; font-size:0.7rem; border-radius:4px; height:auto;">View Specs 📋</button>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+    
+    botMsg.innerHTML = htmlContent;
     messages.appendChild(botMsg);
     messages.scrollTop = messages.scrollHeight;
   } catch (error) {
